@@ -20,7 +20,7 @@ export function FutureVision() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}

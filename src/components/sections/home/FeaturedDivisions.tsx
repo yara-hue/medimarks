@@ -60,7 +60,7 @@ export function FeaturedDivisions() {
             return (
               <motion.div
                 key={item.title}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -69,7 +69,7 @@ export function FeaturedDivisions() {
                 <Link
                   href={item.href}
                   className={`group relative block rounded-2xl overflow-hidden ${
-                    isLarge ? "aspect-[3/1] md:aspect-[4/1]" : "aspect-[4/3] md:aspect-[3/2]"
+                    isLarge ? "min-h-[320px] md:aspect-[4/1] md:min-h-0" : "aspect-[4/3] md:aspect-[3/2]"
                   }`}
                 >
                   <div
