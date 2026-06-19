@@ -7,8 +7,17 @@ export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 3200);
-    return () => clearTimeout(timer);
+    const dismiss = () => setIsLoading(false);
+
+    const timer = setTimeout(dismiss, 3200);
+    window.addEventListener("load", dismiss);
+    window.addEventListener("pageshow", dismiss);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("load", dismiss);
+      window.removeEventListener("pageshow", dismiss);
+    };
   }, []);
 
   return (
@@ -59,12 +68,6 @@ export function LoadingScreen() {
                   MediMarks
                 </h1>
               </motion.div>
-              <motion.div
-                className="absolute top-0 bottom-0 w-0.5 bg-white/80"
-                initial={{ left: 0 }}
-                animate={{ left: "100%" }}
-                transition={{ duration: 1.8, ease: "easeInOut" }}
-              />
             </div>
           </div>
 
