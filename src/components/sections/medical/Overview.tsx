@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function MedicalOverview() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="max-w-3xl">
           <motion.div
@@ -18,7 +18,7 @@ export function MedicalOverview() {
             <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 leading-tight">
               Our Founding Division
             </h2>
-            <div className="mt-6 space-y-4 text-gray-500 leading-relaxed">
+            <div className="mt-6 space-y-4 text-gray-500 dark:text-gray-400 leading-relaxed">
               <p>
                 As MediMarks&apos; founding division, Medical Furniture represents our core
                 expertise and commitment to quality. Since 2015, we have been designing
@@ -46,9 +46,9 @@ export function MedicalOverview() {
             { number: "5+", label: "Product Lines" },
             { number: "Regional", label: "Market Reach" },
           ].map((stat) => (
-            <div key={stat.label} className="bg-gray-50 rounded-xl p-8 text-center">
+            <div key={stat.label} className="bg-gray-50 dark:bg-navy-900/50 rounded-xl p-8 text-center">
               <div className="font-heading font-bold text-3xl text-navy-500">{stat.number}</div>
-              <div className="mt-1 text-gray-500 text-sm">{stat.label}</div>
+              <div className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{stat.label}</div>
             </div>
           ))}
         </motion.div>

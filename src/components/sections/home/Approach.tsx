@@ -30,7 +30,7 @@ const items = [
 
 export function Approach() {
   return (
-    <section className="py-24 md:py-32 bg-white border-b border-gray-100">
+    <section className="py-24 md:py-32 bg-white dark:bg-navy-900 border-b border-gray-100 dark:border-navy-800">
       <Container>
         <SectionHeading
           title="Our Approach"
@@ -49,13 +49,13 @@ export function Approach() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-14 h-14 mx-auto rounded-2xl bg-navy-50 flex items-center justify-center mb-5">
+                <div className="w-14 h-14 mx-auto rounded-2xl bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5">
                   <Icon className="w-7 h-7 text-navy-500" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg text-navy-900 mb-2">
+                <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>
@@ -70,8 +70,8 @@ export function Approach() {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-16 max-w-3xl mx-auto text-center"
         >
-          <div className="h-px bg-gray-200 mb-8" />
-          <p className="text-gray-400 text-sm italic">
+          <div className="h-px bg-gray-200 dark:bg-navy-700 mb-8" />
+          <p className="text-gray-400 dark:text-gray-500 text-sm italic">
             From concept to completion — every product reflects our commitment to
             engineering excellence and practical innovation.
           </p>

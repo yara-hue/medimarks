@@ -22,12 +22,12 @@ export function SectionHeading({
       )}
     >
       <h2
-        className="text-4xl md:text-5xl font-heading font-bold text-navy-900 leading-tight"
+        className="text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight"
       >
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 text-lg text-gray-500 leading-relaxed">
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-400 leading-relaxed">
           {subtitle}
         </p>
       )}

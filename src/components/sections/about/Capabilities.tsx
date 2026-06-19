@@ -13,7 +13,7 @@ const capabilities = [
 
 export function AboutCapabilities() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50">
+    <section className="py-24 md:py-32 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading
           title="Manufacturing Capabilities"
@@ -28,13 +28,13 @@ export function AboutCapabilities() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white rounded-xl p-8 border border-gray-200/60"
+              className="bg-white dark:bg-navy-900 rounded-xl p-8 border border-gray-200/60 dark:border-navy-700"
             >
-              <div className="w-12 h-12 rounded-xl bg-navy-50 flex items-center justify-center text-xl mb-5">
+              <div className="w-12 h-12 rounded-xl bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center text-xl mb-5">
                 {item.icon}
               </div>
-              <h3 className="font-heading font-semibold text-lg text-navy-900">{item.title}</h3>
-              <p className="mt-2 text-gray-500 text-sm leading-relaxed">{item.description}</p>
+              <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white">{item.title}</h3>
+              <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>
@@ -47,7 +47,7 @@ export function AboutCapabilities() {
           className="mt-12 p-8 bg-navy-900 rounded-2xl text-center"
         >
           <div className="aspect-[3/1] max-w-2xl mx-auto flex items-center justify-center">
-            <span className="text-gray-500 text-sm tracking-widest uppercase">Manufacturing Facility — Image Placeholder</span>
+            <span className="text-gray-500 dark:text-gray-400 text-sm tracking-widest uppercase">Manufacturing Facility — Image Placeholder</span>
           </div>
         </motion.div>
       </Container>

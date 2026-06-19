@@ -33,17 +33,17 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/50"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/50 dark:bg-navy-900/90 dark:border-navy-700/50"
       )}
     >
       <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
-            className="font-heading text-xl md:text-2xl font-bold text-navy-900 tracking-tight"
+            className="font-heading text-xl md:text-2xl font-bold text-navy-900 dark:text-white tracking-tight"
           >
             MediMarks
-            <span className="block text-[10px] font-sans font-normal text-gray-400 tracking-widest uppercase -mt-1">
+            <span className="block text-[10px] font-sans font-normal text-gray-400 dark:text-gray-500 tracking-widest uppercase -mt-1">
               Engineering Solutions
             </span>
           </Link>
@@ -64,7 +64,7 @@ export function Navbar() {
                         "flex items-center gap-1 text-sm font-medium transition-colors py-2",
                         pathname.startsWith("/solutions")
                           ? "text-navy-500"
-                          : "text-gray-600 hover:text-navy-500"
+                          : "text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
                       )}
                     >
                       {item.label}
@@ -99,9 +99,8 @@ export function Navbar() {
                     "text-sm font-medium transition-colors py-2",
                     pathname === item.href
                       ? "text-navy-500"
-                      : "text-gray-600 hover:text-navy-500"
-                  )}
-                >
+                      : "text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
+                  )}>
                   {item.label}
                 </Link>
               );
@@ -109,7 +108,7 @@ export function Navbar() {
           </div>
 
           <button
-            className="lg:hidden p-2 text-gray-600 hover:text-navy-500 transition-colors"
+            className="lg:hidden p-2 text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white transition-colors"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -119,7 +118,7 @@ export function Navbar() {
       </nav>
 
       {isOpen && (
-        <div className="lg:hidden bg-white border-t border-gray-200/50 shadow-lg animate-in fade-in duration-200">
+        <div className="lg:hidden bg-white dark:bg-navy-900 border-t border-gray-200/50 dark:border-navy-700/50 shadow-lg animate-in fade-in duration-200">
           <div className="px-6 py-4 space-y-1">
             {navigation.map((item) => {
               if (item.children) {

@@ -47,7 +47,7 @@ const featured = [
 
 export function FeaturedDivisions() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Divisions"
@@ -90,7 +90,7 @@ export function FeaturedDivisions() {
                     <h3 className="font-heading font-bold text-white text-2xl md:text-3xl mb-3">
                       {item.title}
                     </h3>
-                    <p className={`text-gray-300 leading-relaxed max-w-xl ${isLarge ? "" : "text-sm"}`}>
+                    <p className={`text-gray-300 dark:text-gray-400 leading-relaxed max-w-xl ${isLarge ? "" : "text-sm"}`}>
                       {item.description}
                     </p>
                     <div className="mt-5 flex items-center gap-2 text-white/80 group-hover:text-white transition-colors text-sm font-medium">

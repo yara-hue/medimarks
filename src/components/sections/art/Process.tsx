@@ -13,7 +13,7 @@ const steps = [
 
 export function ArtProcess() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50">
+    <section className="py-24 md:py-32 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading title="Our Fabrication Process" subtitle="From concept to installation — how we create custom art and sculpture." />
 
@@ -25,11 +25,11 @@ export function ArtProcess() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white rounded-xl p-8 border border-gray-200/60"
+              className="bg-white dark:bg-navy-900 rounded-xl p-8 border border-gray-200/60 dark:border-navy-700"
             >
               <span className="text-navy-200 font-heading font-bold text-3xl">{item.step}</span>
-              <h3 className="mt-3 font-heading font-semibold text-lg text-navy-900">{item.title}</h3>
-              <p className="mt-2 text-gray-500 text-sm leading-relaxed">{item.description}</p>
+              <h3 className="mt-3 font-heading font-semibold text-lg text-navy-900 dark:text-white">{item.title}</h3>
+              <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>

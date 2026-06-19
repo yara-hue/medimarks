@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function ArtPortfolio() {
   return (
-    <section id="portfolio" className="py-24 md:py-32 bg-white">
+    <section id="portfolio" className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Portfolio" subtitle="A glimpse into our custom fabrication work." />
 
@@ -18,11 +18,11 @@ export function ArtPortfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: (item % 3) * 0.1 }}
-              className="aspect-square bg-gradient-to-br from-slate-100 to-gray-100 rounded-2xl flex items-center justify-center group cursor-pointer"
+              className="aspect-square bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 rounded-2xl flex items-center justify-center group cursor-pointer"
             >
               <div className="text-center p-6 opacity-60 group-hover:opacity-100 transition-opacity">
                 <span className="text-3xl">✦</span>
-                <p className="mt-2 text-gray-400 text-xs tracking-widest uppercase">Project {item}</p>
+                <p className="mt-2 text-gray-400 dark:text-gray-500 text-xs tracking-widest uppercase">Project {item}</p>
               </div>
             </motion.div>
           ))}
@@ -33,9 +33,9 @@ export function ArtPortfolio() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 p-8 bg-gray-50 rounded-2xl border border-dashed border-gray-200 text-center"
-        >
-          <p className="text-gray-400 text-sm italic">
+          className="mt-12 p-8 bg-gray-50 dark:bg-navy-900/50 rounded-2xl border border-dashed border-gray-200 dark:border-navy-700 text-center"
+          >
+            <p className="text-gray-400 dark:text-gray-500 text-sm italic">
             Portfolio images of completed sculptures, architectural elements, and custom
             fabrication projects will be added as they are completed.
           </p>

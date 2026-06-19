@@ -7,7 +7,7 @@ import { medicalProducts } from "@/data/site";
 
 export function MedicalProducts() {
   return (
-    <section id="products" className="py-24 md:py-32 bg-white">
+    <section id="products" className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Medical Products"
@@ -43,19 +43,19 @@ export function MedicalProducts() {
                 <span className="text-navy-500 text-xs font-medium tracking-widest uppercase">
                   {product.category}
                 </span>
-                <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900">
+                <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
                   {product.name}
                 </h3>
-                <p className="mt-3 text-gray-500 leading-relaxed">
+                <p className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed">
                   {product.description}
                 </p>
 
                 <div className="mt-6 grid sm:grid-cols-2 gap-4">
                   <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 mb-2">Key Benefits</h4>
+                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
                     <ul className="space-y-1.5">
                       {product.benefits.map((b) => (
-                        <li key={b} className="text-sm text-gray-500 flex items-start gap-2">
+                        <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
                           <span className="text-navy-400 mt-0.5">•</span>
                           {b}
                         </li>
@@ -63,8 +63,8 @@ export function MedicalProducts() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 mb-2">Technical Specifications</h4>
-                    <p className="text-sm text-gray-400 italic bg-gray-50 rounded-lg p-3">
+                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Technical Specifications</h4>
+                    <p className="text-sm text-gray-400 dark:text-gray-500 italic bg-gray-50 dark:bg-navy-900/50 rounded-lg p-3">
                       Detailed specifications available upon request.
                     </p>
                   </div>

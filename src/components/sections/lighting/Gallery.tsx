@@ -7,7 +7,7 @@ import { lightingProducts } from "@/data/site";
 
 export function LightingGallery() {
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-white">
+    <section id="gallery" className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Product Gallery" subtitle="Our range of decorative light poles." />
 
@@ -27,8 +27,8 @@ export function LightingGallery() {
                   <p className="mt-3 text-indigo-300 text-xs tracking-widest uppercase">Image</p>
                 </div>
               </div>
-              <h3 className="font-heading font-semibold text-lg text-navy-900">{product.name}</h3>
-              <p className="mt-1 text-gray-500 text-sm">{product.description}</p>
+              <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white">{product.name}</h3>
+              <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{product.description}</p>
             </motion.div>
           ))}
         </div>

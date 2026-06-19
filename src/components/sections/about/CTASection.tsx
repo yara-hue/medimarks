@@ -27,7 +27,7 @@ export function AboutCTA() {
             We&apos;d be happy to discuss our capabilities, products, or potential partnerships.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">
+            <Button href="/contact" size="lg" className="bg-white dark:bg-navy-800 text-navy-900 dark:text-white hover:bg-gray-100 dark:hover:bg-navy-700">
               Contact Us
             </Button>
             <Button href="/solutions" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">

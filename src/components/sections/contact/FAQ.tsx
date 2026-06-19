@@ -12,7 +12,7 @@ export function ContactFAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 md:py-32 bg-gray-50">
+    <section className="py-24 md:py-32 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading title="Frequently Asked Questions" subtitle="Quick answers to common inquiries." />
 
@@ -20,18 +20,18 @@ export function ContactFAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-gray-200/60 overflow-hidden"
+              className="bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-5 md:p-6 text-left transition-colors hover:bg-gray-50"
+                className="w-full flex items-center justify-between p-5 md:p-6 text-left transition-colors hover:bg-gray-50 dark:hover:bg-navy-800/50"
               >
-                <span className="font-medium text-navy-900 text-sm md:text-base pr-4">
+                <span className="font-medium text-navy-900 dark:text-white text-sm md:text-base pr-4">
                   {faq.q}
                 </span>
                 <ChevronDown
                   className={cn(
-                    "w-4 h-4 text-gray-400 shrink-0 transition-transform duration-200",
+                      "w-4 h-4 text-gray-400 dark:text-gray-500 shrink-0 transition-transform duration-200",
                     openIndex === index && "rotate-180"
                   )}
                 />
@@ -46,7 +46,7 @@ export function ContactFAQ() {
                     className="overflow-hidden"
                   >
                     <div className="px-5 md:px-6 pb-5 md:pb-6">
-                      <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                      <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{faq.a}</p>
                     </div>
                   </motion.div>
                 )}

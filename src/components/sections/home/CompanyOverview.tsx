@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 export function CompanyOverview() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <motion.div
@@ -18,11 +18,11 @@ export function CompanyOverview() {
             <span className="text-navy-500 font-medium text-sm tracking-widest uppercase">
               About MediMarks
             </span>
-            <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 leading-tight">
+            <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
               Built on Engineering,<br />
               <span className="text-navy-500">Driven by Innovation</span>
             </h2>
-            <div className="mt-6 space-y-4 text-gray-500 leading-relaxed">
+            <div className="mt-6 space-y-4 text-gray-500 dark:text-gray-400 leading-relaxed">
               <p>
                 MediMarks was established in 2015 with the vision of creating high-quality
                 medical furniture for regional markets. Through continuous development and

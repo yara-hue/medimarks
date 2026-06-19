@@ -19,7 +19,7 @@ const gradients = [
 
 export function DivisionCards() {
   return (
-    <section className="py-24 md:py-32 bg-white">
+    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="grid md:grid-cols-2 gap-6">
           {divisions.map((division, index) => {
@@ -38,7 +38,7 @@ export function DivisionCards() {
                   <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">
                     <Icon className="w-8 h-8 text-white/60 mb-3" />
                     <h3 className="font-heading font-bold text-2xl text-white mb-2">{division.title}</h3>
-                    <p className="text-gray-300 text-sm max-w-md mb-5">{division.description}</p>
+                    <p className="text-gray-300 dark:text-gray-400 text-sm max-w-md mb-5">{division.description}</p>
                     <Button
                       href={division.href}
                       variant="ghost"

@@ -35,7 +35,7 @@ export function FutureVision() {
               Possibilities
             </span>
           </h2>
-          <p className="mt-6 text-lg text-gray-300 leading-relaxed max-w-2xl">
+          <p className="mt-6 text-lg text-gray-300 dark:text-gray-400 leading-relaxed max-w-2xl">
             As MediMarks continues to strengthen its manufacturing and engineering
             capabilities, the company aims to expand into new sectors, develop
             innovative products, and build long-term partnerships across regional

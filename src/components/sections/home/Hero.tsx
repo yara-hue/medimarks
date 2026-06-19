@@ -38,7 +38,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed"
+            className="mt-6 text-lg md:text-xl text-gray-300 dark:text-gray-400 max-w-2xl leading-relaxed"
           >
             Since 2015, MediMarks has been designing and manufacturing specialized products
             that combine functionality, quality, and innovation across multiple industries.
@@ -60,7 +60,7 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white dark:from-navy-900 to-transparent" />
     </section>
   );
 }
