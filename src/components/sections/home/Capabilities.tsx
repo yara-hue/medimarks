@@ -34,14 +34,14 @@ export function Capabilities() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="group relative bg-white dark:bg-navy-900 rounded-xl border border-gray-300 dark:border-navy-500 p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-300/50 dark:hover:shadow-black/40">
-                  <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-700 flex items-center justify-center mb-5 group-hover:bg-navy-100 dark:group-hover:bg-navy-800 transition-colors">
-                    <Icon className="w-6 h-6 text-navy-500 dark:text-blue-300" />
+                <div className="group relative bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30">
+                  <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5 group-hover:bg-navy-100 dark:group-hover:bg-navy-800 transition-colors">
+                    <Icon className="w-6 h-6 text-navy-500" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl text-navy-900 dark:text-white mb-3">
                     {division.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-6">
+                  <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
                     {division.description}
                   </p>
                   <Button

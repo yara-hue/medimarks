@@ -22,7 +22,7 @@ export function CompanyOverview() {
               Built on Engineering,<br />
               <span className="text-navy-500">Driven by Innovation</span>
             </h2>
-            <div className="mt-6 space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
+            <div className="mt-6 space-y-4 text-gray-500 dark:text-gray-400 leading-relaxed">
               <p>
                 MediMarks was established in 2015 with the vision of creating high-quality
                 medical furniture for regional markets. Through continuous development and

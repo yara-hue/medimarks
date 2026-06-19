@@ -18,7 +18,7 @@ export function ArtOverview() {
           <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
             Engineering Meets Artistry
           </h2>
-          <p className="mt-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="mt-6 text-gray-500 dark:text-gray-400 leading-relaxed">
             Our artistic fabrication division specializes in custom metal sculpture, decorative
             architectural elements, and commissioned art pieces. Leveraging the same engineering
             precision and manufacturing expertise that defines all MediMarks divisions, we bring

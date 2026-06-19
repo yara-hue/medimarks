@@ -18,7 +18,7 @@ export function StorageOverview() {
           <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
             Engineered for Efficiency
           </h2>
-          <p className="mt-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+          <p className="mt-6 text-gray-500 dark:text-gray-400 leading-relaxed">
             Our storage solutions division provides adjustable-height shelving systems
             designed for warehouse, commercial, and industrial applications. Built with
             durable materials and flexible configurations, our storage products help

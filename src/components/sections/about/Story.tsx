@@ -54,7 +54,7 @@ export function AboutStory() {
                 <div className={`md:w-1/2 ${index % 2 === 0 ? "md:pl-12" : "md:pr-12 md:text-right"}`}>
                   <span className="md:hidden font-heading font-bold text-lg text-navy-500 dark:text-navy-300">{item.year}</span>
                   <h3 className="mt-1 font-heading font-semibold text-xl text-navy-900 dark:text-white">{item.title}</h3>
-                  <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{item.description}</p>
+                  <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{item.description}</p>
                 </div>
               </motion.div>
             ))}

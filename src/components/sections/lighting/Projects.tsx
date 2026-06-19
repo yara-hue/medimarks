@@ -17,7 +17,7 @@ export function LightingProjects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5 }}
-          className="p-12 bg-white dark:bg-navy-900 rounded-2xl border border-dashed border-gray-300 dark:border-navy-500 text-center"
+          className="p-12 bg-white dark:bg-navy-900 rounded-2xl border border-dashed border-gray-200 dark:border-navy-700 text-center"
           >
             <span className="text-4xl">🏗</span>
             <h3 className="mt-4 font-heading font-semibold text-xl text-navy-900 dark:text-white">Project Case Studies</h3>

@@ -33,7 +33,7 @@ export function ArtPortfolio() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 p-8 bg-gray-50 dark:bg-navy-900/50 rounded-2xl border border-dashed border-gray-300 dark:border-navy-500 text-center"
+          className="mt-12 p-8 bg-gray-50 dark:bg-navy-900/50 rounded-2xl border border-dashed border-gray-200 dark:border-navy-700 text-center"
           >
             <p className="text-gray-400 dark:text-gray-500 text-sm italic">
             Portfolio images of completed sculptures, architectural elements, and custom

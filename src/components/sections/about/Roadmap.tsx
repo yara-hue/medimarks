@@ -20,12 +20,12 @@ export function AboutRoadmap() {
             Future Development
             <span className="block text-navy-500">& Expansion Plans</span>
           </h2>
-          <p className="mt-6 text-gray-600 dark:text-gray-300 leading-relaxed max-w-2xl">
+          <p className="mt-6 text-gray-500 dark:text-gray-400 leading-relaxed max-w-2xl">
             MediMarks continues to invest in new product development, manufacturing
             capabilities, and market expansion. We are actively exploring opportunities
             in additional sectors and regional markets.
           </p>
-          <div className="mt-6 p-6 bg-gray-50 dark:bg-navy-900/50 rounded-xl border border-dashed border-gray-300 dark:border-navy-500">
+          <div className="mt-6 p-6 bg-gray-50 dark:bg-navy-900/50 rounded-xl border border-dashed border-gray-200 dark:border-navy-700">
             <p className="text-gray-400 dark:text-gray-500 text-sm italic">
               Detailed roadmap content coming soon. This section will outline specific
               product development timelines, market expansion targets, and strategic
