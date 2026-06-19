@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-14 md:pt-16">
       <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, #0A1628 0%, #0A1628 40%, #0B1830 50%, #0C1C36 58%, #0D1E3A 65%, #0F2040 72%, #122648 78%, #162D4A 84%, #1A3555 90%, #1E3A5F 96%, #1E3A5F 100%)" }} />
       <div
         className="absolute inset-0 opacity-[0.08]"

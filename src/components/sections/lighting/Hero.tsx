@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function LightingHero() {
   return (
-    <section className="relative min-h-[55vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[55vh] flex items-center overflow-hidden pt-14 md:pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-indigo-900 to-navy-700" />
       <div className="absolute inset-0 opacity-[0.04]"
         style={{ backgroundImage: `radial-gradient(circle at 2px 2px, #ffffff 1px, transparent 0)`, backgroundSize: "50px 50px" }}

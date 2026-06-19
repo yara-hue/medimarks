@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function SolutionsHero() {
   return (
-    <section className="relative min-h-[50vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[50vh] flex items-center overflow-hidden pt-14 md:pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700" />
       <div className="absolute inset-0 opacity-[0.06]"
         style={{ backgroundImage: `radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)`, backgroundSize: "40px 40px" }}

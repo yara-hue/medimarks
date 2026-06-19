@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function MedicalHero() {
   return (
-    <section className="relative min-h-[65vh] flex items-center overflow-hidden pt-20">
+    <section className="relative min-h-[65vh] flex items-center overflow-hidden pt-14 md:pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-600" />
       <div className="absolute inset-0 opacity-[0.07]"
         style={{

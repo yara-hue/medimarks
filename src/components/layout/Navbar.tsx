@@ -37,7 +37,7 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
             className="font-heading text-xl md:text-2xl font-bold text-navy-900 tracking-tight"
