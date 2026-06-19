@@ -9,7 +9,7 @@ import { siteConfig } from "@/data/site";
 
 export function ContactSection() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Let's Build Something Together"

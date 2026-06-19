@@ -19,7 +19,7 @@ const gradients = [
 
 export function DivisionCards() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="grid md:grid-cols-2 gap-6">
           {divisions.map((division, index) => {
@@ -32,7 +32,7 @@ export function DivisionCards() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="group relative rounded-2xl overflow-hidden aspect-[4/3]">
+                <div className="group relative rounded-2xl overflow-hidden min-h-[320px] md:aspect-[4/3]">
                   <div className={`absolute inset-0 bg-gradient-to-br ${gradients[index]} transition-transform duration-700 group-hover:scale-105`} />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                   <div className="absolute inset-0 p-8 md:p-10 flex flex-col justify-end">

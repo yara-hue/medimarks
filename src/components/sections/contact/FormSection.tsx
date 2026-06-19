@@ -8,7 +8,7 @@ import { siteConfig } from "@/data/site";
 
 export function ContactFormSection() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="grid lg:grid-cols-5 gap-12 lg:gap-16">
           <motion.div

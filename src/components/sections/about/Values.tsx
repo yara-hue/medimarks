@@ -9,7 +9,7 @@ const icons = ["⚙", "💡", "✓", "🤝"];
 
 export function AboutValues() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Core Values"

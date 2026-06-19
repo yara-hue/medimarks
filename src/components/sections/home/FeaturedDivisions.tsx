@@ -47,7 +47,7 @@ const featured = [
 
 export function FeaturedDivisions() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Divisions"
@@ -69,7 +69,7 @@ export function FeaturedDivisions() {
                 <Link
                   href={item.href}
                   className={`group relative block rounded-2xl overflow-hidden ${
-                    isLarge ? "min-h-[320px] md:aspect-[4/1] md:min-h-0" : "aspect-[4/3] md:aspect-[3/2]"
+                    isLarge ? "min-h-[320px] md:aspect-[4/1] md:min-h-0" : "min-h-[280px] md:aspect-[3/2] md:min-h-0"
                   }`}
                 >
                   <div

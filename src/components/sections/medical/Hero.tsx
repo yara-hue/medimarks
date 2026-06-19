@@ -22,7 +22,7 @@ export function MedicalHero() {
           className="max-w-3xl"
         >
           <span className="text-blue-200 font-medium text-sm tracking-widest uppercase">Flagship Division</span>
-          <h1 className="mt-4 text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight">
+          <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight">
             Medical Furniture
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">

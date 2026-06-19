@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 
 export function CompanyOverview() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           <motion.div

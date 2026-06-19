@@ -25,7 +25,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[4.5rem] font-heading font-bold text-white leading-snug md:leading-[1.05] tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-heading font-bold text-white leading-snug md:leading-[1.05] tracking-tight"
           >
             Engineering Solutions for
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">

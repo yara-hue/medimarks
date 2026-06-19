@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 
 export function FutureVision() {
   return (
-    <section className="relative py-28 md:py-36 overflow-hidden">
+    <section className="relative py-16 md:py-28 lg:py-36 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700" />
       <div
         className="absolute inset-0 opacity-[0.04]"

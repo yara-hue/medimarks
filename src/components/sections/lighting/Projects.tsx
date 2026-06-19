@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function LightingProjects() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading
           title="Featured Projects"

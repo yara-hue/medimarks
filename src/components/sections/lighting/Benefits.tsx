@@ -13,7 +13,7 @@ const benefits = [
 
 export function LightingBenefits() {
   return (
-    <section className="py-24 md:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading title="Why Choose Our Light Poles" subtitle="Quality and design that stand the test of time." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

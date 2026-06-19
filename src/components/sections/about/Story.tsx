@@ -12,7 +12,7 @@ const timeline = [
 
 export function AboutStory() {
   return (
-    <section className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -7,7 +7,7 @@ import { lightingProducts } from "@/data/site";
 
 export function LightingGallery() {
   return (
-    <section id="gallery" className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section id="gallery" className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Product Gallery" subtitle="Our range of decorative light poles." />
 

@@ -6,7 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function ArtPortfolio() {
   return (
-    <section id="portfolio" className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section id="portfolio" className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Portfolio" subtitle="A glimpse into our custom fabrication work." />
 

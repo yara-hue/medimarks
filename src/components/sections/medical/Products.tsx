@@ -7,7 +7,7 @@ import { medicalProducts } from "@/data/site";
 
 export function MedicalProducts() {
   return (
-    <section id="products" className="py-24 md:py-32 bg-white dark:bg-navy-900">
+    <section id="products" className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Medical Products"
