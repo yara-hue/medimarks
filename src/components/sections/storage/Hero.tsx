@@ -19,8 +19,8 @@ export function StorageHero() {
             durable, and adaptable shelving solutions for modern facilities.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="#product" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">View Product</Button>
-            <Button href="/contact" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">Inquire</Button>
+            <Button href="#product" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">View Product</Button>
+            <Button href="/contact" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white">Inquire</Button>
           </div>
         </motion.div>
       </div>

@@ -30,7 +30,7 @@ export function AboutCTA() {
             <Button href="/contact" size="lg" className="bg-white dark:bg-navy-800 text-navy-900 dark:text-white hover:bg-gray-100 dark:hover:bg-navy-700">
               Contact Us
             </Button>
-            <Button href="/solutions" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
+            <Button href="/solutions" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white">
               View Our Solutions
             </Button>
           </div>

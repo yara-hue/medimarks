@@ -15,7 +15,7 @@ export function LightingCTA() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">Planning an Urban Project?</h2>
           <p className="mt-4 text-gray-300 max-w-xl mx-auto">Contact us to discuss your lighting requirements and explore how our solutions can enhance your space.</p>
           <div className="mt-8">
-            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">Request Information</Button>
+            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">Request Information</Button>
           </div>
         </motion.div>
       </div>

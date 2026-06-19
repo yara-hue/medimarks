@@ -25,10 +25,10 @@ export function MedicalCTA() {
             healthcare equipment.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">
+            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">
               Request a Quote
             </Button>
-            <Button href="/contact" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
+            <Button href="/contact" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white">
               Contact Us
             </Button>
           </div>

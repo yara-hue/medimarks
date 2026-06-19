@@ -15,7 +15,7 @@ export function ArtCTA() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">Have a Creative Vision?</h2>
           <p className="mt-4 text-gray-300 max-w-xl mx-auto">Let&apos;s discuss how our fabrication expertise can bring your artistic project to life.</p>
           <div className="mt-8">
-            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">Discuss a Project</Button>
+            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">Discuss a Project</Button>
           </div>
         </motion.div>
       </div>

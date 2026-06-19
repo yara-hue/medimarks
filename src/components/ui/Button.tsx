@@ -31,10 +31,10 @@ export function Button({
 
   const variantStyles = {
     primary:
-      "bg-navy-500 text-white hover:bg-navy-600 active:bg-navy-700 dark:bg-navy-600 dark:hover:bg-navy-500",
+      "bg-navy-600 text-white hover:bg-navy-700 active:bg-navy-800 dark:bg-navy-500 dark:hover:bg-navy-400",
     secondary:
-      "border-2 border-navy-500 text-navy-500 bg-transparent hover:bg-navy-500 hover:text-white dark:border-navy-400 dark:text-navy-400 dark:hover:bg-navy-500 dark:hover:text-white",
-    ghost: "text-navy-500 hover:bg-navy-500/5 dark:text-navy-400 dark:hover:bg-navy-400/10",
+      "border-2 border-navy-700 text-navy-700 bg-transparent hover:bg-navy-700 hover:text-white dark:border-blue-300 dark:text-blue-300 dark:hover:bg-blue-300 dark:hover:text-navy-900",
+    ghost: "text-navy-700 hover:bg-navy-500/10 dark:text-blue-300 dark:hover:bg-blue-300/15",
   };
 
   const classes = cn(baseStyles, sizeStyles[size], variantStyles[variant], className);

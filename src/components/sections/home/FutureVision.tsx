@@ -45,7 +45,7 @@ export function FutureVision() {
             <Button
               href="/about"
               size="lg"
-              className="bg-white text-navy-900 hover:bg-gray-100"
+              className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900"
             >
               Learn More About Our Journey
             </Button>

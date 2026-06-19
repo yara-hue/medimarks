@@ -15,7 +15,7 @@ export function StorageCTA() {
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white">Need Storage Solutions?</h2>
           <p className="mt-4 text-gray-300 max-w-xl mx-auto">Contact us for product information, specifications, or to discuss your storage requirements.</p>
           <div className="mt-8">
-            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">Get in Touch</Button>
+            <Button href="/contact" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">Get in Touch</Button>
           </div>
         </motion.div>
       </div>

@@ -50,10 +50,10 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-10 flex flex-wrap gap-4"
           >
-            <Button href="/solutions" size="lg" className="bg-white text-navy-900 hover:bg-gray-100">
+            <Button href="/solutions" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">
               Explore Our Solutions
             </Button>
-            <Button href="/contact" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
+            <Button href="/contact" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white">
               Contact Us
             </Button>
           </motion.div>

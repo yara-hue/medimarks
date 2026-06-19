@@ -71,7 +71,7 @@ export function Navbar() {
                       <ChevronDown className="w-3.5 h-3.5 mt-0.5" />
                     </Link>
                     {dropdownOpen && (
-                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-200/80 py-2 animate-in fade-in slide-in-from-top-2 duration-200">
+                      <div className="absolute top-full left-0 mt-1 w-56 bg-white rounded-xl shadow-lg border border-gray-200/80 py-2 animate-in fade-in slide-in-from-top-2 duration-200 dark:bg-navy-800 dark:border-navy-600">
                         {item.children.map((child) => (
                           <Link
                             key={child.label}
@@ -79,8 +79,8 @@ export function Navbar() {
                             className={cn(
                               "block px-5 py-2.5 text-sm transition-colors",
                               pathname === child.href
-                                ? "text-navy-500 font-medium bg-navy-50"
-                                : "text-gray-600 hover:text-navy-500 hover:bg-gray-50"
+                                ? "text-navy-500 font-medium bg-navy-50 dark:text-blue-300 dark:bg-navy-700/50"
+                                : "text-gray-600 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-700/50"
                             )}
                           >
                             {child.label}
@@ -126,7 +126,7 @@ export function Navbar() {
                   <div key={item.label}>
                     <button
                       onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                      className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-gray-600 hover:text-navy-500 rounded-lg transition-colors"
+                      className="flex items-center justify-between w-full px-3 py-2.5 text-sm font-medium text-gray-600 hover:text-navy-500 rounded-lg transition-colors dark:text-gray-300 dark:hover:text-white"
                     >
                       {item.label}
                       <ChevronDown
@@ -145,8 +145,8 @@ export function Navbar() {
                             className={cn(
                               "block px-3 py-2.5 text-sm rounded-lg transition-colors",
                               pathname === child.href
-                                ? "text-navy-500 font-medium bg-navy-50"
-                                : "text-gray-500 hover:text-navy-500 hover:bg-gray-50"
+                                ? "text-navy-500 font-medium bg-navy-50 dark:text-blue-300 dark:bg-navy-700/50"
+                                : "text-gray-500 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-400 dark:hover:text-white dark:hover:bg-navy-700/50"
                             )}
                           >
                             {child.label}
@@ -164,8 +164,8 @@ export function Navbar() {
                   className={cn(
                     "block px-3 py-2.5 text-sm font-medium rounded-lg transition-colors",
                     pathname === item.href
-                      ? "text-navy-500 bg-navy-50"
-                      : "text-gray-600 hover:text-navy-500 hover:bg-gray-50"
+                      ? "text-navy-500 bg-navy-50 dark:text-blue-300 dark:bg-navy-700/50"
+                      : "text-gray-600 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-700/50"
                   )}
                 >
                   {item.label}
