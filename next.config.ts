@@ -1,11 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export",
+  basePath: "/medimarks",
+  assetPrefix: "/medimarks/",
   images: {
-    formats: ["image/avif", "image/webp"],
-  },
-  turbopack: {
-    root: process.cwd(),
+    unoptimized: true,
   },
 };
 
