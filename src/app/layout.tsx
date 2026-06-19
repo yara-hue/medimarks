@@ -45,6 +45,18 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased">
         <LoadingScreen />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            setTimeout(function(){
+              var el = document.getElementById('loading-screen');
+              if (el && el.style.display !== 'none') { el.style.display = 'none'; }
+            }, 3500);
+            setTimeout(function(){
+              var el = document.getElementById('loading-screen');
+              if (el) { el.style.display = 'none'; }
+            }, 5000);
+          `
+        }} />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
