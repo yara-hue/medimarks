@@ -7,11 +7,14 @@ import { BeforeAfterSlider } from "@/components/ui/BeforeAfterSlider";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-14 md:pt-16">
-      <BeforeAfterSlider
-        beforeSrc="/medimarks/images/Gemini_Generated_Image_fcsl4efcsl4efcsl.png"
-        afterSrc="/medimarks/images/Gemini_Generated_Image_pjpo1opjpo1opjpo.png"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/85 via-navy-900/50 to-transparent" />
+      <div className="absolute inset-0 bg-navy-900" />
+      <div className="absolute inset-0">
+        <BeforeAfterSlider
+          beforeSrc="/medimarks/images/Gemini_Generated_Image_fcsl4efcsl4efcsl.png"
+          afterSrc="/medimarks/images/Gemini_Generated_Image_pjpo1opjpo1opjpo.png"
+        />
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/75 to-navy-900/30 z-[2]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16 w-full">
         <div className="max-w-3xl">
