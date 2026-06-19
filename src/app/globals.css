@@ -76,3 +76,11 @@ html {
 @keyframes reveal-text {
   to { width: 100%; }
 }
+
+#loading-screen {
+  animation: dismiss-loading 4s ease forwards;
+}
+@keyframes dismiss-loading {
+  0%, 85% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; pointer-events: none; }
+}
