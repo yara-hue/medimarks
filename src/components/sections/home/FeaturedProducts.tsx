@@ -27,7 +27,7 @@ export function FeaturedProducts() {
               transition={{ duration: 0.4, delay: index * 0.08 }}
               className="group"
             >
-              <div className="bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 h-full flex flex-col">
+              <div className="bg-white dark:bg-navy-900 rounded-xl border border-gray-300 dark:border-navy-500 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-300/50 dark:hover:shadow-black/40 h-full flex flex-col">
                 <div className="aspect-[4/3] bg-gradient-to-br from-navy-100 dark:from-navy-800 to-navy-50 dark:to-navy-900 flex items-center justify-center">
                   <div className="text-center p-6">
                     <div className="w-16 h-16 mx-auto rounded-full bg-navy-200/50 dark:bg-navy-700/50 flex items-center justify-center mb-3">
@@ -47,14 +47,14 @@ export function FeaturedProducts() {
                   <h3 className="mt-2 font-heading font-semibold text-lg text-navy-900 dark:text-white">
                     {product.name}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed flex-1">
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-300 leading-relaxed flex-1">
                     {product.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
                     {product.benefits.slice(0, 3).map((benefit) => (
                       <span
                         key={benefit}
-                        className="text-xs text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-navy-800 px-2.5 py-1 rounded-md"
+                        className="text-xs text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-navy-700 px-2.5 py-1 rounded-md"
                       >
                         {benefit}
                       </span>

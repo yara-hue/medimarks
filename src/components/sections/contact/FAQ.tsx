@@ -20,7 +20,7 @@ export function ContactFAQ() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 overflow-hidden"
+              className="bg-white dark:bg-navy-900 rounded-xl border border-gray-300 dark:border-navy-500 overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -46,7 +46,7 @@ export function ContactFAQ() {
                     className="overflow-hidden"
                   >
                     <div className="px-5 md:px-6 pb-5 md:pb-6">
-                      <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{faq.a}</p>
+                      <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{faq.a}</p>
                     </div>
                   </motion.div>
                 )}

@@ -25,7 +25,7 @@ export function StorageProduct() {
             <h2 className="mt-2 text-3xl md:text-4xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
               Adjustable Height Shelves
             </h2>
-            <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
+            <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               Versatile shelving system with adjustable height configurations. Designed for
               durability, flexibility, and efficient space utilization in commercial and
               industrial settings.
@@ -40,7 +40,7 @@ export function StorageProduct() {
                 )
               )}
             </div>
-            <div className="mt-6 p-4 bg-white dark:bg-navy-900 rounded-xl border border-dashed border-gray-200 dark:border-navy-700">
+            <div className="mt-6 p-4 bg-white dark:bg-navy-900 rounded-xl border border-dashed border-gray-300 dark:border-navy-500">
               <p className="text-gray-400 dark:text-gray-500 text-sm italic">
                 Detailed specifications, load capacities, and dimension options available upon request.
               </p>

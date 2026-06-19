@@ -46,7 +46,7 @@ export function MedicalProducts() {
                 <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
                   {product.name}
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed">
+                <p className="mt-3 text-gray-600 dark:text-gray-300 leading-relaxed">
                   {product.description}
                 </p>
 
@@ -55,7 +55,7 @@ export function MedicalProducts() {
                     <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
                     <ul className="space-y-1.5">
                       {product.benefits.map((b) => (
-                        <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
+                        <li key={b} className="text-sm text-gray-600 dark:text-gray-300 flex items-start gap-2">
                           <span className="text-navy-400 mt-0.5">•</span>
                           {b}
                         </li>

@@ -24,11 +24,11 @@ export function LightingBenefits() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="bg-white dark:bg-navy-900 rounded-xl p-8 border border-gray-200/60 dark:border-navy-700"
+              className="bg-white dark:bg-navy-900 rounded-xl p-8 border border-gray-300 dark:border-navy-500"
             >
               <span className="text-3xl">{item.icon}</span>
               <h3 className="mt-4 font-heading font-semibold text-lg text-navy-900 dark:text-white">{item.title}</h3>
-              <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">{item.description}</p>
+              <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>

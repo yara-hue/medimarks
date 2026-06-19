@@ -30,7 +30,7 @@ export function AboutValues() {
               <h3 className="mt-4 font-heading font-semibold text-lg text-navy-900 dark:text-white">
                 {item.title}
               </h3>
-              <p className="mt-2 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+              <p className="mt-2 text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                 {item.description}
               </p>
             </motion.div>

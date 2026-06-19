@@ -18,7 +18,7 @@ export function LightingOverview() {
           <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
             Illuminating Urban Spaces
           </h2>
-          <p className="mt-6 text-gray-500 dark:text-gray-400 leading-relaxed">
+          <p className="mt-6 text-gray-600 dark:text-gray-300 leading-relaxed">
             Our decorative light poles combine functional illumination with architectural
             design. Each piece is crafted to enhance public environments while providing
             reliable, long-lasting performance. From modern urban boulevards to classic

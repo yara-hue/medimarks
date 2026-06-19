@@ -28,7 +28,7 @@ export function LightingGallery() {
                 </div>
               </div>
               <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white">{product.name}</h3>
-              <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{product.description}</p>
+              <p className="mt-1 text-gray-600 dark:text-gray-300 text-sm">{product.description}</p>
             </motion.div>
           ))}
         </div>

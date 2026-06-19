@@ -49,13 +49,13 @@ export function Approach() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-14 h-14 mx-auto rounded-2xl bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5">
-                  <Icon className="w-7 h-7 text-navy-500" />
+                <div className="w-14 h-14 mx-auto rounded-2xl bg-navy-50 dark:bg-navy-700 flex items-center justify-center mb-5">
+                  <Icon className="w-7 h-7 text-navy-500 dark:text-blue-300" />
                 </div>
                 <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </motion.div>

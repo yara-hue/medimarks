@@ -32,7 +32,7 @@ export function ContactSection() {
                   </label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-navy-600 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-navy-500 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
                     placeholder="Your name"
                   />
                 </div>
@@ -42,7 +42,7 @@ export function ContactSection() {
                   </label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-navy-600 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-navy-500 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -53,7 +53,7 @@ export function ContactSection() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-navy-600 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-navy-500 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500"
                   placeholder="How can we help?"
                 />
               </div>
@@ -63,7 +63,7 @@ export function ContactSection() {
                 </label>
                 <textarea
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-navy-600 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-navy-500 focus:border-navy-400 dark:focus:border-navy-500 focus:ring-2 focus:ring-navy-100 dark:focus:ring-navy-700 outline-none transition-all text-sm bg-white dark:bg-navy-800 text-gray-700 dark:text-gray-300 placeholder:text-gray-400 dark:placeholder:text-gray-500 resize-none"
                   placeholder="Tell us about your project..."
                 />
               </div>
@@ -82,48 +82,48 @@ export function ContactSection() {
           >
             <div className="bg-gray-50 dark:bg-navy-900/50 rounded-2xl p-8 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 text-navy-500" />
+                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-700 flex items-center justify-center shrink-0">
+                  <MapPin className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Location</h4>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{siteConfig.location}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-0.5">{siteConfig.location}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-navy-500" />
+                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-700 flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Phone</h4>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{siteConfig.phone}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-0.5">{siteConfig.phone}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Mail className="w-5 h-5 text-navy-500" />
+                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-700 flex items-center justify-center shrink-0">
+                  <Mail className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Email</h4>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{siteConfig.email}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-0.5">{siteConfig.email}</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Clock className="w-5 h-5 text-navy-500" />
+                <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-700 flex items-center justify-center shrink-0">
+                  <Clock className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Working Hours</h4>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mt-0.5">{siteConfig.hours}</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm mt-0.5">{siteConfig.hours}</p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 p-6 rounded-2xl border border-gray-200/60 dark:border-navy-700">
-              <div className="aspect-[16/9] bg-gray-100 dark:bg-navy-800 rounded-xl flex items-center justify-center">
+            <div className="mt-6 p-6 rounded-2xl border border-gray-300 dark:border-navy-500">
+              <div className="aspect-[16/9] bg-gray-100 dark:bg-navy-700 rounded-xl flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-8 h-8 text-gray-300 dark:text-gray-400 mx-auto mb-2" />
                   <p className="text-gray-400 dark:text-gray-500 text-xs">Map Placeholder</p>
