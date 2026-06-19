@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/Button";
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-16 md:pt-20">
-      <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, #0A1628 0%, #0A1628 25%, #0F2040 45%, #162D4A 65%, #1E3A5F 85%, rgba(30,58,95,0.6) 100%)" }} />
+      <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, #0A1628 0%, #0A1628 30%, #0B1A30 40%, #0D1E3A 50%, #0F2040 60%, #122748 68%, #162D4A 76%, #1A3353 84%, #1E3A5F 92%, #1E3A5F 100%)" }} />
       <div
         className="absolute inset-0 opacity-[0.08]"
         style={{
