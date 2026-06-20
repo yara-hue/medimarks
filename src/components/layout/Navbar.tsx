@@ -57,7 +57,7 @@ export function Navbar() {
               alt="MediMarks"
               width={176}
               height={96}
-              className="h-8 md:h-9 w-auto"
+              className="h-10 md:h-12 w-auto"
               priority
             />
           </Link>
