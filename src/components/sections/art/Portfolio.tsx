@@ -6,11 +6,11 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function ArtPortfolio() {
   return (
-    <section id="portfolio" className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section id="portfolio" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Portfolio" subtitle="A glimpse into our custom fabrication work." />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {[1, 2, 3, 4, 5, 6].map((item) => (
             <motion.div
               key={item}

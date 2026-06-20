@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function StorageOverview() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

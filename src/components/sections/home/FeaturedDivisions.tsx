@@ -47,14 +47,14 @@ const featured = [
 
 export function FeaturedDivisions() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Divisions"
           subtitle="Four specialized areas of expertise, one engineering standard."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {featured.map((item, index) => {
             const isLarge = item.size === "large";
             return (

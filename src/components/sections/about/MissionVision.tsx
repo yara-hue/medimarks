@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function MissionVision() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <motion.div

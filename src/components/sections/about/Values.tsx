@@ -9,14 +9,14 @@ const icons = ["⚙", "💡", "✓", "🤝"];
 
 export function AboutValues() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Core Values"
           subtitle="The principles that guide every project, partnership, and product we deliver."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {valuesCards.map((item, index) => (
             <motion.div
               key={item.title}

@@ -20,7 +20,7 @@ export function SolutionsHero() {
           <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight">
             Solutions &amp; Divisions
           </h1>
-          <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
+          <p className="mt-8 text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed">
             Four specialized divisions, one engineering standard. Explore our areas of
             expertise and discover how MediMarks delivers value across industries.
           </p>

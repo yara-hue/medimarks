@@ -16,14 +16,14 @@ const iconMap: Record<string, React.ElementType> = {
 
 export function Capabilities() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading
           title="Our Areas of Expertise"
           subtitle="Four specialized divisions delivering engineering-driven solutions across multiple industries."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {divisions.map((division, index) => {
             const Icon = iconMap[division.icon] || Hospital;
             return (

@@ -30,7 +30,7 @@ const items = [
 
 export function Approach() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900 border-b border-gray-100 dark:border-navy-800">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900 border-b border-gray-100 dark:border-navy-800">
       <Container>
         <SectionHeading
           title="Our Approach"

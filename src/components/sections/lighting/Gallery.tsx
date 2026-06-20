@@ -7,11 +7,11 @@ import { lightingProducts } from "@/data/site";
 
 export function LightingGallery() {
   return (
-    <section id="gallery" className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section id="gallery" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Product Gallery" subtitle="Our range of decorative light poles." />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {lightingProducts.map((product, index) => (
             <motion.div
               key={product.name}

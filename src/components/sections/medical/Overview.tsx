@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function MedicalOverview() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
         <div className="max-w-3xl">
           <motion.div
@@ -39,7 +39,7 @@ export function MedicalOverview() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-16 grid sm:grid-cols-3 gap-6"
+          className="mt-16 grid sm:grid-cols-3 gap-8"
         >
           {[
             { number: "2015", label: "Established" },

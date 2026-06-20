@@ -32,6 +32,14 @@
   body {
     @apply bg-white text-gray-700 font-sans dark:bg-navy-900 dark:text-gray-300;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
 }
 
 html {

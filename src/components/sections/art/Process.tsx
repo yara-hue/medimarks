@@ -13,11 +13,11 @@ const steps = [
 
 export function ArtProcess() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading title="Our Fabrication Process" subtitle="From concept to installation — how we create custom art and sculpture." />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((item, index) => (
             <motion.div
               key={item.step}

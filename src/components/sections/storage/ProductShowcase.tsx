@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function StorageProduct() {
   return (
-    <section id="product" className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section id="product" className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

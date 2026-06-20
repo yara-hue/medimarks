@@ -13,14 +13,14 @@ const capabilities = [
 
 export function AboutCapabilities() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading
           title="Manufacturing Capabilities"
           subtitle="Our facilities and expertise span the full manufacturing lifecycle."
         />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {capabilities.map((item, index) => (
             <motion.div
               key={item.title}

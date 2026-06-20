@@ -19,9 +19,9 @@ const gradients = [
 
 export function DivisionCards() {
   return (
-    <section className="py-16 md:py-24 lg:py-32 bg-white dark:bg-navy-900">
+    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
       <Container>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {divisions.map((division, index) => {
             const Icon = iconMap[division.icon] || Hospital;
             return (
