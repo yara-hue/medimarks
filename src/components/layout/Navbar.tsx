@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -50,16 +49,12 @@ export function Navbar() {
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
-            className="flex items-center"
+            className="font-heading text-xl md:text-2xl font-bold text-navy-900 dark:text-white tracking-tight"
           >
-            <Image
-              src="/medimarks/images/medimarks-logo.png"
-              alt="MediMarks"
-              width={480}
-              height={114}
-              className="h-9 md:h-11 w-auto"
-              priority
-            />
+            MediMarks
+            <span className="block text-[10px] font-sans font-normal text-gray-400 dark:text-gray-500 tracking-widest uppercase -mt-1">
+              Engineering Solutions
+            </span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
