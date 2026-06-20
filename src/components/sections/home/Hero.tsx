@@ -10,8 +10,8 @@ export function Hero() {
       <div className="absolute inset-0 bg-navy-900" />
       <div className="absolute top-0 right-0 bottom-0 overflow-hidden" style={{ left: "700px" }}>
         <BeforeAfterSlider
-          beforeSrc="/medimarks/images/Gemini_Generated_Image_fcsl4efcsl4efcsl.png"
-          afterSrc="/medimarks/images/Gemini_Generated_Image_pjpo1opjpo1opjpo.png"
+          beforeSrc="/images/Gemini_Generated_Image_fcsl4efcsl4efcsl.png"
+          afterSrc="/images/Gemini_Generated_Image_pjpo1opjpo1opjpo.png"
         />
       </div>
       <div className="absolute inset-0 pointer-events-none z-[3]"
