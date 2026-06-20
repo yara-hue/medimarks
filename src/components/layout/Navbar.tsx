@@ -55,9 +55,9 @@ export function Navbar() {
             <Image
               src="/medimarks/images/medimarks-logo.png"
               alt="MediMarks"
-              width={176}
-              height={96}
-              className="h-10 md:h-12 w-auto"
+              width={600}
+              height={130}
+              className="h-9 md:h-11 w-auto"
               priority
             />
           </Link>
