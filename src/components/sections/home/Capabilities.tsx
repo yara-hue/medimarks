@@ -36,7 +36,7 @@ export function Capabilities() {
               >
                 <div className="group relative bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30">
                   <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5 group-hover:bg-navy-100 dark:group-hover:bg-navy-800 transition-colors">
-                    <Icon className="w-6 h-6 text-navy-500 dark:text-blue-300" />
+                    <Icon className="w-6 h-6 text-navy-500 dark:text-navy-300" />
                   </div>
                   <h3 className="font-heading font-semibold text-xl text-navy-900 dark:text-white mb-3">
                     {division.title}

@@ -26,7 +26,7 @@ export function MedicalHero() {
           transition={{ duration: 0.6 }}
           className="max-w-3xl"
         >
-          <span className="text-blue-200 font-medium text-sm tracking-widest uppercase">Flagship Division</span>
+          <span className="text-navy-200 font-medium text-sm tracking-widest uppercase">Flagship Division</span>
           <h1 className="mt-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white leading-tight">
             Medical Furniture
           </h1>

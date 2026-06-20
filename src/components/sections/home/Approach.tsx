@@ -50,7 +50,7 @@ export function Approach() {
                 className="text-center"
               >
                 <div className="w-14 h-14 mx-auto rounded-2xl bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5">
-                  <Icon className="w-7 h-7 text-navy-500 dark:text-blue-300" />
+                  <Icon className="w-7 h-7 text-navy-500 dark:text-navy-300" />
                 </div>
                 <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white mb-2">
                   {item.title}
