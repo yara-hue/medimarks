@@ -30,7 +30,7 @@ export function Hero() {
             className="text-4xl sm:text-5xl md:text-6xl lg:text-[4.5rem] font-heading font-bold text-white leading-snug md:leading-[1.05] tracking-tight"
           >
             Engineering Solutions for
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy-200 to-navy-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
               {" "}Healthcare, Infrastructure,
             </span>
             {" "}and Modern Spaces

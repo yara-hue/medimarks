@@ -1,16 +1,14 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-navy-900: #002635;
-  --color-navy-800: #003848;
-  --color-navy-700: #094a5e;
-  --color-navy-600: #085870;
-  --color-navy-500: #1a6a80;
-  --color-navy-400: #3a8aa0;
-  --color-navy-300: #5baabe;
-  --color-navy-200: #7cc4d4;
-  --color-navy-100: #b0dce8;
-  --color-navy-50:  #d8edf4;
+  --color-navy-900: #0A1628;
+  --color-navy-800: #0F2040;
+  --color-navy-700: #162D4A;
+  --color-navy-600: #1E3A5F;
+  --color-navy-500: #2A4A7A;
+  --color-navy-400: #3A5F8A;
+  --color-navy-300: #8AB0D0;
+  --color-navy-200: #B0CFE5;
   --color-silver: #A0AEC0;
   --color-silver-dark: #718096;
   --color-gray-50: #F8F9FA;
@@ -47,7 +45,7 @@ html {
 }
 
 ::selection {
-  background-color: #085870;
+  background-color: #1E3A5F;
   color: white;
 }
 

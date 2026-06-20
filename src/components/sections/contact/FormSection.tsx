@@ -67,7 +67,7 @@ export function ContactFormSection() {
             <div className="bg-gray-50 dark:bg-navy-900/50 rounded-2xl p-8 space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5 text-navy-500 dark:text-navy-300" />
+                  <MapPin className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Location</h4>
@@ -76,7 +76,7 @@ export function ContactFormSection() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5 text-navy-500 dark:text-navy-300" />
+                  <Phone className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Phone</h4>
@@ -85,7 +85,7 @@ export function ContactFormSection() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Mail className="w-5 h-5 text-navy-500 dark:text-navy-300" />
+                  <Mail className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Email</h4>
@@ -94,7 +94,7 @@ export function ContactFormSection() {
               </div>
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                  <Clock className="w-5 h-5 text-navy-500 dark:text-navy-300" />
+                  <Clock className="w-5 h-5 text-navy-500 dark:text-blue-300" />
                 </div>
                 <div>
                   <h4 className="font-medium text-navy-900 dark:text-white text-sm">Working Hours</h4>
