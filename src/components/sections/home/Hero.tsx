@@ -14,7 +14,7 @@ export function Hero() {
           afterSrc="/medimarks/images/Gemini_Generated_Image_pjpo1opjpo1opjpo.png"
         />
       </div>
-      <div className="absolute inset-y-0 left-0 w-[700px] bg-gradient-to-r from-navy-900 via-navy-900/60 to-transparent pointer-events-none z-[3]" />
+      <div className="absolute inset-y-0 left-0 w-[900px] bg-gradient-to-r from-navy-900 via-navy-900/60 via-70% to-transparent pointer-events-none z-[3]" />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/75 to-navy-900/30 z-[2]" />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16 w-full">
