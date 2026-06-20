@@ -16,7 +16,7 @@ export function Hero() {
       </div>
       <div className="absolute inset-0 pointer-events-none z-[3]"
         style={{
-          background: "linear-gradient(to right, #0A1628 0%, #0A1628 650px, rgba(10,22,40,0.92) 700px, rgba(10,22,40,0.5) 800px, rgba(10,22,40,0.1) 950px, transparent 1050px)"
+          background: "linear-gradient(to right, #0A1628 0%, #0A1628 750px, rgba(10,22,40,0.97) 800px, rgba(10,22,40,0.7) 950px, rgba(10,22,40,0.2) 1200px, transparent 1400px)"
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/75 to-navy-900/30 z-[2]" />
