@@ -36,7 +36,7 @@ export function LoadingScreen() {
       </div>
 
       <p className="mt-6 text-xs text-gray-500 tracking-[0.3em] uppercase loading-subtitle">
-        Engineering Solutions
+        Innovation by Design
       </p>
 
       <p className="mt-2 text-[10px] text-gray-600 tracking-widest uppercase loading-since">

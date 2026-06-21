@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "MediMarks",
-  tagline: "Engineering Solutions for Healthcare, Infrastructure, and Modern Spaces",
+  tagline: "Innovation by Design for Healthcare, Infrastructure, and Modern Spaces",
   description:
     "Since 2015, MediMarks has been designing and manufacturing specialized products that combine functionality, quality, and innovation across multiple industries.",
   founded: 2015,

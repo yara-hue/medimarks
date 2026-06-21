@@ -16,7 +16,7 @@ export function Footer() {
             >
               MediMarks
               <span className="block text-[10px] font-sans font-normal text-gray-500 tracking-widest uppercase -mt-1">
-                Engineering Solutions
+                Innovation by Design
               </span>
             </Link>
             <p className="mt-4 text-sm text-gray-400 leading-relaxed">
@@ -104,7 +104,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} MediMarks. All rights reserved.
           </p>
           <p className="text-xs text-gray-600">
-            Engineering Solutions for Healthcare, Infrastructure, and Modern Spaces
+            Innovation by Design for Healthcare, Infrastructure, and Modern Spaces
           </p>
         </div>
       </Container>

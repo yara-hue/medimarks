@@ -19,13 +19,13 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "MediMarks | Engineering Solutions for Healthcare, Infrastructure & Modern Spaces",
+    default: "MediMarks | Innovation by Design for Healthcare, Infrastructure & Modern Spaces",
     template: "%s | MediMarks",
   },
   description:
     "Since 2015, MediMarks has manufactured medical furniture, storage systems, decorative lighting, and custom fabrication across the Middle East and Africa.",
   openGraph: {
-    title: "MediMarks — Engineering Solutions",
+    title: "MediMarks — Innovation by Design",
     description:
       "Manufacturing medical furniture, storage systems, decorative lighting, and custom fabrication since 2015.",
     type: "website",
