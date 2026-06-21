@@ -25,17 +25,27 @@ export function MedicalProducts() {
               className="grid md:grid-cols-5 gap-8 md:gap-12 items-center"
             >
               <div className="md:col-span-2">
-                <div className="aspect-[4/3] bg-gradient-to-br from-navy-100 to-navy-50 rounded-2xl flex items-center justify-center">
-                  <div className="text-center p-6">
-                    <div className="w-20 h-20 mx-auto rounded-full bg-navy-200/50 flex items-center justify-center mb-3">
-                      <span className="text-navy-500 font-heading font-bold text-2xl">
-                        {product.name.charAt(0)}
-                      </span>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-navy-100 to-navy-50 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+                      <div className="text-center p-6">
+                        <div className="w-20 h-20 mx-auto rounded-full bg-navy-200/50 flex items-center justify-center mb-3">
+                          <span className="text-navy-500 font-heading font-bold text-2xl">
+                            {product.name.charAt(0)}
+                          </span>
+                        </div>
+                        <span className="text-navy-400 text-xs tracking-widest uppercase font-medium">
+                          Product Image
+                        </span>
+                      </div>
                     </div>
-                    <span className="text-navy-400 text-xs tracking-widest uppercase font-medium">
-                      Product Image
-                    </span>
-                  </div>
+                  )}
                 </div>
               </div>
 

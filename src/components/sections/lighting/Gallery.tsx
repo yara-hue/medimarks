@@ -21,11 +21,21 @@ export function LightingGallery() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="group"
             >
-              <div className="aspect-[3/4] bg-gradient-to-br from-indigo-50 to-navy-50 rounded-2xl flex items-center justify-center mb-4">
-                <div className="text-center p-6">
-                  <span className="text-4xl">☼</span>
-                  <p className="mt-3 text-indigo-300 text-xs tracking-widest uppercase">Image</p>
-                </div>
+              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800 mb-4">
+                {product.image ? (
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-gradient-to-br from-indigo-50 to-navy-50 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+                    <div className="text-center p-6">
+                      <span className="text-4xl">☼</span>
+                      <p className="mt-3 text-indigo-300 text-xs tracking-widest uppercase">Image</p>
+                    </div>
+                  </div>
+                )}
               </div>
               <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white">{product.name}</h3>
               <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{product.description}</p>

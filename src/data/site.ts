@@ -113,6 +113,7 @@ export const medicalProducts = [
       "Patient comfort-focused design",
       "Durable medical-grade construction",
     ],
+    image: "/images/products/product-t3000.jpg",
   },
   {
     name: "Recliner Chair",
@@ -127,6 +128,7 @@ export const medicalProducts = [
       "Comfortable extended-use design",
       "Clinical-grade materials",
     ],
+    image: "/images/products/product-assem-echair.jpg",
   },
   {
     name: "Electrical Table",
@@ -141,6 +143,7 @@ export const medicalProducts = [
       "Smooth and quiet operation",
       "Enhanced patient accessibility",
     ],
+    image: "/images/products/product-wheel-chair-etables.jpg",
   },
   {
     name: "Wheel Chair",
@@ -155,6 +158,7 @@ export const medicalProducts = [
       "Comfortable seating for extended use",
       "Smooth maneuverability",
     ],
+    image: "/images/products/product-wheel-chair-etables-2.jpg",
   },
   {
     name: "Electric Ophthalmic Table",
@@ -174,16 +178,36 @@ export const medicalProducts = [
 
 export const lightingProducts = [
   {
-    name: "Light Pole 1",
-    description: "Modern urban lighting pole with clean lines and contemporary design.",
+    name: "Garden Light Pole",
+    description: "Modern decorative light pole designed for gardens, pathways, and public landscapes with clean architectural lines.",
+    image: "/images/products/product-garden-light-pole.jpg",
   },
   {
-    name: "Light Pole 2",
-    description: "Traditional-inspired architectural lighting pole for classic environments.",
+    name: "LC3 Narrow Vertical",
+    description: "Slim-profile architectural lighting pole for narrow streetscapes, walkways, and space-constrained urban settings.",
+    image: "/images/products/product-lc3-narrow-vertical.jpg",
   },
   {
-    name: "Star Alliance Light",
-    description: "Decorative feature lighting piece for distinctive architectural settings.",
+    name: "Star Alliance",
+    description: "Decorative feature lighting piece for distinctive architectural settings and landmark installations.",
+    image: "/images/products/product-star-alliance-2.jpg",
+  },
+];
+
+export const storageProducts = [
+  {
+    name: "Industrial Shelving Unit",
+    category: "Heavy-Duty Storage",
+    description:
+      "Versatile shelving system with adjustable height configurations. Designed for durability, flexibility, and efficient space utilization in commercial and industrial settings.",
+    specs: ["Specifications coming soon"],
+    benefits: [
+      "Adjustable Configuration",
+      "Heavy-Duty Construction",
+      "Space Optimization",
+      "Long-Lasting Durability",
+    ],
+    image: "/images/products/product-shelf-model-1.jpg",
   },
 ];
 
