@@ -14,6 +14,20 @@ const iconMap: Record<string, React.ElementType> = {
   Sparkles,
 };
 
+const cardImages: Record<string, string> = {
+  "medical-furniture": "/images/products/product-assem-echair.jpg",
+  "storage-solutions": "/images/products/product-shelf-model-1.jpg",
+  "decorative-light-poles": "/images/products/product-garden-light-pole.jpg",
+  "art-sculptures": "/images/products/product-star-alliance-2.jpg",
+};
+
+const cardGradients: Record<string, string> = {
+  "medical-furniture": "from-navy-900/85 via-navy-800/80 to-navy-700/75",
+  "storage-solutions": "from-navy-800/85 to-navy-600/75",
+  "decorative-light-poles": "from-navy-700/85 to-navy-500/75",
+  "art-sculptures": "from-navy-900/85 via-navy-800/80 to-slate-800/75",
+};
+
 export function Capabilities() {
   return (
     <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
@@ -26,6 +40,8 @@ export function Capabilities() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {divisions.map((division, index) => {
             const Icon = iconMap[division.icon] || Hospital;
+            const bgImage = cardImages[division.id];
+            const gradient = cardGradients[division.id];
             return (
               <motion.div
                 key={division.id}
@@ -34,27 +50,34 @@ export function Capabilities() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <div className="group relative bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 p-8 h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30">
-                  <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center mb-5 group-hover:bg-navy-100 dark:group-hover:bg-navy-800 transition-colors">
-                    <Icon className="w-6 h-6 text-navy-500 dark:text-blue-300" />
+                <div className="group relative rounded-xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30">
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${bgImage})` }}
+                  />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
+                  <div className="relative z-10 p-8 h-full flex flex-col">
+                    <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-5 backdrop-blur-sm">
+                      <Icon className="w-6 h-6 text-white" />
+                    </div>
+                    <h3 className="font-heading font-semibold text-xl text-white mb-3">
+                      {division.title}
+                    </h3>
+                    <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
+                      {division.description}
+                    </p>
+                    <Button
+                      href={division.href}
+                      variant="ghost"
+                      size="sm"
+                      className="group/link p-0 text-white/80 hover:text-white hover:bg-transparent self-start"
+                    >
+                      <span className="flex items-center gap-2">
+                        Explore
+                        <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
+                      </span>
+                    </Button>
                   </div>
-                  <h3 className="font-heading font-semibold text-xl text-navy-900 dark:text-white mb-3">
-                    {division.title}
-                  </h3>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed mb-6">
-                    {division.description}
-                  </p>
-                  <Button
-                    href={division.href}
-                    variant="ghost"
-                    size="sm"
-                    className="group/link p-0 text-navy-500 hover:bg-transparent"
-                  >
-                    <span className="flex items-center gap-2">
-                      Explore
-                      <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover/link:translate-x-1" />
-                    </span>
-                  </Button>
                 </div>
               </motion.div>
             );
