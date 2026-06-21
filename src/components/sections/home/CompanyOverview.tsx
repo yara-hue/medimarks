@@ -50,21 +50,49 @@ export function CompanyOverview() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="relative"
           >
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-navy-900 to-navy-700 overflow-hidden">
-              <div className="w-full h-full flex items-center justify-center">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden relative">
+              <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: "url(/images/products/product-assem-echair.jpg)" }}
+                />
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: "url(/images/products/product-shelf-model-1.jpg)" }}
+                />
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: "url(/images/products/product-garden-light-pole.jpg)" }}
+                />
+                <div
+                  className="bg-cover bg-center"
+                  style={{ backgroundImage: "url(/images/products/product-star-alliance-2.jpg)" }}
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-navy-900/85 to-navy-800/75" />
+              <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="text-5xl font-heading font-bold text-white/20">2015</div>
-                  <div className="mt-2 text-white/40 text-sm tracking-widest uppercase">
+                  <div className="text-5xl font-heading font-bold text-white/90">2015</div>
+                  <div className="mt-2 text-white/70 text-sm tracking-widest uppercase">
                     Founded
                   </div>
-                  <div className="mt-6 grid grid-cols-2 gap-6">
-                    {["Medical Furniture", "Storage Solutions", "Light Poles", "Art & Sculpture"].map(
-                      (item) => (
-                        <div key={item} className="text-white/60 text-xs tracking-wide">
-                          {item}
-                        </div>
-                      )
-                    )}
+                  <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-4">
+                    {[
+                      { name: "Medical Furniture", img: "product-assem-echair.jpg" },
+                      { name: "Storage Solutions", img: "product-shelf-model-1.jpg" },
+                      { name: "Light Poles", img: "product-garden-light-pole.jpg" },
+                      { name: "Art & Sculpture", img: "product-star-alliance-2.jpg" },
+                    ].map((item) => (
+                      <div key={item.name} className="flex items-center gap-3">
+                        <div
+                          className="w-8 h-8 rounded-lg bg-cover bg-center shrink-0 border border-white/10"
+                          style={{ backgroundImage: "url(/images/products/" + item.img + ")" }}
+                        />
+                        <span className="text-white/80 text-xs tracking-wide text-left leading-tight">
+                          {item.name}
+                        </span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>

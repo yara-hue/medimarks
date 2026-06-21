@@ -5,7 +5,11 @@ import { motion } from "framer-motion";
 export function AboutHero() {
   return (
     <section className="relative min-h-[60vh] flex items-center overflow-hidden pt-14 md:pt-16">
-      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/products/product-star-alliance-2.jpg)" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700/85" />
       <div
         className="absolute inset-0 opacity-[0.06]"
         style={{

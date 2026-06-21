@@ -15,6 +15,7 @@ const featured = [
     size: "large",
     gradient: "from-navy-900 via-navy-800 to-navy-700",
     accent: "bg-navy-500",
+    image: "/images/products/product-assem-echair.jpg",
   },
   {
     title: "Storage Solutions",
@@ -24,6 +25,7 @@ const featured = [
     size: "small",
     gradient: "from-navy-800 to-navy-600",
     accent: "bg-navy-400",
+    image: "/images/products/product-shelf-model-1.jpg",
   },
   {
     title: "Decorative Light Poles",
@@ -33,6 +35,7 @@ const featured = [
     size: "small",
     gradient: "from-navy-700 to-navy-500",
     accent: "bg-navy-400",
+    image: "/images/products/product-garden-light-pole.jpg",
   },
   {
     title: "Art & Sculptures",
@@ -42,6 +45,7 @@ const featured = [
     size: "large",
     gradient: "from-navy-900 via-navy-800 to-slate-800",
     accent: "bg-navy-500",
+    image: "/images/products/product-star-alliance-2.jpg",
   },
 ];
 
@@ -72,6 +76,10 @@ export function FeaturedDivisions() {
                     isLarge ? "min-h-[320px] md:aspect-[4/1] md:min-h-0" : "min-h-[280px] md:aspect-[3/2] md:min-h-0"
                   }`}
                 >
+                  <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${item.image})` }}
+                  />
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${item.gradient} transition-transform duration-700 group-hover:scale-105`}
                   />

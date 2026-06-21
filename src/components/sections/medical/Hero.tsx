@@ -6,6 +6,10 @@ import { Button } from "@/components/ui/Button";
 export function MedicalHero() {
   return (
     <section className="relative min-h-[65vh] flex items-center overflow-hidden pt-14 md:pt-16">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url(/images/products/product-t3000.jpg)" }}
+      />
       <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, #0A1628 0%, #0A1628 35%, #0C1C36 50%, #0F2040 60%, #122648 68%, #162D4A 78%, #1A3555 88%, #1E3A5F 95%, #1E3A5F 100%)" }} />
       <div
         className="absolute inset-0 opacity-[0.08]"

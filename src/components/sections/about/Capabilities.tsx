@@ -44,10 +44,17 @@ export function AboutCapabilities() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="mt-12 p-8 bg-navy-900 rounded-2xl text-center"
+          className="mt-12 rounded-2xl overflow-hidden relative"
         >
-          <div className="aspect-[3/1] max-w-2xl mx-auto flex items-center justify-center">
-            <span className="text-gray-500 dark:text-gray-400 text-sm tracking-widest uppercase">Manufacturing Facility — Image Placeholder</span>
+          <div
+            className="aspect-[3/1] max-w-2xl mx-auto w-full bg-cover bg-center"
+            style={{ backgroundImage: "url(/images/products/product-assem-echair.jpg)" }}
+          >
+            <div className="w-full h-full bg-navy-900/60 flex items-center justify-center backdrop-blur-[2px]">
+              <span className="text-white/70 text-sm tracking-widest uppercase font-medium">
+                Manufacturing Facility
+              </span>
+            </div>
           </div>
         </motion.div>
       </Container>
