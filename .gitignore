@@ -33,6 +33,11 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# video files (too large for git)
+*.mpg
+*.mp4
+*.mov
+
 # vercel
 .vercel
 
