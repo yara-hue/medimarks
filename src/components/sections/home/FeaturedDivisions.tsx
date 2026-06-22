@@ -42,10 +42,40 @@ const featured = [
     description:
       "Custom artistic fabrication and decorative engineering solutions for public and private spaces.",
     href: "/solutions/art-sculptures",
-    size: "large",
+    size: "small",
     gradient: "from-navy-900/85 via-navy-800/80 to-slate-800/75",
     accent: "bg-navy-500",
     image: "/images/products/product-star-alliance-2.jpg",
+  },
+  {
+    title: "Automation",
+    description:
+      "CNC machining, linear actuators, and custom automation solutions for precision manufacturing and industrial processes.",
+    href: "/solutions/automation",
+    size: "small",
+    gradient: "from-navy-900/85 via-navy-700/80 to-slate-700/75",
+    accent: "bg-navy-400",
+    image: "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
+  },
+  {
+    title: "Electrical Enclosures",
+    description:
+      "Industrial electrical boxes, cabinets, and cable management systems for commercial and industrial installations.",
+    href: "/solutions/electrical-enclosures",
+    size: "small",
+    gradient: "from-navy-800/85 to-navy-500/75",
+    accent: "bg-navy-400",
+    image: "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
+  },
+  {
+    title: "Fire Resistant Doors",
+    description:
+      "Certified fire-rated doors and isolation materials designed for commercial safety and regulatory compliance.",
+    href: "/solutions/fire-resistant-doors",
+    size: "large",
+    gradient: "from-navy-900/85 via-navy-800/80 to-navy-600/75",
+    accent: "bg-navy-500",
+    image: "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
   },
 ];
 
@@ -55,7 +85,7 @@ export function FeaturedDivisions() {
       <Container>
         <SectionHeading
           title="Our Divisions"
-          subtitle="Four specialized areas of expertise, one engineering standard."
+          subtitle="Seven specialized areas of expertise, one engineering standard."
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

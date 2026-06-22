@@ -26,9 +26,10 @@ export function CompanyOverview() {
               <p>
                 MediMarks was established in 2015 with the vision of creating high-quality
                 medical furniture for regional markets. Through continuous development and
-                manufacturing expertise, the company expanded into additional sectors,
+                manufacturing expertise, the company expanded into seven specialized divisions,
                 delivering practical and innovative solutions across healthcare, storage
-                systems, decorative infrastructure, and custom fabrication.
+                systems, decorative infrastructure, automation, electrical enclosures,
+                fire safety, and custom fabrication.
               </p>
               <p>
                 Today, MediMarks continues to invest in product development, engineering
@@ -82,6 +83,9 @@ export function CompanyOverview() {
                       { name: "Storage Solutions", img: "product-shelf-model-1.jpg" },
                       { name: "Light Poles", img: "product-garden-light-pole.jpg" },
                       { name: "Art & Sculpture", img: "product-star-alliance-2.jpg" },
+                      { name: "Automation", img: "Automation/4 Axis CNC Router Machine 1530.jpg" },
+                      { name: "Electrical Enclosures", img: "Electrical Enclosures/Electrical Box 1.jpg" },
+                      { name: "Fire Resistant Doors", img: "Fire Resistant Metal Doors/MH.Door 100x220.jpg" },
                     ].map((item) => (
                       <div key={item.name} className="flex items-center gap-3">
                         <div

@@ -21,6 +21,9 @@ export const navigation = [
       { label: "Storage Solutions", href: "/solutions/storage-solutions" },
       { label: "Decorative Light Poles", href: "/solutions/decorative-light-poles" },
       { label: "Art & Sculptures", href: "/solutions/art-sculptures" },
+      { label: "Automation", href: "/solutions/automation" },
+      { label: "Electrical Enclosures", href: "/solutions/electrical-enclosures" },
+      { label: "Fire Resistant Doors", href: "/solutions/fire-resistant-doors" },
     ],
   },
   { label: "Contact", href: "/contact" },
@@ -54,6 +57,27 @@ export const divisions = [
     description: "Custom artistic fabrication and decorative engineering solutions.",
     href: "/solutions/art-sculptures",
     icon: "Sparkles",
+  },
+  {
+    id: "automation",
+    title: "Automation",
+    description: "CNC machining, linear actuators, and custom automation solutions.",
+    href: "/solutions/automation",
+    icon: "Cog",
+  },
+  {
+    id: "electrical-enclosures",
+    title: "Electrical Enclosures",
+    description: "Industrial electrical boxes, cabinets, and cable management systems.",
+    href: "/solutions/electrical-enclosures",
+    icon: "Zap",
+  },
+  {
+    id: "fire-resistant-doors",
+    title: "Fire Resistant Doors",
+    description: "Certified fire-rated doors and isolation materials for commercial safety.",
+    href: "/solutions/fire-resistant-doors",
+    icon: "Shield",
   },
 ];
 
@@ -104,110 +128,454 @@ export const medicalProducts = [
     name: "Tri Table Refractive Unit",
     category: "Ophthalmic Equipment",
     description:
-      "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort.",
-    specs: [
-      "Specifications coming soon",
-    ],
+      "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort. Features include custom keypad with Pantone colors.",
+    specs: ["Specifications coming soon"],
     benefits: [
       "Precision positioning for accurate procedures",
       "Patient comfort-focused design",
       "Durable medical-grade construction",
+      "Custom keypad interface",
     ],
-    image: "/images/products/product-t3000.jpg",
+    image: "/images/products/Medical Furniture/Refractive unit Model T3000/Refractive Unit Model T3000.jpg",
+    images: [
+      "/images/products/Medical Furniture/Refractive unit Model T3000/Refractive Unit Model T3000.jpg",
+      "/images/products/Medical Furniture/Refractive unit Model T3000/Refractive Unit T-3000 design Inside.JPG",
+      "/images/products/Medical Furniture/Refractive unit Model T3000/Custom Made KeyPad STD.Pantone colors.JPG",
+    ],
   },
   {
     name: "Recliner Chair",
     category: "Patient Seating",
     description:
-      "Multi-position reclining chair designed for patient examination and recovery. Ergonomically engineered for extended use in clinical environments.",
-    specs: [
-      "Specifications coming soon",
-    ],
+      "Multi-position reclining chair designed for patient examination and recovery. Ergonomically engineered for extended use in clinical environments with electrical adjustment.",
+    specs: ["Specifications coming soon"],
     benefits: [
       "Multiple ergonomic positions",
+      "Electrical adjustment",
       "Comfortable extended-use design",
       "Clinical-grade materials",
     ],
-    image: "/images/products/product-assem-echair.jpg",
+    image: "/images/products/Medical Furniture/Recliner Chair/Recliner Electrical Chair.JPG",
+    images: [
+      "/images/products/Medical Furniture/Recliner Chair/Recliner Electrical Chair.JPG",
+    ],
   },
   {
-    name: "Electrical Table",
+    name: "Electrical Instrument Table TA-60s",
     category: "Examination Equipment",
     description:
-      "Height-adjustable electric examination table with smooth motorized positioning. Built for clinical efficiency and patient accessibility.",
-    specs: [
-      "Specifications coming soon",
-    ],
+      "Height-adjustable electric examination table with smooth motorized positioning. Built for clinical efficiency and patient accessibility with internal thrust unit design.",
+    specs: ["Specifications coming soon"],
     benefits: [
       "Motorized height adjustment",
       "Smooth and quiet operation",
+      "Internal thrust unit design",
       "Enhanced patient accessibility",
     ],
-    image: "/images/products/product-wheel-chair-etables.jpg",
+    image: "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table Model TA-60s/Electrical instrument Table TA-60s.jpg",
+    images: [
+      "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table Model TA-60s/Electrical instrument Table TA-60s.jpg",
+      "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table Model TA-60s/Our design-internal Thrust Unit.jpg",
+    ],
   },
   {
-    name: "Wheel Chair",
-    category: "Mobility Solutions",
+    name: "Electrical Instrument Table TB-80s",
+    category: "Examination Equipment",
     description:
-      "Durable, lightweight wheelchair designed for patient mobility in healthcare environments. Built for reliability and ease of use.",
-    specs: [
-      "Specifications coming soon",
-    ],
+      "Advanced electrical instrument table with height control and stability-tested design. Ideal for modern clinical environments requiring precise positioning.",
+    specs: ["Specifications coming soon"],
     benefits: [
-      "Lightweight yet durable frame",
-      "Comfortable seating for extended use",
-      "Smooth maneuverability",
+      "Height control system",
+      "Stability tested design",
+      "Smooth motorized operation",
+      "Compact footprint",
     ],
-    image: "/images/products/product-wheel-chair-etables-2.jpg",
+    image: "/images/products/Medical Furniture/Electrical Tables/Electrical Instrument Table  model TB-80s/Table TB-80S with Height Control.jpg",
+    images: [
+      "/images/products/Medical Furniture/Electrical Tables/Electrical Instrument Table  model TB-80s/Table TB-80S with Height Control.jpg",
+      "/images/products/Medical Furniture/Electrical Tables/Electrical Instrument Table  model TB-80s/Electrical Instrument Table  model TB-80s-P2_.jpg",
+    ],
   },
   {
-    name: "Electric Ophthalmic Table",
+    name: "Electrical Instrument Table TA-70s",
+    category: "Examination Equipment",
+    description:
+      "Discontinued model TA-70s and TA-70c electric instrument tables. Previously used in clinical settings for examination and treatment procedures.",
+    specs: ["Discontinued model", "Specifications available upon request"],
+    benefits: [
+      "Electric height adjustment",
+      "Reliable clinical performance",
+      "Robust construction",
+    ],
+    image: "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table TA-70s (Discontinued)/TA-70s.jpg",
+    images: [
+      "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table TA-70s (Discontinued)/TA-70s.jpg",
+      "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table TA-70s (Discontinued)/TA Electric Instrument Tables TA-70s, TA-70c.JPG",
+    ],
+  },
+  {
+    name: "Wheel Chair Electrical Instrument Table TL-70HS / TL-70HC",
     category: "Ophthalmic Equipment",
     description:
-      "Motorized ophthalmic examination table with precise positioning capabilities. Optimized for eye care professionals who demand accuracy.",
-    specs: [
-      "Specifications coming soon",
-    ],
+      "Specialized wheel chair electric instrument table designed for ophthalmic procedures. Features switching power supply unit and wheelchair-accessible design.",
+    specs: ["Specifications coming soon"],
     benefits: [
-      "Precise motorized positioning",
-      "Specialized ophthalmic configuration",
-      "Professional-grade reliability",
+      "Wheelchair accessible design",
+      "Electric height adjustment",
+      "Ophthalmic procedure optimized",
+      "Switching power supply included",
+    ],
+    image: "/images/products/Medical Furniture/Electrical Tables/Wheel Chair Electrical Instrument Table TL-70HS, TL-70HC/Wheel Chair E-Tables.jpg",
+    images: [
+      "/images/products/Medical Furniture/Electrical Tables/Wheel Chair Electrical Instrument Table TL-70HS, TL-70HC/Wheel Chair E-Tables.jpg",
+      "/images/products/Medical Furniture/Electrical Tables/Wheel Chair Electrical Instrument Table TL-70HS, TL-70HC/Switching _ Power Supply Unit.jpg",
+    ],
+  },
+];
+
+export const storageProducts = [
+  {
+    name: "Metal Shelf Storage Solutions",
+    category: "Heavy-Duty Storage",
+    description:
+      "Versatile metal shelving system with multiple models and configurations. Designed for durability, flexibility, and efficient space utilization in commercial and industrial settings.",
+    specs: ["Multiple models available", "Specifications coming soon"],
+    benefits: [
+      "Adjustable Configuration",
+      "Heavy-Duty Construction",
+      "Space Optimization",
+      "Long-Lasting Durability",
+      "Accurate assembly design",
+    ],
+    image: "/images/products/Metal Shelf storage Solutions/Shelf Model 1.jpg",
+    images: [
+      "/images/products/Metal Shelf storage Solutions/Shelf Model 1.jpg",
+      "/images/products/Metal Shelf storage Solutions/Model 1.jpg",
+      "/images/products/Metal Shelf storage Solutions/Assembled2.jpg",
+      "/images/products/Metal Shelf storage Solutions/Accurate Assembly.jpg",
     ],
   },
 ];
 
 export const lightingProducts = [
   {
-    name: "Garden Light Pole",
+    name: "Garden Light Pole Model LPG1",
     description: "Modern decorative light pole designed for gardens, pathways, and public landscapes with clean architectural lines.",
-    image: "/images/products/product-garden-light-pole.jpg",
+    image: "/images/products/Decorative Lighting Poles/Garden pole Model LPG1/Garden Light pole Model LPG1.jpg",
+    images: [
+      "/images/products/Decorative Lighting Poles/Garden pole Model LPG1/Garden Light pole Model LPG1.jpg",
+    ],
   },
   {
-    name: "LC3 Narrow Vertical",
-    description: "Slim-profile architectural lighting pole for narrow streetscapes, walkways, and space-constrained urban settings.",
-    image: "/images/products/product-lc3-narrow-vertical.jpg",
+    name: "Lighting Pole Model LP1",
+    description: "Slim-profile architectural lighting pole with brass-plated finish for golden effect. Features wire globe design for distinctive illumination.",
+    image: "/images/products/Decorative Lighting Poles/Lighting Pole Model LP1/Lighting Pole Model LP1 Wire Globe.jpg",
+    images: [
+      "/images/products/Decorative Lighting Poles/Lighting Pole Model LP1/Lighting Pole Model LP1 Wire Globe.jpg",
+      "/images/products/Decorative Lighting Poles/Lighting Pole Model LP1/Brass Plated Finish for Golden effect.jpg",
+    ],
   },
   {
-    name: "Star Alliance",
-    description: "Decorative feature lighting piece for distinctive architectural settings and landmark installations.",
-    image: "/images/products/product-star-alliance-2.jpg",
+    name: "Lighting Pole Model LP2",
+    description: "Decorative lighting pole with wire globe design and robust base. Ideal for streetscapes, walkways, and urban settings.",
+    image: "/images/products/Decorative Lighting Poles/Lighting pole Models LP2/Lighting Pole Model LP2.jpg",
+    images: [
+      "/images/products/Decorative Lighting Poles/Lighting pole Models LP2/Lighting Pole Model LP2.jpg",
+      "/images/products/Decorative Lighting Poles/Lighting pole Models LP2/Lighting Pole Model LP2-Wire Globe.jpg",
+      "/images/products/Decorative Lighting Poles/Lighting pole Models LP2/Lighting Pole Model LP2 Base.jpg",
+    ],
   },
 ];
 
-export const storageProducts = [
+export const artProducts = [
   {
-    name: "Industrial Shelving Unit",
-    category: "Heavy-Duty Storage",
+    name: "Star Alliance Stainless Steel Sculpture",
+    category: "Metal Sculpture",
     description:
-      "Versatile shelving system with adjustable height configurations. Designed for durability, flexibility, and efficient space utilization in commercial and industrial settings.",
+      "A stunning stainless steel sculpture featuring the Star Alliance emblem. Custom-fabricated for decorative and commemorative installations.",
+    specs: ["Custom fabrication", "Stainless steel construction"],
+    benefits: [
+      "Custom design capability",
+      "Durable stainless steel",
+      "Weather-resistant finish",
+      "Indoor/outdoor installation",
+    ],
+    image: "/images/products/Metalic Sculputure/Star Aliance Stainless Steel Sculpture.jpg",
+    images: [
+      "/images/products/Metalic Sculputure/Star Aliance Stainless Steel Sculpture.jpg",
+    ],
+  },
+];
+
+export const automationProducts = [
+  {
+    name: "4 Axis CNC Router Machine 1530",
+    category: "CNC Machining",
+    description:
+      "Advanced 4-axis CNC router machine with 1500x3000mm working area. Designed for precision cutting, engraving, and machining of various materials.",
+    specs: ["4-axis operation", "1500x3000mm working area", "High-precision machining"],
+    benefits: [
+      "Multi-axis precision machining",
+      "Large format capability",
+      "Versatile material processing",
+      "Industrial-grade reliability",
+    ],
+    image: "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
+    images: [
+      "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
+      "/images/products/Automation/Assem_CNC2.JPG",
+    ],
+  },
+  {
+    name: "CNC Router Target Works",
+    category: "CNC Machining",
+    description:
+      "Showcasing the precision and artistry of our CNC router capabilities. From artistic boards and decorative panels to wood turning and crib cradle production.",
+    specs: ["Custom CNC routing", "Multi-material capability"],
+    benefits: [
+      "Artistic precision",
+      "Custom design capability",
+      "Wide range of finishes",
+      "Rapid prototyping",
+    ],
+    image: "/images/products/Automation/Target Works of CNC Router/Artistic.jpg",
+    images: [
+      "/images/products/Automation/Target Works of CNC Router/Artistic.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Artistic Boards.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Boards.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Wood Turning.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Engraved Board.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Decoration.jpg",
+      "/images/products/Automation/Target Works of CNC Router/Crib Cradle.jpg",
+    ],
+  },
+  {
+    name: "Electric Linear Actuator Model LC4",
+    category: "Linear Actuation",
+    description:
+      "Component-level design electric linear actuator with lifting column. Our design includes precision-engineered components for reliable linear motion applications.",
+    specs: ["Component-level design", "Lifting column integration"],
+    benefits: [
+      "High-precision linear motion",
+      "Custom integration capability",
+      "Robust construction",
+      "Reliable performance",
+    ],
+    image: "/images/products/Automation/Electric Linear Actuator    (Component level-design ) Model LC4/Lifting Column Model LC4 (Our design component level).jpg",
+    images: [
+      "/images/products/Automation/Electric Linear Actuator    (Component level-design ) Model LC4/Lifting Column Model LC4 (Our design component level).jpg",
+      "/images/products/Automation/Electric Linear Actuator    (Component level-design ) Model LC4/Lifting Column CL3 .jpg",
+    ],
+  },
+  {
+    name: "XZ-Base Plate Assembly",
+    category: "Automation Components",
+    description:
+      "Precision-machined XZ-base plate assembly designed for automation systems. Fabricated with tight tolerances for reliable machine operation.",
+    specs: ["Precision machined", "Custom fabrication"],
+    benefits: [
+      "High precision machining",
+      "Tight tolerance control",
+      "Custom design capability",
+      "Industrial-grade quality",
+    ],
+    image: "/images/products/Automation/Assem XZ-Base Plate D2.JPG",
+    images: [
+      "/images/products/Automation/Assem XZ-Base Plate D2.JPG",
+    ],
+  },
+  {
+    name: "Control Module Assembly",
+    category: "Automation Components",
+    description:
+      "Custom-fabricated control module assembly in metal sheets. Designed for integration into automated systems and machinery.",
+    specs: ["Metal sheet fabrication", "Custom assembly"],
+    benefits: [
+      "Custom metal fabrication",
+      "Integration-ready design",
+      "Durable construction",
+      "Application-specific design",
+    ],
+    image: "/images/products/Automation/Assem_Control Module-- Metal Sheets.JPG",
+    images: [
+      "/images/products/Automation/Assem_Control Module-- Metal Sheets.JPG",
+    ],
+  },
+];
+
+export const electricalProducts = [
+  {
+    name: "Electrical Box Model 1",
+    category: "Electrical Enclosures",
+    description:
+      "Standard electrical enclosure box designed for commercial and industrial applications. Provides secure housing for electrical components.",
     specs: ["Specifications coming soon"],
     benefits: [
-      "Adjustable Configuration",
-      "Heavy-Duty Construction",
-      "Space Optimization",
-      "Long-Lasting Durability",
+      "Secure electrical housing",
+      "Durable construction",
+      "Standard mounting compatibility",
+      "Industrial-grade protection",
     ],
-    image: "/images/products/product-shelf-model-1.jpg",
+    image: "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
+    images: [
+      "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
+    ],
+  },
+  {
+    name: "Electrical Box Model 2",
+    category: "Electrical Enclosures",
+    description:
+      "Heavy-duty electrical enclosure box with enhanced capacity for larger electrical installations and component housing.",
+    specs: ["Specifications coming soon"],
+    benefits: [
+      "Enhanced capacity",
+      "Heavy-duty protection",
+      "Secure locking capability",
+      "Weather-resistant design",
+    ],
+    image: "/images/products/Electrical Enclosures/Electrical Box 2.JPG",
+    images: [
+      "/images/products/Electrical Enclosures/Electrical Box 2.JPG",
+    ],
+  },
+  {
+    name: "Electrical Cables Box",
+    category: "Cable Management",
+    description:
+      "Specialized cable management enclosure designed for organizing and protecting electrical cables in commercial and industrial settings.",
+    specs: ["Specifications coming soon"],
+    benefits: [
+      "Cable organization",
+      "Protection for wiring",
+      "Neat installation finish",
+      "Durable construction",
+    ],
+    image: "/images/products/Electrical Enclosures/Electrical Cables Box.jpg",
+    images: [
+      "/images/products/Electrical Enclosures/Electrical Cables Box.jpg",
+    ],
+  },
+];
+
+export const fireDoorProducts = [
+  {
+    name: "MH Door 100x220",
+    category: "Fire Resistant Doors",
+    description:
+      "Fire-resistant metal door measuring 100x220 cm. Designed for commercial and industrial fire safety compliance.",
+    specs: ["100x220 cm", "Fire-resistant construction"],
+    benefits: [
+      "Fire safety compliance",
+      "Durable metal construction",
+      "Standard size installation",
+      "Professional finish",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
+    ],
+  },
+  {
+    name: "MH Door 140x220 D1",
+    category: "Fire Resistant Doors",
+    description:
+      "Large fire-resistant metal door measuring 140x220 cm. Design D1 with enhanced fire protection rating.",
+    specs: ["140x220 cm", "Design D1", "Fire-resistant"],
+    benefits: [
+      "Large opening coverage",
+      "Enhanced fire protection",
+      "Durable metal build",
+      "Professional installation",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/MH.Door 140X220 D1.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/MH.Door 140X220 D1.jpg",
+    ],
+  },
+  {
+    name: "MH Door 140x220 D2",
+    category: "Fire Resistant Doors",
+    description:
+      "Large fire-resistant metal door measuring 140x220 cm. Design D2 with alternative configuration and finish options.",
+    specs: ["140x220 cm", "Design D2", "Fire-resistant"],
+    benefits: [
+      "Alternative design option",
+      "Fire safety certified",
+      "Heavy-duty construction",
+      "Custom finish available",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/MH.Door 140X220 D2.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/MH.Door 140X220 D2.jpg",
+    ],
+  },
+  {
+    name: "MH Swing Door 160x220",
+    category: "Fire Resistant Doors",
+    description:
+      "Extra-large fire-resistant swing door measuring 160x220 cm. Designed for high-traffic commercial and industrial entries.",
+    specs: ["160x220 cm", "Swing door design", "Fire-resistant"],
+    benefits: [
+      "Extra-large capacity",
+      "Swing door convenience",
+      "Fire safety compliance",
+      "High-traffic durability",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/MH.Swing Door 160X220.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/MH.Swing Door 160X220.jpg",
+    ],
+  },
+  {
+    name: "Isolation Materials from Saudi Rock Wool",
+    category: "Fire Protection",
+    description:
+      "High-quality isolation materials manufactured from Saudi-sourced rock wool. Provides excellent fire resistance and thermal insulation.",
+    specs: ["Saudi rock wool", "Fire resistant", "Thermal insulation"],
+    benefits: [
+      "Local Saudi materials",
+      "Excellent fire resistance",
+      "Thermal insulation",
+      "Sound dampening properties",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/Isolation Materials From Saudi Rock Wool.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/Isolation Materials From Saudi Rock Wool.jpg",
+    ],
+  },
+  {
+    name: "Lock-Frame Assembly",
+    category: "Door Hardware",
+    description:
+      "Precision-engineered lock-frame assembly for fire-resistant metal doors. Ensures secure closing and fire seal integrity.",
+    specs: ["Custom fabrication", "Fire-rated hardware"],
+    benefits: [
+      "Secure closing mechanism",
+      "Fire seal integrity",
+      "Precision engineering",
+      "Durable hardware",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/Lock-Frame.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/Lock-Frame.jpg",
+    ],
+  },
+  {
+    name: "Wood Laminated Fire Door",
+    category: "Fire Resistant Doors",
+    description:
+      "Fire-resistant metal door with wood laminate finish. Combines the safety of fire-rated construction with aesthetic wood appearance.",
+    specs: ["Wood laminate finish", "Fire-resistant core"],
+    benefits: [
+      "Aesthetic wood finish",
+      "Fire-rated protection",
+      "Durable construction",
+      "Professional appearance",
+    ],
+    image: "/images/products/Fire Resistant Metal Doors/Wood Laminated.jpg",
+    images: [
+      "/images/products/Fire Resistant Metal Doors/Wood Laminated.jpg",
+    ],
   },
 ];
 

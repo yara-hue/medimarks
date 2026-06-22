@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Hospital, Warehouse, Lamp, Sparkles, ArrowRight } from "lucide-react";
+import { Hospital, Warehouse, Lamp, Sparkles, Cog, Zap, Shield, ArrowRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
@@ -12,6 +12,9 @@ const iconMap: Record<string, React.ElementType> = {
   Warehouse,
   Lamp,
   Sparkles,
+  Cog,
+  Zap,
+  Shield,
 };
 
 const cardImages: Record<string, string> = {
@@ -19,6 +22,9 @@ const cardImages: Record<string, string> = {
   "storage-solutions": "/images/products/product-shelf-model-1.jpg",
   "decorative-light-poles": "/images/products/product-garden-light-pole.jpg",
   "art-sculptures": "/images/products/product-star-alliance-2.jpg",
+  "automation": "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
+  "electrical-enclosures": "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
+  "fire-resistant-doors": "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
 };
 
 const cardGradients: Record<string, string> = {
@@ -26,6 +32,9 @@ const cardGradients: Record<string, string> = {
   "storage-solutions": "from-navy-800/85 to-navy-600/75",
   "decorative-light-poles": "from-navy-700/85 to-navy-500/75",
   "art-sculptures": "from-navy-900/85 via-navy-800/80 to-slate-800/75",
+  "automation": "from-navy-900/85 via-navy-700/80 to-slate-700/75",
+  "electrical-enclosures": "from-navy-800/85 to-navy-500/75",
+  "fire-resistant-doors": "from-navy-900/85 via-navy-800/80 to-navy-600/75",
 };
 
 export function Capabilities() {
@@ -34,7 +43,7 @@ export function Capabilities() {
       <Container>
         <SectionHeading
           title="Our Areas of Expertise"
-          subtitle="Four specialized divisions delivering engineering-driven solutions across multiple industries."
+          subtitle="Seven specialized divisions delivering engineering-driven solutions across multiple industries."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">

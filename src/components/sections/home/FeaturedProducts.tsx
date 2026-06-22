@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { medicalProducts, lightingProducts, storageProducts } from "@/data/site";
+import { medicalProducts, lightingProducts, storageProducts, artProducts, automationProducts, electricalProducts, fireDoorProducts } from "@/data/site";
 
 interface DisplayProduct {
   name: string;
@@ -18,9 +18,12 @@ interface DisplayProduct {
 export function FeaturedProducts() {
   const allProducts: DisplayProduct[] = [
     ...medicalProducts.slice(0, 2).map((p) => ({ ...p, division: "Medical" })),
-    ...lightingProducts.slice(0, 2).map((p) => ({ ...p, division: "Lighting" })),
+    ...automationProducts.slice(0, 1).map((p) => ({ ...p, division: "Automation" })),
+    ...lightingProducts.slice(0, 1).map((p) => ({ ...p, division: "Lighting" })),
     ...storageProducts.slice(0, 1).map((p) => ({ ...p, division: "Storage" })),
-    ...medicalProducts.slice(2, 4).map((p) => ({ ...p, division: "Medical" })),
+    ...electricalProducts.slice(0, 1).map((p) => ({ ...p, division: "Electrical" })),
+    ...fireDoorProducts.slice(0, 1).map((p) => ({ ...p, division: "Fire Doors" })),
+    ...artProducts.slice(0, 1).map((p) => ({ ...p, division: "Art" })),
   ];
 
   return (

@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Hospital, Warehouse, Lamp, Sparkles } from "lucide-react";
+import { ArrowRight, Hospital, Warehouse, Lamp, Sparkles, Cog, Zap, Shield } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { divisions } from "@/data/site";
 
 const iconMap: Record<string, React.ElementType> = {
-  Hospital, Warehouse, Lamp, Sparkles,
+  Hospital, Warehouse, Lamp, Sparkles, Cog, Zap, Shield,
 };
 
 const gradients = [
