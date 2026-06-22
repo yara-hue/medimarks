@@ -11,7 +11,7 @@ export function Hero() {
       <div className="absolute top-0 right-0 bottom-0 overflow-hidden" style={{ left: "700px" }}>
         <BeforeAfterSlider
           beforeSrc="/images/Gemini_Generated_Image_fcsl4efcsl4efcsl.png"
-          afterSrc="/images/Gemini_Generated_Image_7svq3d7svq3d7svq.png"
+          afterSrc="/images/Gemini_Generated_Image_7svq3d7svq3d7svq.jpg"
         />
       </div>
       <div className="absolute inset-0 pointer-events-none z-[3]"
