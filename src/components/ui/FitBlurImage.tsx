@@ -1,4 +1,5 @@
 import edgeColors from "@/data/edge-colors";
+import type { EdgeColors } from "@/data/edge-colors";
 
 interface FitBlurImageProps {
   src: string;
@@ -6,11 +7,25 @@ interface FitBlurImageProps {
   className?: string;
 }
 
+function bgStyle(data: EdgeColors | undefined): React.CSSProperties {
+  if (!data) return { backgroundColor: "#f0f0f0" };
+  if (data.gradient) {
+    const { top, bottom, left, right } = data;
+    return {
+      background: [
+        `linear-gradient(to bottom, ${top}, ${bottom})`,
+        `linear-gradient(to right, ${left}, ${right})`,
+      ].join(", "),
+    };
+  }
+  return { backgroundColor: data.flat };
+}
+
 export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
-  const bgColor = edgeColors[src] || "#f0f0f0";
+  const bg = bgStyle(edgeColors[src]);
 
   return (
-    <div className="absolute inset-0" style={{ backgroundColor: bgColor }}>
+    <div className="absolute inset-0" style={bg}>
       <img
         src={src}
         alt={alt}

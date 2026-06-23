@@ -108,7 +108,7 @@ export function FeaturedDivisions() {
                 >
                   <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${item.image})` }}
+                    style={{ backgroundImage: `url("${item.image}")` }}
                   />
                   <div
                     className={`absolute inset-0 bg-gradient-to-br ${item.gradient} transition-transform duration-700 group-hover:scale-105`}
