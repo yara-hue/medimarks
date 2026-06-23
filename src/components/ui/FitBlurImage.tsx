@@ -7,9 +7,11 @@ interface FitBlurImageProps {
 export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
   return (
     <div className="absolute inset-0">
-      <div
-        className="absolute inset-0 bg-cover bg-center blur-2xl scale-110"
-        style={{ backgroundImage: `url(${src})` }}
+      <img
+        src={src}
+        alt=""
+        className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110"
+        aria-hidden="true"
       />
       <img
         src={src}
