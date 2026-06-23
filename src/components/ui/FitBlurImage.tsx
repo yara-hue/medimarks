@@ -10,7 +10,7 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
       <img
         src={src}
         alt=""
-        className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110"
+        className="absolute inset-0 w-full h-full object-cover blur-3xl brightness-75 scale-150"
         aria-hidden="true"
       />
       <img
