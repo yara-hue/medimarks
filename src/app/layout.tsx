@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
+import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased">
         <LoadingScreen />
+        <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{
           __html: `
             setTimeout(function(){
