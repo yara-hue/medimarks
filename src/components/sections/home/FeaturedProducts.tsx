@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { medicalProducts, lightingProducts, storageProducts, artProducts, automationProducts, electricalProducts, fireDoorProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 
 interface DisplayProduct {
   name: string;
@@ -45,12 +46,12 @@ export function FeaturedProducts() {
               className="group"
             >
               <div className="bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 h-full flex flex-col">
-                <div className="aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-navy-800">
+                <div className="aspect-[4/3] relative overflow-hidden bg-gray-100 dark:bg-navy-800">
                   {product.image ? (
-                    <img
+                    <FitBlurImage
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="transition-transform duration-500 group-hover:scale-105"
                     />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-navy-100 dark:from-navy-800 to-navy-50 dark:to-navy-900 flex items-center justify-center">

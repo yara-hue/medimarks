@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { automationProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 
 export function AutomationProducts() {
   return (
@@ -25,11 +26,10 @@ export function AutomationProducts() {
               className="grid md:grid-cols-5 gap-8 md:gap-12 items-center"
             >
               <div className="md:col-span-2">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800">
-                  <img
+                <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+                  <FitBlurImage
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover"
                   />
                 </div>
               </div>

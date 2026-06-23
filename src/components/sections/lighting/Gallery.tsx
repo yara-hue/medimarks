@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { lightingProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 
 export function LightingGallery() {
   return (
@@ -21,12 +22,12 @@ export function LightingGallery() {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="group"
             >
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800 mb-4">
+              <div className="aspect-[3/4] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 mb-4">
                 {product.image ? (
-                  <img
+                  <FitBlurImage
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="transition-transform duration-500 group-hover:scale-105"
                   />
                 ) : (
                   <div className="w-full h-full bg-gradient-to-br from-indigo-50 to-navy-50 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fireDoorProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 
 export function FireDoorsProducts() {
   return (
@@ -24,11 +25,11 @@ export function FireDoorsProducts() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30"
             >
-              <div className="aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-navy-800">
-                <img
+              <div className="aspect-[4/3] relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+                <FitBlurImage
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="transition-transform duration-500 hover:scale-105"
                 />
               </div>
               <div className="p-6">

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { storageProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 
 export function StorageProduct() {
   const product = storageProducts[0];
@@ -17,12 +18,11 @@ export function StorageProduct() {
           transition={{ duration: 0.5 }}
           className="grid md:grid-cols-2 gap-12 md:gap-16 items-center"
         >
-          <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800">
+          <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
             {product.image ? (
-              <img
+              <FitBlurImage
                 src={product.image}
                 alt={product.name}
-                className="w-full h-full object-cover"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">

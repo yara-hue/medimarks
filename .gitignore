@@ -38,6 +38,9 @@ yarn-error.log*
 *.mp4
 *.mov
 
+# local backup of original images
+public/images/products-original/
+
 # vercel
 .vercel
 
