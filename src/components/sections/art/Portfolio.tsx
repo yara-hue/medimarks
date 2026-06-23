@@ -3,6 +3,8 @@
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { artProducts } from "@/data/site";
 
 export function ArtPortfolio() {
   return (
@@ -10,19 +12,46 @@ export function ArtPortfolio() {
       <Container>
         <SectionHeading title="Portfolio" subtitle="A glimpse into our custom fabrication work." />
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[1, 2, 3, 4, 5, 6].map((item) => (
+        <div className="grid md:grid-cols-2 gap-8">
+          {artProducts.map((product, index) => (
             <motion.div
-              key={item}
+              key={product.name}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, delay: (item % 3) * 0.1 }}
-              className="aspect-square bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 rounded-2xl flex items-center justify-center group cursor-pointer"
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              className="md:col-span-2"
             >
-              <div className="text-center p-6 opacity-60 group-hover:opacity-100 transition-opacity">
-                <span className="text-3xl">✦</span>
-                <p className="mt-2 text-gray-400 dark:text-gray-500 text-xs tracking-widest uppercase">Project {item}</p>
+              <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
+                <div className="md:col-span-2">
+                  <div className="aspect-square rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+                    {product.image ? (
+                      <FitBlurImage
+                        src={product.image}
+                        alt={product.name}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+                        <div className="text-center p-6">
+                          <span className="text-4xl">✦</span>
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+                <div className="md:col-span-3">
+                  {product.category && (
+                    <span className="text-navy-500 dark:text-navy-300 text-xs font-medium tracking-widest uppercase">
+                      {product.category}
+                    </span>
+                  )}
+                  <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
+                    {product.name}
+                  </h3>
+                  <p className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed">
+                    {product.description}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
@@ -34,9 +63,9 @@ export function ArtPortfolio() {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
           className="mt-12 p-8 bg-gray-50 dark:bg-navy-900/50 rounded-2xl border border-dashed border-gray-200 dark:border-navy-700 text-center"
-          >
-            <p className="text-gray-400 dark:text-gray-500 text-sm italic">
-            Portfolio images of completed sculptures, architectural elements, and custom
+        >
+          <p className="text-gray-400 dark:text-gray-500 text-sm italic">
+            More portfolio images of completed sculptures, architectural elements, and custom
             fabrication projects will be added as they are completed.
           </p>
         </motion.div>
