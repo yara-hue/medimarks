@@ -125,16 +125,24 @@ export const valuesCards = [
 
 export const medicalProducts = [
   {
-    name: "Tri Table Refractive Unit",
+    name: "Three-Table Refractive Unit",
     category: "Ophthalmic Equipment",
     description:
-      "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort. Features include custom keypad with Pantone colors.",
-    specs: ["Specifications coming soon"],
+      "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort.",
+    specs: [
+      "Heavy-duty welded steel construction",
+      "Patient chair with two 400 kg motors for lift and backrest adjustment",
+      "Motorized rotating tables with adjustable speed for smooth, precise positioning",
+      "Automatic input-voltage range selection",
+    ],
     benefits: [
-      "Precision positioning for accurate procedures",
-      "Patient comfort-focused design",
-      "Durable medical-grade construction",
-      "Custom keypad interface",
+      "Two charging cradles with adjustable charging voltage",
+      "Integrated examination light with adjustable intensity",
+      "Motorized refractor arm",
+      "Accessibility mode for patients with limited mobility",
+      "Comprehensive emergency-stop protection activated by vertical or rotational obstruction, the emergency button, any keypad command, or the footswitch",
+      "Available in various color combinations",
+      "Three spacious drawers for trial lenses, accessories, and instruments",
     ],
     image: "/images/products/Medical Furniture/Refractive unit Model T3000/Refractive Unit Model T3000.jpg",
     images: [
@@ -148,12 +156,16 @@ export const medicalProducts = [
     category: "Patient Seating",
     description:
       "Multi-position reclining chair designed for patient examination and recovery. Ergonomically engineered for extended use in clinical environments with electrical adjustment.",
-    specs: ["Specifications coming soon"],
+    specs: [
+      "Patient chair is powered with two 400 kgf motors for lift and backrest adjustment",
+      "Automatic input-voltage range selection",
+      "The two actuators are heavy duty industrial linear actuators, unlike the others it works electrically for 100% duty cycle",
+    ],
     benefits: [
-      "Multiple ergonomic positions",
-      "Electrical adjustment",
-      "Comfortable extended-use design",
-      "Clinical-grade materials",
+      "With leg rest mechanism and comfortable foot rest",
+      "Two side identical control switch, and up down footswitch",
+      "Available in wide different leather colors suitable for the clinic decor",
+      "Heavy-duty construction with industrial 100% duty cycle linear actuators",
     ],
     image: "/images/products/Medical Furniture/Recliner Chair/Recliner Electrical Chair.JPG",
     images: [

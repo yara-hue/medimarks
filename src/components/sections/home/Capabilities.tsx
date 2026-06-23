@@ -43,7 +43,6 @@ export function Capabilities() {
       <Container>
         <SectionHeading
           title="Our Areas of Expertise"
-          subtitle="Seven specialized divisions delivering engineering-driven solutions across multiple industries."
         />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
