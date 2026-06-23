@@ -17,6 +17,10 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
         src={src}
         alt={alt}
         className={`relative w-full h-full object-contain z-10 ${className}`}
+        style={{
+          maskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
+        }}
       />
     </div>
   );
