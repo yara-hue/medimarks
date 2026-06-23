@@ -1,3 +1,5 @@
+import edgeColors from "@/data/edge-colors";
+
 interface FitBlurImageProps {
   src: string;
   alt: string;
@@ -5,18 +7,14 @@ interface FitBlurImageProps {
 }
 
 export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
+  const bgColor = edgeColors[src] || "#f0f0f0";
+
   return (
-    <div className="absolute inset-0">
-      <img
-        src={src}
-        alt=""
-        className="absolute inset-0 w-full h-full object-cover blur-3xl scale-150"
-        aria-hidden="true"
-      />
+    <div className="absolute inset-0" style={{ backgroundColor: bgColor }}>
       <img
         src={src}
         alt={alt}
-        className={`relative w-full h-full object-contain z-10 ${className}`}
+        className={`w-full h-full object-contain ${className}`}
         style={{
           maskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
           WebkitMaskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
