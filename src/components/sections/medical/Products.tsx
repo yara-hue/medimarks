@@ -74,9 +74,14 @@ export function MedicalProducts() {
                   </div>
                   <div>
                     <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Technical Specifications</h4>
-                    <p className="text-sm text-gray-400 dark:text-gray-500 italic bg-gray-50 dark:bg-navy-900/50 rounded-lg p-3">
-                      Detailed specifications available upon request.
-                    </p>
+                    <ul className="space-y-1.5">
+                      {product.specs.map((s) => (
+                        <li key={s} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
+                          <span className="text-navy-400 mt-0.5">•</span>
+                          {s}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </div>
               </div>

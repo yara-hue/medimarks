@@ -131,7 +131,7 @@ export const medicalProducts = [
       "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort.",
     specs: [
       "Heavy-duty welded steel construction",
-      "Patient chair with two 400 kg motors for lift and backrest adjustment",
+      "Patient chair with two 400 kgf motors for lift and backrest adjustment",
       "Motorized rotating tables with adjustable speed for smooth, precise positioning",
       "Automatic input-voltage range selection",
     ],
