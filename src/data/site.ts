@@ -5,9 +5,9 @@ export const siteConfig = {
     "Since 2015, MediMarks has been designing and manufacturing specialized products that combine functionality, quality, and innovation across multiple industries.",
   founded: 2015,
   email: "info@medimarks.com",
-  phone: "+966 XX XXX XXXX",
+  phone: "+966 59 225 3166",
   hours: "Sunday - Thursday: 8:00 AM - 5:00 PM",
-  location: "Jeddah, Saudi Arabia",
+  location: "Al-Khobar, Saudi Arabia",
 };
 
 export const navigation = [
@@ -601,7 +601,7 @@ export const fireDoorProducts = [
 export const faqs = [
   {
     q: "Where is MediMarks located?",
-    a: "MediMarks is based in Jeddah, Saudi Arabia. Contact us for our full address and visiting hours.",
+    a: "MediMarks is based in Al-Khobar, Saudi Arabia. Contact us for our full address and visiting hours.",
   },
   {
     q: "What industries do you serve?",
