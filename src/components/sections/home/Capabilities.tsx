@@ -22,9 +22,9 @@ const cardImages: Record<string, string> = {
   "storage-solutions": "/images/products/product-shelf-model-1.jpg",
   "decorative-light-poles": "/images/products/product-garden-light-pole.jpg",
   "art-sculptures": "/images/products/product-star-alliance-2.jpg",
-  "automation": "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
-  "electrical-enclosures": "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
-  "fire-resistant-doors": "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
+  "automation": "/images/products/product-lc3-narrow-vertical.jpg",
+  "electrical-enclosures": "/images/products/product-wheel-chair-etables.jpg",
+  "fire-resistant-doors": "/images/products/product-t3000.jpg",
 };
 
 const cardGradients: Record<string, string> = {
