@@ -39,11 +39,7 @@ const allProducts: ProductEntry[] = [
   ...fireDoorProducts.map((p) => ({ ...p, division: "fire-resistant-doors" })),
 ];
 
-const aspectPattern = [
-  "aspect-[4/3]", "aspect-[4/3]", "aspect-[3/4]", "aspect-[16/9]",
-  "aspect-[4/3]", "aspect-[1/1]", "aspect-[4/3]", "aspect-[4/3]",
-  "aspect-[3/4]", "aspect-[4/3]", "aspect-[16/9]", "aspect-[4/3]",
-];
+
 
 export function FeaturedProducts() {
   return (
@@ -54,7 +50,7 @@ export function FeaturedProducts() {
           subtitle="A selection of our manufactured products across all divisions."
         />
 
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [&>*]:break-inside-avoid [&>*]:mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {allProducts.map((product, index) => {
             const href = divisionMap[product.division];
             return (
@@ -63,13 +59,13 @@ export function FeaturedProducts() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.4, delay: index * 0.025 }}
+                transition={{ duration: 0.4, delay: index * 0.05 }}
               >
                 <Link
                   href={href}
-                  className="group relative block rounded-xl overflow-hidden bg-gray-100 dark:bg-navy-800"
+                  className="group relative block rounded-xl overflow-hidden bg-gray-100 dark:bg-navy-800 aspect-[4/3]"
                 >
-                  <div className={`relative ${aspectPattern[index % aspectPattern.length]}`}>
+                  <div className="relative w-full h-full">
                     {product.image ? (
                       <FitBlurImage
                         src={product.image}
