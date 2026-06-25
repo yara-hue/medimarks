@@ -22,27 +22,52 @@ function bgStyle(data: EdgeColors | undefined): React.CSSProperties {
 }
 
 export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
-  const bg = bgStyle(edgeColors[src]);
+  const data = edgeColors[src];
+  const bg = bgStyle(data);
+  const blurBg = data?.gradient
+    ? {
+        background: [
+          `linear-gradient(to bottom, ${data.top}, ${data.bottom})`,
+          `linear-gradient(to right, ${data.left}, ${data.right})`,
+        ].join(", "),
+        filter: "blur(40px)",
+        opacity: 0.6,
+        transform: "scale(1.25)",
+      }
+    : {
+        backgroundColor: data?.flat || "#f0f0f0",
+        filter: "blur(40px)",
+        opacity: 0.6,
+        transform: "scale(1.25)",
+      };
+  const midBg = data?.gradient
+    ? {
+        background: [
+          `linear-gradient(to bottom, ${data.top}, ${data.bottom})`,
+          `linear-gradient(to right, ${data.left}, ${data.right})`,
+        ].join(", "),
+        filter: "blur(20px)",
+        opacity: 0.35,
+        transform: "scale(1.12)",
+      }
+    : {
+        backgroundColor: data?.flat || "#f0f0f0",
+        filter: "blur(20px)",
+        opacity: 0.35,
+        transform: "scale(1.12)",
+      };
 
   return (
     <div className="absolute inset-0" style={bg}>
-      <img
-        src={src}
-        alt=""
-        className="absolute inset-0 w-full h-full object-contain"
-        style={{
-          filter: "blur(20px)",
-          opacity: 0.4,
-          transform: "scale(1.1)",
-        }}
-      />
+      <div className="absolute inset-0" style={blurBg} />
+      <div className="absolute inset-0" style={midBg} />
       <img
         src={src}
         alt={alt}
         className={`w-full h-full object-contain relative ${className}`}
         style={{
-          maskImage: "radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%)",
-          WebkitMaskImage: "radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%)",
+          maskImage: "radial-gradient(ellipse 80% 80% at center, black 0%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 80% 80% at center, black 0%, transparent 100%)",
         }}
       />
     </div>
