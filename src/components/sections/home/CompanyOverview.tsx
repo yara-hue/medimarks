@@ -70,36 +70,15 @@ export function CompanyOverview() {
                   style={{ backgroundImage: "url(/images/products/product-star-alliance-2.jpg)" }}
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-navy-900/85 to-navy-800/75" />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-5xl font-heading font-bold text-white/90">2015</div>
-                  <div className="mt-2 text-white/70 text-sm tracking-widest uppercase">
-                    Founded
-                  </div>
-                  <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-4">
-                    {[
-                      { name: "Medical Furniture", img: "product-assem-echair.jpg" },
-                      { name: "Storage Solutions", img: "product-shelf-model-1.jpg" },
-                      { name: "Light Poles", img: "product-garden-light-pole.jpg" },
-                      { name: "Art & Sculpture", img: "product-star-alliance-2.jpg" },
-                      { name: "Automation", img: "Automation/4 Axis CNC Router Machine 1530.jpg" },
-                      { name: "Electrical Enclosures", img: "Electrical Enclosures/Electrical Box 1.jpg" },
-                      { name: "Fire Resistant Doors", img: "Fire Resistant Metal Doors/MH.Door 100x220.jpg" },
-                    ].map((item) => (
-                      <div key={item.name} className="flex items-center gap-3">
-                        <div
-                          className="w-8 h-8 rounded-lg bg-cover bg-center shrink-0 border border-white/10"
-                          style={{ backgroundImage: "url(/images/products/" + item.img + ")" }}
-                        />
-                        <span className="text-white/80 text-xs tracking-wide text-left leading-tight">
-                          {item.name}
-                        </span>
+                  <div className="absolute inset-0 bg-gradient-to-br from-navy-900/85 to-navy-800/75" />
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center p-8">
+                      <div className="text-5xl font-heading font-bold text-white/90">2015</div>
+                      <div className="mt-2 text-white/70 text-sm tracking-widest uppercase">
+                        Founded
                       </div>
-                    ))}
+                    </div>
                   </div>
-                </div>
-              </div>
             </div>
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-navy-500/10 rounded-full blur-2xl" />
           </motion.div>
