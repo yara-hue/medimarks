@@ -28,11 +28,21 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
     <div className="absolute inset-0" style={bg}>
       <img
         src={src}
-        alt={alt}
-        className={`w-full h-full object-contain ${className}`}
+        alt=""
+        className="absolute inset-0 w-full h-full object-contain"
         style={{
-          maskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
-          WebkitMaskImage: "radial-gradient(ellipse 70% 70% at center, black 65%, transparent 100%)",
+          filter: "blur(20px)",
+          opacity: 0.4,
+          transform: "scale(1.1)",
+        }}
+      />
+      <img
+        src={src}
+        alt={alt}
+        className={`w-full h-full object-contain relative ${className}`}
+        style={{
+          maskImage: "radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%)",
+          WebkitMaskImage: "radial-gradient(ellipse 70% 70% at center, black 40%, transparent 100%)",
         }}
       />
     </div>
