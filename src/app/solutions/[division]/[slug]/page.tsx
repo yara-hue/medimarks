@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Container } from "@/components/ui/Container";
-import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { ImageGallery } from "@/components/ui/ImageGallery";
 import { Markdown } from "@/components/ui/Markdown";
 import { divisionProductMap, type ProductEntry } from "@/data/products";
 import { divisions } from "@/data/site";
@@ -68,23 +68,15 @@ export default async function ProductPage({ params }: Props) {
         <Container>
           <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
             <div>
-              <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
-                {product.image ? (
-                  <FitBlurImage src={product.image} alt={product.name} />
-                ) : (
-                  <div className="w-full h-full bg-gradient-to-br from-navy-100 dark:from-navy-800 to-navy-50 dark:to-navy-900 flex items-center justify-center">
-                    <span className="text-navy-300 text-4xl">◈</span>
-                  </div>
-                )}
-              </div>
-
-              {"images" in product && Array.isArray(product.images) && product.images.length > 1 && (
-                <div className="mt-4 grid grid-cols-4 gap-3">
-                  {product.images.map((img: string, i: number) => (
-                    <div key={i} className="aspect-square rounded-lg overflow-hidden bg-gray-100 dark:bg-navy-800">
-                      <img src={img} alt="" className="w-full h-full object-cover" />
-                    </div>
-                  ))}
+              {product.images && product.images.length > 0 ? (
+                <ImageGallery images={product.images} alt={product.name} />
+              ) : product.image ? (
+                <div className="rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800">
+                  <img src={product.image} alt={product.name} className="w-full h-auto block" />
+                </div>
+              ) : (
+                <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-navy-100 dark:from-navy-800 to-navy-50 dark:to-navy-900 flex items-center justify-center">
+                  <span className="text-navy-300 text-4xl">◈</span>
                 </div>
               )}
             </div>
@@ -101,6 +93,21 @@ export default async function ProductPage({ params }: Props) {
               <div className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
                 <Markdown text={product.description} />
               </div>
+
+              {"brochure" in product && typeof product.brochure === "string" && (
+                <div className="mt-6">
+                  <a
+                    href={product.brochure}
+                    download
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-navy-600 hover:bg-navy-700 text-white text-sm font-medium transition-colors"
+                  >
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Download Brochure
+                  </a>
+                </div>
+              )}
 
               {"benefits" in product && Array.isArray(product.benefits) && product.benefits.length > 0 && (
                 <div className="mt-8">

@@ -20,6 +20,7 @@ export type ProductEntry = {
   category?: string;
   benefits?: string[];
   specs?: string[];
+  brochure?: string;
 };
 
 interface DivisionMapEntry {

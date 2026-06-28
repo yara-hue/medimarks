@@ -194,6 +194,7 @@ export const medicalProducts = [
       "Internal thrust unit design",
       "Enhanced patient accessibility",
     ],
+    brochure: "/brochures/TA-60s-Brochure.png",
     image: "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table Model TA-60s/Electrical instrument Table TA-60s.jpg",
     images: [
       "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table Model TA-60s/Electrical instrument Table TA-60s.jpg",
@@ -231,6 +232,7 @@ export const medicalProducts = [
       "Reliable clinical performance",
       "Robust construction",
     ],
+    brochure: "/brochures/TA-70s-Brochure.png",
     image: "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table TA-70s (Discontinued)/TA-70s.jpg",
     images: [
       "/images/products/Medical Furniture/Electrical Tables/Electrical instrument Table TA-70s (Discontinued)/TA-70s.jpg",
@@ -250,6 +252,7 @@ export const medicalProducts = [
       "Ophthalmic procedure optimized",
       "Switching power supply included",
     ],
+    brochure: "/brochures/TL-70HS-TL-70HC-Brochure.zip",
     image: "/images/products/Medical Furniture/Electrical Tables/Wheel Chair Electrical Instrument Table TL-70HS, TL-70HC/Wheel Chair E-Tables.jpg",
     images: [
       "/images/products/Medical Furniture/Electrical Tables/Wheel Chair Electrical Instrument Table TL-70HS, TL-70HC/Wheel Chair E-Tables.jpg",
