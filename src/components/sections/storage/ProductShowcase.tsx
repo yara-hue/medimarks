@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { storageProducts } from "@/data/site";
@@ -36,9 +37,11 @@ export function StorageProduct() {
           </div>
           <div>
             <span className="text-navy-500 text-xs font-medium tracking-widest uppercase">{product.category}</span>
-            <h2 className="mt-2 text-3xl md:text-4xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
-              {product.name}
-            </h2>
+            <Link href={`/solutions/storage-solutions/${product.slug}`}>
+              <h2 className="mt-2 text-3xl md:text-4xl font-heading font-bold text-navy-900 dark:text-white leading-tight hover:text-navy-600 dark:hover:text-navy-200 transition-colors">
+                {product.name}
+              </h2>
+            </Link>
             <Markdown text={product.description} className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed" />
             <div className="mt-6 grid sm:grid-cols-2 gap-4">
               {product.benefits.map((item) => (

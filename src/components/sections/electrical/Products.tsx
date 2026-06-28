@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -39,9 +40,11 @@ export function ElectricalProducts() {
                 <span className="text-navy-500 text-xs font-medium tracking-widest uppercase">
                   {product.category}
                 </span>
-                <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
-                  {product.name}
-                </h3>
+                <Link href={`/solutions/electrical-enclosures/${product.slug}`}>
+                  <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-200 transition-colors">
+                    {product.name}
+                  </h3>
+                </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
                 <div className="mt-6 grid sm:grid-cols-2 gap-4">

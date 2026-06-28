@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -10,6 +11,8 @@ import { Markdown } from "@/components/ui/Markdown";
 
 interface DisplayProduct {
   name: string;
+  slug: string;
+  divisionId: string;
   category?: string;
   description: string;
   benefits?: string[];
@@ -19,13 +22,13 @@ interface DisplayProduct {
 
 export function FeaturedProducts() {
   const allProducts: DisplayProduct[] = [
-    ...medicalProducts.slice(0, 2).map((p) => ({ ...p, division: "Medical" })),
-    ...automationProducts.slice(0, 1).map((p) => ({ ...p, division: "Automation" })),
-    ...lightingProducts.slice(0, 1).map((p) => ({ ...p, division: "Lighting" })),
-    ...storageProducts.slice(0, 1).map((p) => ({ ...p, division: "Storage" })),
-    ...electricalProducts.slice(0, 1).map((p) => ({ ...p, division: "Electrical" })),
-    ...fireDoorProducts.slice(0, 1).map((p) => ({ ...p, division: "Fire Doors" })),
-    ...artProducts.slice(0, 1).map((p) => ({ ...p, division: "Art" })),
+    ...medicalProducts.slice(0, 2).map((p) => ({ ...p, division: "Medical", divisionId: "medical-furniture" })),
+    ...automationProducts.slice(0, 1).map((p) => ({ ...p, division: "Automation", divisionId: "automation" })),
+    ...lightingProducts.slice(0, 1).map((p) => ({ ...p, division: "Lighting", divisionId: "decorative-light-poles" })),
+    ...storageProducts.slice(0, 1).map((p) => ({ ...p, division: "Storage", divisionId: "storage-solutions" })),
+    ...electricalProducts.slice(0, 1).map((p) => ({ ...p, division: "Electrical", divisionId: "electrical-enclosures" })),
+    ...fireDoorProducts.slice(0, 1).map((p) => ({ ...p, division: "Fire Doors", divisionId: "fire-resistant-doors" })),
+    ...artProducts.slice(0, 1).map((p) => ({ ...p, division: "Art", divisionId: "art-sculptures" })),
   ];
 
   return (
@@ -80,9 +83,11 @@ export function FeaturedProducts() {
                       {product.division}
                     </span>
                   </div>
-                  <h3 className="mt-1 font-heading font-semibold text-lg text-navy-900 dark:text-white">
-                    {product.name}
-                  </h3>
+                  <Link href={`/solutions/${product.divisionId}/${product.slug}`}>
+                    <h3 className="mt-1 font-heading font-semibold text-lg text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-200 transition-colors">
+                      {product.name}
+                    </h3>
+                  </Link>
                   <div className="mt-2 flex-1 line-clamp-3">
                     <Markdown text={product.description} as="span" className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed" />
                   </div>

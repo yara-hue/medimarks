@@ -126,6 +126,7 @@ export const valuesCards = [
 export const medicalProducts = [
   {
     name: "Three-Table Refractive Unit",
+    slug: "three-table-refractive-unit",
     category: "Ophthalmic Equipment",
     description:
       "A specialized examination table designed for refractive procedures in ophthalmic clinics. Engineered for stability, precision, and patient comfort.",
@@ -156,6 +157,7 @@ export const medicalProducts = [
   },
   {
     name: "Recliner Chair",
+    slug: "recliner-chair",
     category: "Patient Seating",
     description:
       "Multi-position reclining chair designed for patient examination and recovery. Ergonomically engineered for extended use in clinical environments with electrical adjustment.",
@@ -181,6 +183,7 @@ export const medicalProducts = [
   },
   {
     name: "Electrical Instrument Table TA-60s",
+    slug: "electrical-instrument-table-ta-60s",
     category: "Examination Equipment",
     description:
       "Height-adjustable electric examination table with smooth motorized positioning. Built for clinical efficiency and patient accessibility with internal thrust unit design.",
@@ -199,6 +202,7 @@ export const medicalProducts = [
   },
   {
     name: "Electrical Instrument Table TB-80s",
+    slug: "electrical-instrument-table-tb-80s",
     category: "Examination Equipment",
     description:
       "Advanced electrical instrument table with height control and stability-tested design. Ideal for modern clinical environments requiring precise positioning.",
@@ -217,6 +221,7 @@ export const medicalProducts = [
   },
   {
     name: "Electrical Instrument Table TA-70s",
+    slug: "electrical-instrument-table-ta-70s",
     category: "Examination Equipment",
     description:
       "Discontinued model TA-70s and TA-70c electric instrument tables. Previously used in clinical settings for examination and treatment procedures.",
@@ -234,6 +239,7 @@ export const medicalProducts = [
   },
   {
     name: "Wheel Chair Electrical Instrument Table TL-70HS / TL-70HC",
+    slug: "tl-70hs-tl-70hc",
     category: "Ophthalmic Equipment",
     description:
       "Specialized wheel chair electric instrument table designed for ophthalmic procedures. Features switching power supply unit and wheelchair-accessible design.",
@@ -255,6 +261,7 @@ export const medicalProducts = [
 export const storageProducts = [
   {
     name: "Metal Shelf Storage Solutions",
+    slug: "metal-shelf-storage-solutions",
     category: "Heavy-Duty Storage",
     description:
       "Versatile metal shelving system with multiple models and configurations. Designed for durability, flexibility, and efficient space utilization in commercial and industrial settings.",
@@ -279,6 +286,7 @@ export const storageProducts = [
 export const lightingProducts = [
   {
     name: "Garden Light Pole Model LPG1",
+    slug: "garden-light-pole-model-lpg1",
     description: "Modern decorative light pole designed for gardens, pathways, and public landscapes with clean architectural lines.",
     image: "/images/products/Decorative Lighting Poles/Garden pole Model LPG1/Garden Light pole Model LPG1.jpg",
     images: [
@@ -287,6 +295,7 @@ export const lightingProducts = [
   },
   {
     name: "Lighting Pole Model LP1",
+    slug: "lighting-pole-model-lp1",
     description: "Slim-profile architectural lighting pole with brass-plated finish for golden effect. Features wire globe design for distinctive illumination.",
     image: "/images/products/Decorative Lighting Poles/Lighting Pole Model LP1/Lighting Pole Model LP1 Wire Globe.jpg",
     images: [
@@ -296,6 +305,7 @@ export const lightingProducts = [
   },
   {
     name: "Lighting Pole Model LP2",
+    slug: "lighting-pole-model-lp2",
     description: "Decorative lighting pole with wire globe design and robust base. Ideal for streetscapes, walkways, and urban settings.",
     image: "/images/products/Decorative Lighting Poles/Lighting pole Models LP2/Lighting Pole Model LP2.jpg",
     images: [
@@ -309,6 +319,7 @@ export const lightingProducts = [
 export const artProducts = [
   {
     name: "Star Alliance Stainless Steel Sculpture",
+    slug: "star-alliance-stainless-steel-sculpture",
     category: "Metal Sculpture",
     description:
       "A stunning stainless steel sculpture featuring the Star Alliance emblem. Custom-fabricated for decorative and commemorative installations.",
@@ -329,6 +340,7 @@ export const artProducts = [
 export const automationProducts = [
   {
     name: "4 Axis CNC Router Machine 1530",
+    slug: "4-axis-cnc-router-machine-1530",
     category: "CNC Machining",
     description:
       "Advanced 4-axis CNC router machine with 1500x3000mm working area. Designed for precision cutting, engraving, and machining of various materials.",
@@ -347,6 +359,7 @@ export const automationProducts = [
   },
   {
     name: "CNC Router Target Works",
+    slug: "cnc-router-target-works",
     category: "CNC Machining",
     description:
       "Showcasing the precision and artistry of our CNC router capabilities. From artistic boards and decorative panels to wood turning and crib cradle production.",
@@ -370,6 +383,7 @@ export const automationProducts = [
   },
   {
     name: "Electric Linear Actuator Model LC4",
+    slug: "electric-linear-actuator-model-lc4",
     category: "Linear Actuation",
     description:
       "Component-level design electric linear actuator with lifting column. Our design includes precision-engineered components for reliable linear motion applications.",
@@ -388,6 +402,7 @@ export const automationProducts = [
   },
   {
     name: "XZ-Base Plate Assembly",
+    slug: "xz-base-plate-assembly",
     category: "Automation Components",
     description:
       "Precision-machined XZ-base plate assembly designed for automation systems. Fabricated with tight tolerances for reliable machine operation.",
@@ -405,6 +420,7 @@ export const automationProducts = [
   },
   {
     name: "Control Module Assembly",
+    slug: "control-module-assembly",
     category: "Automation Components",
     description:
       "Custom-fabricated control module assembly in metal sheets. Designed for integration into automated systems and machinery.",
@@ -425,6 +441,7 @@ export const automationProducts = [
 export const electricalProducts = [
   {
     name: "Electrical Box Model 1",
+    slug: "electrical-box-model-1",
     category: "Electrical Enclosures",
     description:
       "Standard electrical enclosure box designed for commercial and industrial applications. Provides secure housing for electrical components.",
@@ -442,6 +459,7 @@ export const electricalProducts = [
   },
   {
     name: "Electrical Box Model 2",
+    slug: "electrical-box-model-2",
     category: "Electrical Enclosures",
     description:
       "Heavy-duty electrical enclosure box with enhanced capacity for larger electrical installations and component housing.",
@@ -459,6 +477,7 @@ export const electricalProducts = [
   },
   {
     name: "Electrical Cables Box",
+    slug: "electrical-cables-box",
     category: "Cable Management",
     description:
       "Specialized cable management enclosure designed for organizing and protecting electrical cables in commercial and industrial settings.",
@@ -479,6 +498,7 @@ export const electricalProducts = [
 export const fireDoorProducts = [
   {
     name: "MH Door 100x220",
+    slug: "mh-door-100x220",
     category: "Fire Resistant Doors",
     description:
       "Fire-resistant metal door measuring 100x220 cm. Designed for commercial and industrial fire safety compliance.",
@@ -496,6 +516,7 @@ export const fireDoorProducts = [
   },
   {
     name: "MH Door 140x220 D1",
+    slug: "mh-door-140x220-d1",
     category: "Fire Resistant Doors",
     description:
       "Large fire-resistant metal door measuring 140x220 cm. Design D1 with enhanced fire protection rating.",
@@ -513,6 +534,7 @@ export const fireDoorProducts = [
   },
   {
     name: "MH Door 140x220 D2",
+    slug: "mh-door-140x220-d2",
     category: "Fire Resistant Doors",
     description:
       "Large fire-resistant metal door measuring 140x220 cm. Design D2 with alternative configuration and finish options.",
@@ -530,6 +552,7 @@ export const fireDoorProducts = [
   },
   {
     name: "MH Swing Door 160x220",
+    slug: "mh-swing-door-160x220",
     category: "Fire Resistant Doors",
     description:
       "Extra-large fire-resistant swing door measuring 160x220 cm. Designed for high-traffic commercial and industrial entries.",
@@ -547,6 +570,7 @@ export const fireDoorProducts = [
   },
   {
     name: "Isolation Materials from Saudi Rock Wool",
+    slug: "isolation-materials-from-saudi-rock-wool",
     category: "Fire Protection",
     description:
       "High-quality isolation materials manufactured from Saudi-sourced rock wool. Provides excellent fire resistance and thermal insulation.",
@@ -564,6 +588,7 @@ export const fireDoorProducts = [
   },
   {
     name: "Lock-Frame Assembly",
+    slug: "lock-frame-assembly",
     category: "Door Hardware",
     description:
       "Precision-engineered lock-frame assembly for fire-resistant metal doors. Ensures secure closing and fire seal integrity.",
@@ -581,6 +606,7 @@ export const fireDoorProducts = [
   },
   {
     name: "Wood Laminated Fire Door",
+    slug: "wood-laminated-fire-door",
     category: "Fire Resistant Doors",
     description:
       "Fire-resistant metal door with wood laminate finish. Combines the safety of fire-rated construction with aesthetic wood appearance.",

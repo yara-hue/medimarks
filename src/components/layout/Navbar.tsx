@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navigation } from "@/data/site";
 
@@ -114,6 +114,13 @@ export function Navbar() {
                 </Link>
               );
             })}
+            <Link
+              href="/search"
+              className="text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white transition-colors p-2"
+              aria-label="Search products"
+            >
+              <Search className="w-5 h-5" />
+            </Link>
           </div>
 
           <button
@@ -132,6 +139,14 @@ export function Navbar() {
       {isOpen && (
         <div className="lg:hidden bg-white dark:bg-navy-900 border-t border-gray-200/50 dark:border-navy-700/50 shadow-lg animate-in fade-in duration-200 relative z-50">
           <div className="px-6 py-4 space-y-1">
+            <Link
+              href="/search"
+              className="flex items-center gap-3 px-3 py-3.5 text-sm font-medium rounded-lg transition-colors text-gray-600 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-700/50"
+              onClick={() => setIsOpen(false)}
+            >
+              <Search className="w-4 h-4" />
+              Search Products
+            </Link>
             {navigation.map((item) => {
               if (item.children) {
                 return (

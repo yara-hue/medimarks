@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -37,9 +38,11 @@ export function FireDoorsProducts() {
                 <span className="text-navy-500 text-xs font-medium tracking-widest uppercase">
                   {product.category}
                 </span>
-                <h3 className="mt-2 font-heading font-semibold text-lg text-navy-900 dark:text-white">
-                  {product.name}
-                </h3>
+                <Link href={`/solutions/fire-resistant-doors/${product.slug}`}>
+                  <h3 className="mt-2 font-heading font-semibold text-lg text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-200 transition-colors">
+                    {product.name}
+                  </h3>
+                </Link>
                 <div className="mt-2 line-clamp-3">
                   <Markdown text={product.description} as="span" className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed" />
                 </div>
