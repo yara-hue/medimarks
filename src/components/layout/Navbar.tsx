@@ -107,14 +107,19 @@ export function Navbar() {
       >
       <div
         className={cn(
-          "transition-all duration-300",
+          "transition-all duration-300 relative",
           isScrolled
-            ? "rounded-2xl overflow-hidden bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] ring-1 ring-white/25 shadow-[0_2px_16px_rgba(0,0,0,0.08)] dark:ring-white/[0.12] dark:shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
-            : "bg-transparent"
+            ? "rounded-2xl overflow-hidden ring-1 ring-white/25 shadow-[0_2px_16px_rgba(0,0,0,0.08)] dark:ring-white/[0.12] dark:shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
+            : ""
         )}
-        style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
       >
-        <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
+        {isScrolled && (
+          <div
+            className="absolute -inset-x-4 -inset-y-4 rounded-[28px] bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] pointer-events-none"
+            style={{ filter: "url(#nav-liquid-glass)" }}
+          />
+        )}
+        <nav className={cn("mx-auto max-w-7xl px-6 md:px-10 lg:px-16", isScrolled && "relative z-10")}>
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
