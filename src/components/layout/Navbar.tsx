@@ -89,8 +89,8 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <svg className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true" width="0" height="0">
+    <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-2 md:pt-4">
+      <svg className="absolute top-0 left-0 w-full h-full pointer-events-none" aria-hidden="true" width="0" height="0">
         <defs>
           <filter id="nav-liquid-glass" color-interpolation-filters="sRGB">
             <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="2" result="noise" />
@@ -100,22 +100,22 @@ export function Navbar() {
         </defs>
       </svg>
       <div
-        className="bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border-b border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)]"
+        className="w-full max-w-5xl mx-auto px-4 md:px-6 bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)] rounded-2xl"
         style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
       >
-        <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
-        <div className="flex items-center justify-between h-14 md:h-16">
+        <nav className="w-full">
+        <div className="flex items-center justify-between h-12 md:h-14">
           <Link
             href="/"
-            className="font-heading text-xl md:text-2xl font-bold tracking-tight text-navy-900 dark:text-white"
+            className="font-heading text-lg md:text-xl font-bold tracking-tight text-navy-900 dark:text-white"
           >
             MediMarks
-            <span className="block text-[10px] font-sans font-normal tracking-widest uppercase -mt-1 text-gray-400 dark:text-gray-500">
+            <span className="hidden sm:block text-[9px] font-sans font-normal tracking-widest uppercase -mt-0.5 text-gray-400 dark:text-gray-500">
               Innovation by Design
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navigation.map((item) => {
               if (item.children) {
                 return <DesktopDropdown key={item.label} item={item} />;
@@ -144,12 +144,12 @@ export function Navbar() {
           </div>
 
           <button
-            className="lg:hidden p-3 transition-colors text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
+            className="lg:hidden p-2 transition-colors text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
       </nav>
