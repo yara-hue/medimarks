@@ -90,7 +90,7 @@ export function CompanyOverview() {
                       <div key={item.name} className="flex items-center gap-3">
                         <div
                           className="w-8 h-8 rounded-lg bg-cover bg-center shrink-0 border border-white/10"
-                          style={{ backgroundImage: "url(/images/products/" + item.img + ")" }}
+                          style={{ backgroundImage: "url(" + encodeURI("/images/products/" + item.img) + ")" }}
                         />
                         <span className="text-white/80 text-xs tracking-wide text-left leading-tight">
                           {item.name}
