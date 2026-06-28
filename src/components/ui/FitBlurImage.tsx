@@ -57,6 +57,8 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
         transform: "scale(1.12)",
       };
 
+  const edgeFade = "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)";
+
   return (
     <div className="absolute inset-0" style={bg}>
       <div className="absolute inset-0" style={blurBg} />
@@ -64,10 +66,12 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
       <img
         src={src}
         alt={alt}
-        className={`w-full h-full object-contain relative ${className}`}
+        className={`w-full h-full object-cover relative ${className}`}
         style={{
-          maskImage: "radial-gradient(ellipse 80% 80% at center, black 0%, transparent 100%)",
-          WebkitMaskImage: "radial-gradient(ellipse 80% 80% at center, black 0%, transparent 100%)",
+          maskImage: edgeFade,
+          WebkitMaskImage: edgeFade,
+          maskComposite: "intersect",
+          WebkitMaskComposite: "source-in",
         }}
       />
     </div>
