@@ -99,33 +99,18 @@ export function Navbar() {
           </filter>
         </defs>
       </svg>
-      <div className={cn(
-        isScrolled
-          ? "bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border-b border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)]"
-          : "bg-transparent"
-      )}
+      <div
+        className="bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border-b border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)]"
         style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
       >
         <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
-            className={cn(
-              "font-heading text-xl md:text-2xl font-bold tracking-tight transition-colors",
-              isScrolled
-                ? "text-navy-900 dark:text-white"
-                : "text-white"
-            )}
+            className="font-heading text-xl md:text-2xl font-bold tracking-tight text-navy-900 dark:text-white"
           >
             MediMarks
-            <span
-              className={cn(
-                "block text-[10px] font-sans font-normal tracking-widest uppercase -mt-1 transition-colors",
-                isScrolled
-                  ? "text-gray-400 dark:text-gray-500"
-                  : "text-gray-400"
-              )}
-            >
+            <span className="block text-[10px] font-sans font-normal tracking-widest uppercase -mt-1 text-gray-400 dark:text-gray-500">
               Innovation by Design
             </span>
           </Link>
@@ -139,14 +124,7 @@ export function Navbar() {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className={cn(
-                    "text-sm font-medium transition-colors py-2",
-                    pathname === item.href
-                      ? "text-navy-500"
-                      : isScrolled
-                      ? "text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
-                      : "text-gray-300 hover:text-white"
-                  )}
+                  className="text-sm font-medium transition-colors py-2 text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
                 >
                   {item.label}
                 </Link>
@@ -157,12 +135,7 @@ export function Navbar() {
                 const isDark = document.documentElement.classList.toggle('dark');
                 localStorage.setItem('theme', isDark ? 'dark' : 'light');
               }}
-              className={cn(
-                "p-2 rounded-lg transition-colors",
-                isScrolled
-                  ? "text-gray-500 hover:text-navy-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-navy-800"
-                  : "text-gray-300 hover:text-white hover:bg-white/10"
-              )}
+              className="p-2 rounded-lg transition-colors text-gray-500 hover:text-navy-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-navy-800"
               aria-label="Toggle dark mode"
             >
               <Sun className="w-4 h-4 hidden dark:block" />
@@ -171,12 +144,7 @@ export function Navbar() {
           </div>
 
           <button
-            className={cn(
-              "lg:hidden p-3 transition-colors",
-              isScrolled
-                ? "text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
-                : "text-gray-300 hover:text-white"
-            )}
+            className="lg:hidden p-3 transition-colors text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
