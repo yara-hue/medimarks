@@ -38,7 +38,7 @@ export function ProjectDetailHero({
       <div
         className="absolute inset-0"
         style={{
-          background: "linear-gradient(to top, #0A1628 0%, #0A1628 30%, #0C1C36 45%, transparent 70%)",
+          background: "linear-gradient(to top, #0E3A31 0%, #0E3A31 30%, #16594C 45%, transparent 70%)",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900/70 via-navy-900/40 to-transparent" />

@@ -50,14 +50,14 @@ export function AboutLeadership() {
             <motion.div key={member.name} variants={staggerItem}>
               <Card className="p-6 text-center h-full">
                 <div className="w-24 h-24 mx-auto rounded-full bg-navy-100 dark:bg-navy-700 flex items-center justify-center mb-4">
-                  <span className="text-2xl font-heading font-bold text-navy-500 dark:text-blue-300">
+                  <span className="text-2xl font-heading font-bold text-navy-500 dark:text-navy-200">
                     {member.name.split(" ").map((n) => n[0]).join("")}
                   </span>
                 </div>
                 <h3 className="font-heading font-bold text-base text-navy-900 dark:text-white">
                   {member.name}
                 </h3>
-                <p className="text-xs text-navy-500 dark:text-blue-300 font-medium mt-1">
+                <p className="text-xs text-navy-500 dark:text-navy-200 font-medium mt-1">
                   {member.title}
                 </p>
                 <p className="mt-3 text-xs text-gray-500 dark:text-gray-400 leading-relaxed">

@@ -42,7 +42,7 @@ export function IndustryChallenges({
               <motion.div key={item.title} variants={staggerItem}>
                 <Card variant="feature" className="p-8 h-full">
                   <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center mb-5">
-                    <Icon className="w-6 h-6 text-navy-600 dark:text-blue-300" />
+                    <Icon className="w-6 h-6 text-navy-600 dark:text-navy-200" />
                   </div>
                   <h3 className="font-heading font-bold text-lg text-navy-900 dark:text-white mb-3">
                     {item.title}

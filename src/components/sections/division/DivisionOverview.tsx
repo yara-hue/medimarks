@@ -15,7 +15,7 @@ export function DivisionOverview({ title, paragraphs, stats }: DivisionOverviewP
       <Container>
         <div className="max-w-3xl">
           <AnimatedSection delay={0.1}>
-            <span className="text-navy-500 dark:text-blue-300 font-medium text-sm tracking-widest uppercase">
+            <span className="text-navy-500 dark:text-navy-200 font-medium text-sm tracking-widest uppercase">
               Overview
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
@@ -40,7 +40,7 @@ export function DivisionOverview({ title, paragraphs, stats }: DivisionOverviewP
                   key={stat.label}
                   className="bg-gray-50 dark:bg-navy-900/50 rounded-xl p-8 text-center"
                 >
-                  <div className="font-heading font-bold text-3xl text-navy-500 dark:text-blue-300">
+                  <div className="font-heading font-bold text-3xl text-navy-500 dark:text-navy-200">
                     {stat.value}
                   </div>
                   <div className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{stat.label}</div>

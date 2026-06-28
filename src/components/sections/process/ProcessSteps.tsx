@@ -99,7 +99,7 @@ export function ProcessSteps() {
                 <div className="lg:text-center">
                   <div className="flex items-center gap-4 lg:justify-center lg:flex-col lg:items-center">
                     <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center shrink-0">
-                      <Icon className="w-6 h-6 text-navy-600 dark:text-blue-300" />
+                      <Icon className="w-6 h-6 text-navy-600 dark:text-navy-200" />
                     </div>
                     <div className="lg:text-center lg:mt-4">
                       <div className="lg:hidden text-xs font-bold text-navy-500/50 dark:text-white/20 tracking-widest uppercase mb-1">

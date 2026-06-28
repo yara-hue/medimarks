@@ -54,7 +54,7 @@ export default function IndustriesPage() {
                   className="group block bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-navy-300 dark:hover:border-navy-500"
                 >
                   <div className="w-14 h-14 rounded-2xl bg-navy-50 dark:bg-navy-800 flex items-center justify-center mb-6">
-                    <Icon className="w-7 h-7 text-navy-600 dark:text-blue-300" />
+                    <Icon className="w-7 h-7 text-navy-600 dark:text-navy-200" />
                   </div>
                   <h3 className="font-heading font-bold text-xl text-navy-900 dark:text-white group-hover:text-navy-500 dark:group-hover:text-blue-300 transition-colors">
                     {industry.title}
@@ -62,7 +62,7 @@ export default function IndustriesPage() {
                   <p className="mt-3 text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
                     {industry.tagline}
                   </p>
-                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-blue-300 transition-colors">
+                  <div className="mt-4 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-navy-200 transition-colors">
                     Learn more
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                   </div>

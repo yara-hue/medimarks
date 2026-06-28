@@ -60,7 +60,7 @@ export function ProjectsGrid({ projects }: ProjectsGridProps) {
             </div>
             <div className="p-5">
               <div className="flex items-center gap-2 mb-2">
-                <span className="text-[10px] tracking-widest uppercase font-medium text-navy-500 dark:text-blue-300 bg-navy-50 dark:bg-navy-800 px-2 py-0.5 rounded">
+                <span className="text-[10px] tracking-widest uppercase font-medium text-navy-500 dark:text-navy-200 bg-navy-50 dark:bg-navy-800 px-2 py-0.5 rounded">
                   {project.division}
                 </span>
                 <span className="text-[10px] text-gray-400 dark:text-gray-500">

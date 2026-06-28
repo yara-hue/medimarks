@@ -27,7 +27,7 @@ export function ProjectTestimonial({ quote, author, role }: ProjectTestimonialPr
           </p>
           <footer className="mt-6">
             <cite className="not-italic">
-              <span className="block font-semibold text-navy-600 dark:text-blue-300 text-sm">
+              <span className="block font-semibold text-navy-600 dark:text-navy-200 text-sm">
                 {author}
               </span>
               <span className="block text-xs text-gray-400 dark:text-gray-500 mt-0.5">

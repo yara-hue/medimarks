@@ -40,13 +40,13 @@ export function ProjectRelated({ projects }: ProjectRelatedProps) {
                   />
                 </div>
                 <div className="p-5">
-                  <span className="text-[10px] tracking-widest uppercase font-medium text-navy-500 dark:text-blue-300">
+                  <span className="text-[10px] tracking-widest uppercase font-medium text-navy-500 dark:text-navy-200">
                     {project.division}
                   </span>
                   <h3 className="mt-1 font-heading font-bold text-base text-navy-900 dark:text-white">
                     {project.title}
                   </h3>
-                  <div className="mt-3 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-blue-300">
+                  <div className="mt-3 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-navy-200">
                     View Project
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                   </div>

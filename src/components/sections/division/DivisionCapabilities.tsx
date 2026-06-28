@@ -47,7 +47,7 @@ export function DivisionCapabilities({
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center shrink-0">
-                    <Icon className="w-6 h-6 text-navy-600 dark:text-blue-300" />
+                    <Icon className="w-6 h-6 text-navy-600 dark:text-navy-200" />
                   </div>
                   <h3 className="font-heading font-bold text-lg text-navy-900 dark:text-white">
                     {item.title}
@@ -76,7 +76,7 @@ export function DivisionCapabilities({
               {certifications.map((cert) => (
                 <span
                   key={cert}
-                  className="text-xs text-navy-600 dark:text-blue-300 bg-navy-50 dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium"
+                  className="text-xs text-navy-600 dark:text-navy-200 bg-navy-50 dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium"
                 >
                   {cert}
                 </span>

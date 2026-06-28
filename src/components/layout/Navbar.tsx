@@ -47,7 +47,7 @@ function DesktopDropdown({ item }: { item: NavItem }) {
               className={cn(
                 "block px-5 py-2.5 text-sm transition-colors",
                 pathname === child.href
-                  ? "text-navy-500 font-medium bg-navy-50 dark:text-blue-300 dark:bg-navy-700/50"
+                  ? "text-navy-500 font-medium bg-navy-50 dark:text-navy-200 dark:bg-navy-700/50"
                   : "text-gray-600 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-700/50"
               )}
             >
@@ -244,7 +244,7 @@ function NavMobileItem({ item, onNavigate }: { item: NavItem; onNavigate: () => 
         className={cn(
           "block px-4 py-4 text-base font-medium rounded-xl transition-colors",
           pathname === item.href
-            ? "text-navy-500 bg-navy-50 dark:text-blue-300 dark:bg-navy-800"
+            ? "text-navy-500 bg-navy-50 dark:text-navy-200 dark:bg-navy-800"
             : "text-gray-700 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-800"
         )}
       >
@@ -260,7 +260,7 @@ function NavMobileItem({ item, onNavigate }: { item: NavItem; onNavigate: () => 
         className={cn(
           "flex items-center justify-between w-full px-4 py-4 text-base font-medium rounded-xl transition-colors",
           pathname.startsWith(item.href)
-            ? "text-navy-500 bg-navy-50 dark:text-blue-300 dark:bg-navy-800"
+            ? "text-navy-500 bg-navy-50 dark:text-navy-200 dark:bg-navy-800"
             : "text-gray-700 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-800"
         )}
       >
@@ -282,7 +282,7 @@ function NavMobileItem({ item, onNavigate }: { item: NavItem; onNavigate: () => 
               className={cn(
                 "block px-4 py-3 text-sm rounded-lg transition-colors",
                 pathname === child.href
-                  ? "text-navy-500 font-medium bg-navy-50 dark:text-blue-300 dark:bg-navy-800"
+                  ? "text-navy-500 font-medium bg-navy-50 dark:text-navy-200 dark:bg-navy-800"
                   : "text-gray-500 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-400 dark:hover:text-white dark:hover:bg-navy-800"
               )}
             >

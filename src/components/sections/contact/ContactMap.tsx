@@ -35,7 +35,7 @@ export function ContactMap() {
             src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
           />
           <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-navy-900/90 backdrop-blur-sm rounded-lg px-4 py-2.5 flex items-center gap-2 shadow-sm border border-gray-200/60 dark:border-navy-700">
-            <MapPin className="w-4 h-4 text-navy-500 dark:text-blue-300 shrink-0" />
+            <MapPin className="w-4 h-4 text-navy-500 dark:text-navy-200 shrink-0" />
             <span className="text-xs font-medium text-navy-900 dark:text-white">{siteConfig.location}</span>
           </div>
         </motion.div>

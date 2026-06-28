@@ -23,7 +23,7 @@ export function AboutStory() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-navy-500 dark:text-blue-300 font-medium text-sm tracking-widest uppercase">
+            <span className="text-navy-500 dark:text-navy-200 font-medium text-sm tracking-widest uppercase">
               Our Story
             </span>
             <h2 className="mt-4 text-4xl md:text-5xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
@@ -63,13 +63,13 @@ export function AboutStory() {
                 {milestones.map((m, i) => (
                   <div key={m.year} className="flex gap-4">
                     <div className="flex flex-col items-center">
-                      <div className="w-3 h-3 rounded-full bg-navy-500 dark:bg-blue-400 shrink-0 mt-1.5" />
+                      <div className="w-3 h-3 rounded-full bg-navy-500 dark:bg-navy-500 shrink-0 mt-1.5" />
                       {i < milestones.length - 1 && (
                         <div className="w-px flex-1 bg-gray-200 dark:bg-navy-700 min-h-[32px]" />
                       )}
                     </div>
                     <div className="pb-6">
-                      <span className="font-heading font-bold text-sm text-navy-600 dark:text-blue-300">
+                      <span className="font-heading font-bold text-sm text-navy-600 dark:text-navy-200">
                         {m.year}
                       </span>
                       <p className="text-sm text-gray-500 dark:text-gray-400">{m.label}</p>

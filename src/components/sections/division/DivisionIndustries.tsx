@@ -45,7 +45,7 @@ export function DivisionIndustries({
                   className="flex items-center gap-4 p-5 rounded-xl border border-gray-200/60 dark:border-navy-700 bg-white dark:bg-navy-900 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md"
                 >
                   <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center shrink-0">
-                    <Icon className="w-5 h-5 text-navy-600 dark:text-blue-300" />
+                    <Icon className="w-5 h-5 text-navy-600 dark:text-navy-200" />
                   </div>
                   <span className="font-medium text-sm text-navy-900 dark:text-white">
                     {item.name}

@@ -52,7 +52,7 @@ function StatCard({ item, index }: { item: StatItem; index: number }) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="text-center"
     >
-      <div className="text-5xl md:text-6xl font-heading font-bold text-navy-600 dark:text-blue-300 leading-none tabular-nums">
+      <div className="text-5xl md:text-6xl font-heading font-bold text-navy-600 dark:text-navy-200 leading-none tabular-nums">
         {count}{item.suffix}
       </div>
       <div className="mt-3 text-sm text-gray-500 dark:text-gray-400 font-medium">

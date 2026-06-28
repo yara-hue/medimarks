@@ -57,7 +57,7 @@ export function ContactSection() {
                 return (
                   <div key={item.title} className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800/50 flex items-center justify-center shrink-0">
-                      <Icon className="w-5 h-5 text-navy-500 dark:text-blue-300" />
+                      <Icon className="w-5 h-5 text-navy-500 dark:text-navy-200" />
                     </div>
                     <div>
                       <h4 className="font-medium text-navy-900 dark:text-white text-sm">{item.title}</h4>

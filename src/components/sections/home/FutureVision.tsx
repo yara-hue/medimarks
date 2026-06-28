@@ -31,7 +31,7 @@ export function FutureVision() {
           </span>
           <h2 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight">
             Expanding
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-navy-200 to-gold-light">
               Possibilities
             </span>
           </h2>

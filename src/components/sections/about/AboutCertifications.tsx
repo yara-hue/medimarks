@@ -33,7 +33,7 @@ export function AboutCertifications() {
                 className="flex items-center gap-3 bg-white dark:bg-navy-900 px-6 py-4 rounded-xl border border-gray-200/60 dark:border-navy-700"
               >
                 <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-navy-600 dark:text-blue-300" />
+                  <Icon className="w-5 h-5 text-navy-600 dark:text-navy-200" />
                 </div>
                 <div>
                   <div className="font-semibold text-sm text-navy-900 dark:text-white">

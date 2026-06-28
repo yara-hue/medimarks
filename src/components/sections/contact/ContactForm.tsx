@@ -95,7 +95,7 @@ export function ContactForm() {
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-4 text-sm font-medium text-navy-500 dark:text-blue-300 hover:underline"
+                  className="mt-4 text-sm font-medium text-navy-500 dark:text-navy-200 hover:underline"
                 >
                   Send another message
                 </button>
@@ -164,7 +164,7 @@ export function ContactForm() {
                 const content = (
                   <div className="flex items-start gap-4 bg-white dark:bg-navy-900 rounded-xl border border-gray-200/60 dark:border-navy-700 p-5 transition-colors hover:bg-gray-50 dark:hover:bg-navy-800/50">
                     <div className="w-10 h-10 rounded-lg bg-navy-50 dark:bg-navy-800 flex items-center justify-center shrink-0">
-                      <Icon className="w-5 h-5 text-navy-600 dark:text-blue-300" />
+                      <Icon className="w-5 h-5 text-navy-600 dark:text-navy-200" />
                     </div>
                     <div>
                       <h4 className="font-medium text-navy-900 dark:text-white text-sm">{item.label}</h4>

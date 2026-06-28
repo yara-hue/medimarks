@@ -3,15 +3,19 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme inline {
-  --color-navy-900: #0A1628;
-  --color-navy-800: #0F2040;
-  --color-navy-700: #162D4A;
-  --color-navy-600: #1E3A5F;
-  --color-navy-500: #2A4A7A;
-  --color-navy-400: #3A5F8A;
-  --color-navy-300: #8AB0D0;
-  --color-navy-200: #B0CFE5;
-  --color-navy-100: #D4E6F2;
+  --color-navy-50: #ECF9F7;
+  --color-navy-100: #D5F1EC;
+  --color-navy-200: #AAE4D9;
+  --color-navy-300: #7AD4C2;
+  --color-navy-400: #44BFA6;
+  --color-navy-500: #2AA892;
+  --color-navy-600: #1F8A77;
+  --color-navy-700: #1B6E5F;
+  --color-navy-800: #16594C;
+  --color-navy-900: #0E3A31;
+  --color-gold: #D4A04A;
+  --color-gold-light: #E8C47A;
+  --color-gold-dark: #B07D2E;
   --color-silver: #A0AEC0;
   --color-silver-dark: #718096;
   --color-gray-50: #F8F9FA;
@@ -43,15 +47,15 @@
   }
 
   input, textarea, select {
-    @apply rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-navy-400 focus:ring-2 focus:ring-navy-100 dark:border-navy-600 dark:bg-navy-800 dark:text-gray-300 dark:placeholder:text-gray-500 dark:focus:border-navy-500 dark:focus:ring-navy-700;
+    @apply rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-gray-700 outline-none transition-all placeholder:text-gray-400 focus:border-navy-400 focus:ring-2 focus:ring-navy-100 dark:border-navy-700 dark:bg-navy-800 dark:text-gray-300 dark:placeholder:text-gray-500 dark:focus:border-navy-400 dark:focus:ring-navy-700;
   }
 
   input[type="checkbox"], input[type="radio"] {
-    @apply rounded border-gray-300 text-navy-600 focus:ring-navy-500;
+    @apply rounded border-gray-300 text-navy-500 focus:ring-navy-400;
   }
 
   *:focus-visible {
-    @apply outline-none ring-2 ring-navy-500 ring-offset-2;
+    @apply outline-none ring-2 ring-navy-400 ring-offset-2;
   }
 }
 
@@ -60,7 +64,7 @@ html {
 }
 
 ::selection {
-  background-color: #1E3A5F;
+  background-color: #2AA892;
   color: white;
 }
 

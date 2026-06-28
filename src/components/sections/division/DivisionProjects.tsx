@@ -61,7 +61,7 @@ export function DivisionProjects({
                   )}
                 </div>
                 <div className="p-6">
-                  <span className="text-xs text-navy-500 dark:text-blue-300 font-medium tracking-widest uppercase">
+                  <span className="text-xs text-navy-500 dark:text-navy-200 font-medium tracking-widest uppercase">
                     {project.industry}
                   </span>
                   <h3 className="mt-1 font-heading font-bold text-lg text-navy-900 dark:text-white">

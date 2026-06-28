@@ -13,7 +13,7 @@ export function ContactHero() {
       />
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16 w-full text-center">
         <AnimatedSection delay={0.1}>
-          <span className="text-navy-500 dark:text-blue-300 font-medium text-sm tracking-widest uppercase">
+          <span className="text-navy-500 dark:text-navy-200 font-medium text-sm tracking-widest uppercase">
             Contact
           </span>
         </AnimatedSection>

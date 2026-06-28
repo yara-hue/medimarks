@@ -30,7 +30,7 @@ export function Hero() {
         <AnimatedSection delay={0.2}>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-heading font-bold text-white leading-tight tracking-tight">
             Engineering{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-navy-200 to-gold-light">
               Without Compromise.
             </span>
           </h1>

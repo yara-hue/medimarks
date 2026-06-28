@@ -63,7 +63,7 @@ export function DivisionProducts({ title, subtitle, products }: DivisionProducts
 
               <div className="md:col-span-3">
                 {product.category && (
-                  <span className="text-navy-500 dark:text-blue-300 text-xs font-medium tracking-widest uppercase">
+                  <span className="text-navy-500 dark:text-navy-200 text-xs font-medium tracking-widest uppercase">
                     {product.category}
                   </span>
                 )}

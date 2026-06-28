@@ -43,7 +43,7 @@ export function IndustrySolutions({ title = "Our Solutions", subtitle, divisionI
                 <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
                   {div.description}
                 </p>
-                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-blue-300">
+                <div className="mt-4 flex items-center gap-1 text-sm font-medium text-navy-500 dark:text-navy-200">
                   Learn more
                   <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
                 </div>

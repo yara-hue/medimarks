@@ -41,7 +41,7 @@ export function IndustryWhyWork({
               variants={staggerItem}
               className="text-center bg-white dark:bg-navy-900 rounded-xl p-8 border border-gray-200/60 dark:border-navy-700"
             >
-              <div className="text-4xl md:text-5xl font-heading font-bold text-navy-500 dark:text-blue-300">
+              <div className="text-4xl md:text-5xl font-heading font-bold text-navy-500 dark:text-navy-200">
                 {point.value}
               </div>
               <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 font-medium">
@@ -66,7 +66,7 @@ export function IndustryWhyWork({
               {certifications.map((cert) => (
                 <span
                   key={cert}
-                  className="text-xs text-navy-600 dark:text-blue-300 bg-white dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium border border-gray-200 dark:border-navy-700"
+                  className="text-xs text-navy-600 dark:text-navy-200 bg-white dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium border border-gray-200 dark:border-navy-700"
                 >
                   {cert}
                 </span>

@@ -64,7 +64,7 @@ export function Process() {
                     <div className="w-10 h-10 rounded-xl bg-navy-600 dark:bg-navy-500 flex items-center justify-center">
                       <Icon className="w-5 h-5 text-white" />
                     </div>
-                    <span className="text-xs font-bold text-navy-500 dark:text-blue-300 tracking-widest uppercase">
+                    <span className="text-xs font-bold text-navy-500 dark:text-navy-200 tracking-widest uppercase">
                       Step {index + 1}
                     </span>
                   </div>

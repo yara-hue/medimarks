@@ -34,7 +34,7 @@ function StatCounter({ target, suffix, label }: { target: number; suffix: string
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-5xl md:text-6xl font-heading font-bold text-navy-500 dark:text-blue-300 leading-none tabular-nums">
+      <div className="text-5xl md:text-6xl font-heading font-bold text-navy-500 dark:text-navy-200 leading-none tabular-nums">
         {count}{suffix}
       </div>
       <div className="mt-2 text-sm text-gray-500 dark:text-gray-400 font-medium">{label}</div>

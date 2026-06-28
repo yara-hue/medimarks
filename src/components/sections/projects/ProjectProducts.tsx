@@ -41,7 +41,7 @@ export function ProjectProducts({ divisionIds }: ProjectProductsProps) {
                 <p className="mt-1 text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
                   {div.description}
                 </p>
-                <div className="mt-3 flex items-center gap-1 text-xs font-medium text-navy-500 dark:text-blue-300">
+                <div className="mt-3 flex items-center gap-1 text-xs font-medium text-navy-500 dark:text-navy-200">
                   View division
                   <ArrowRight className="w-3 h-3" />
                 </div>
