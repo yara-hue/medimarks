@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { AboutHero } from "@/components/sections/about/Hero";
-import { AboutStory } from "@/components/sections/about/Story";
-import { MissionVision } from "@/components/sections/about/MissionVision";
-import { AboutValues } from "@/components/sections/about/Values";
-import { AboutCapabilities } from "@/components/sections/about/Capabilities";
-import { AboutRoadmap } from "@/components/sections/about/Roadmap";
-import { AboutCTA } from "@/components/sections/about/CTASection";
+import { AboutHero } from "@/components/sections/about/AboutHero";
+import { AboutStory } from "@/components/sections/about/AboutStory";
+import { AboutNumbers } from "@/components/sections/about/AboutNumbers";
+import { AboutDivisions } from "@/components/sections/about/AboutDivisions";
+import { AboutLeadership } from "@/components/sections/about/AboutLeadership";
+import { AboutFacilities } from "@/components/sections/about/AboutFacilities";
+import { AboutCertifications } from "@/components/sections/about/AboutCertifications";
+import { AboutValues } from "@/components/sections/about/AboutValues";
+import { AboutCTA } from "@/components/sections/about/AboutCTA";
 
 export const metadata: Metadata = {
   title: "About",
@@ -18,10 +20,12 @@ export default function AboutPage() {
     <>
       <AboutHero />
       <AboutStory />
-      <MissionVision />
+      <AboutNumbers />
+      <AboutDivisions />
+      <AboutLeadership />
+      <AboutFacilities />
+      <AboutCertifications />
       <AboutValues />
-      <AboutCapabilities />
-      <AboutRoadmap />
       <AboutCTA />
     </>
   );

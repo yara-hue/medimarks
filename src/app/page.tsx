@@ -1,8 +1,10 @@
 import { Hero } from "@/components/sections/home/Hero";
+import { TrustBar } from "@/components/sections/home/TrustBar";
 import { CompanyOverview } from "@/components/sections/home/CompanyOverview";
 import { Capabilities } from "@/components/sections/home/Capabilities";
 import { FeaturedProducts } from "@/components/sections/home/FeaturedProducts";
-import { Approach } from "@/components/sections/home/Approach";
+import { Process } from "@/components/sections/home/Process";
+import { Stats } from "@/components/sections/home/Stats";
 import { FutureVision } from "@/components/sections/home/FutureVision";
 import { ContactSection } from "@/components/sections/home/ContactSection";
 
@@ -10,10 +12,12 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TrustBar />
       <CompanyOverview />
       <Capabilities />
       <FeaturedProducts />
-      <Approach />
+      <Process />
+      <Stats />
       <FutureVision />
       <ContactSection />
     </>

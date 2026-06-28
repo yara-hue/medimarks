@@ -10,9 +10,14 @@ export const siteConfig = {
   location: "Al-Khobar, Saudi Arabia",
 };
 
-export const navigation = [
+export interface NavItem {
+  label: string;
+  href: string;
+  children?: NavItem[];
+}
+
+export const navigation: NavItem[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   {
     label: "Solutions",
     href: "/solutions",
@@ -26,6 +31,20 @@ export const navigation = [
       { label: "Fire Resistant Doors", href: "/solutions/fire-resistant-doors" },
     ],
   },
+  {
+    label: "Industries",
+    href: "/industries",
+    children: [
+      { label: "Healthcare", href: "/industries/healthcare" },
+      { label: "Infrastructure", href: "/industries/infrastructure" },
+      { label: "Commercial", href: "/industries/commercial" },
+      { label: "Public Spaces", href: "/industries/public-spaces" },
+      { label: "Industrial", href: "/industries/industrial" },
+    ],
+  },
+  { label: "Projects", href: "/projects" },
+  { label: "Process", href: "/process" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -598,6 +617,433 @@ export const fireDoorProducts = [
   },
 ];
 
+export interface Industry {
+  id: string;
+  slug: string;
+  title: string;
+  tagline: string;
+  description: string;
+  icon: string;
+  heroImage: string;
+  challenges: { title: string; description: string; icon: string }[];
+  divisions: string[];
+  proofPoints: { value: string; label: string }[];
+  certifications: string[];
+}
+
+export const industries: Industry[] = [
+  {
+    id: "healthcare",
+    slug: "healthcare",
+    title: "Healthcare",
+    tagline: "Precision equipment for modern medical facilities.",
+    description:
+      "MediMarks serves the healthcare sector with specialized medical furniture, examination equipment, and storage solutions designed for clinical environments. Our products are engineered to meet the rigorous demands of hospitals, clinics, diagnostic centers, and rehabilitation facilities.",
+    icon: "HeartPulse",
+    heroImage: "/images/products/product-t3000.jpg",
+    challenges: [
+      {
+        title: "Clinical Workflow Efficiency",
+        description:
+          "Healthcare facilities need equipment that streamlines patient examination workflows without compromising on precision or comfort.",
+        icon: "Settings",
+      },
+      {
+        title: "Infection Control & Hygiene",
+        description:
+          "Medical environments demand materials and finishes that can withstand rigorous cleaning protocols while maintaining appearance and functionality.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Space Optimization",
+        description:
+          "Clinics and hospitals must maximize limited floor space without sacrificing equipment capability or patient accessibility.",
+        icon: "Ruler",
+      },
+      {
+        title: "Regulatory Compliance",
+        description:
+          "Medical equipment must meet stringent regulatory standards including ISO 13485, CE marking, and local health authority requirements.",
+        icon: "Award",
+      },
+    ],
+    divisions: ["medical-furniture", "storage-solutions", "electrical-enclosures"],
+    proofPoints: [
+      { value: "10+", label: "Years Serving Healthcare" },
+      { value: "200+", label: "Healthcare Facilities" },
+      { value: "5+", label: "Product Lines" },
+    ],
+    certifications: ["ISO 13485", "ISO 9001:2015", "CE Marking"],
+  },
+  {
+    id: "commercial",
+    slug: "commercial",
+    title: "Commercial",
+    tagline: "Built for business, designed to last.",
+    description:
+      "From retail spaces and corporate offices to shopping centers and hospitality venues, MediMarks provides storage systems, lighting solutions, and architectural metalwork that combine functionality with aesthetic appeal.",
+    icon: "Building2",
+    heroImage: "/images/products/product-garden-light-pole.jpg",
+    challenges: [
+      {
+        title: "Aesthetic Integration",
+        description:
+          "Commercial spaces require solutions that complement architectural design while meeting functional requirements for storage, lighting, and safety.",
+        icon: "Paintbrush",
+      },
+      {
+        title: "Durability & Traffic",
+        description:
+          "High-traffic commercial environments demand products that withstand continuous use while maintaining their appearance over time.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Scalability",
+        description:
+          "Growing businesses need modular solutions that can expand and adapt as their operations evolve.",
+        icon: "Ruler",
+      },
+    ],
+    divisions: ["storage-solutions", "decorative-light-poles", "art-sculptures", "fire-resistant-doors"],
+    proofPoints: [
+      { value: "500+", label: "Commercial Projects" },
+      { value: "Retail", label: "& Corporate Clients" },
+      { value: "Custom", label: "Design Capabilities" },
+    ],
+    certifications: ["ISO 9001:2015", "CE Marking", "SASO"],
+  },
+  {
+    id: "hospitality",
+    slug: "hospitality",
+    title: "Hospitality",
+    tagline: "Elevating guest experiences through exceptional design.",
+    description:
+      "MediMarks serves the hospitality industry with decorative lighting, custom metalwork, storage solutions, and safety equipment for hotels, resorts, restaurants, and entertainment venues.",
+    icon: "Building2",
+    heroImage: "/images/products/product-star-alliance-2.jpg",
+    challenges: [
+      {
+        title: "Design & Brand Identity",
+        description:
+          "Hospitality spaces need custom solutions that reflect brand identity and create memorable guest experiences through design.",
+        icon: "Sparkles",
+      },
+      {
+        title: "Safety Compliance",
+        description:
+          "Hotels and entertainment venues must meet strict fire safety regulations while maintaining aesthetic appeal across all areas.",
+        icon: "Shield",
+      },
+      {
+        title: "Operational Efficiency",
+        description:
+          "Back-of-house storage and equipment must support seamless hotel operations without compromising front-of-house design.",
+        icon: "Settings",
+      },
+    ],
+    divisions: ["decorative-light-poles", "art-sculptures", "fire-resistant-doors", "storage-solutions"],
+    proofPoints: [
+      { value: "100+", label: "Hospitality Projects" },
+      { value: "Hotels", label: "& Resorts Served" },
+      { value: "Custom", label: "Fabrication Expertise" },
+    ],
+    certifications: ["ISO 9001:2015", "CE Marking", "NFPA Compliant"],
+  },
+  {
+    id: "government",
+    slug: "government",
+    title: "Government",
+    tagline: "Reliable infrastructure for public service.",
+    description:
+      "MediMarks supports government and public sector projects with infrastructure lighting, security solutions, storage systems, and custom fabrication for municipal buildings, public spaces, and defense facilities.",
+    icon: "Building2",
+    heroImage: "/images/products/product-garden-light-pole.jpg",
+    challenges: [
+      {
+        title: "Public Safety Standards",
+        description:
+          "Government projects require products that meet stringent public safety standards and building codes for fire resistance, structural integrity, and accessibility.",
+        icon: "Shield",
+      },
+      {
+        title: "Budget Compliance",
+        description:
+          "Public sector projects demand cost-effective solutions without compromising quality, durability, or regulatory compliance.",
+        icon: "Award",
+      },
+      {
+        title: "Infrastructure Longevity",
+        description:
+          "Government infrastructure requires products engineered for decades of reliable service with minimal maintenance requirements.",
+        icon: "ShieldCheck",
+      },
+      {
+        title: "Procurement Compliance",
+        description:
+          "Vendors must navigate complex procurement processes and demonstrate compliance with government contracting requirements.",
+        icon: "ClipboardList",
+      },
+    ],
+    divisions: ["decorative-light-poles", "fire-resistant-doors", "electrical-enclosures", "automation"],
+    proofPoints: [
+      { value: "50+", label: "Government Contracts" },
+      { value: "Municipal", label: "Infrastructure Projects" },
+      { value: "Compliant", label: "Procurement Ready" },
+    ],
+    certifications: ["ISO 9001:2015", "CE Marking", "SASO", "NFPA Compliant"],
+  },
+  {
+    id: "education",
+    slug: "education",
+    title: "Education",
+    tagline: "Creating better learning environments.",
+    description:
+      "MediMarks provides educational institutions with furniture, storage systems, lighting solutions, and safety equipment designed for schools, universities, training centers, and research facilities.",
+    icon: "School",
+    heroImage: "/images/products/product-shelf-model-1.jpg",
+    challenges: [
+      {
+        title: "Flexible Learning Spaces",
+        description:
+          "Modern education requires adaptable furniture and storage solutions that can reconfigure for different teaching methods and class sizes.",
+        icon: "Settings",
+      },
+      {
+        title: "Student Safety",
+        description:
+          "Educational facilities must meet strict safety standards for fire resistance, structural stability, and child-safe design.",
+        icon: "Shield",
+      },
+      {
+        title: "Durability & Value",
+        description:
+          "School furniture must withstand heavy daily use by students while maintaining a professional appearance over many years.",
+        icon: "ShieldCheck",
+      },
+    ],
+    divisions: ["storage-solutions", "medical-furniture", "fire-resistant-doors", "electrical-enclosures"],
+    proofPoints: [
+      { value: "80+", label: "Educational Institutions" },
+      { value: "Schools", label: "& Universities" },
+      { value: "Durable", label: "Long-Lasting Products" },
+    ],
+    certifications: ["ISO 9001:2015", "CE Marking"],
+  },
+];
+
+export interface Project {
+  id: string;
+  slug: string;
+  title: string;
+  client: string;
+  industry: string;
+  division: string;
+  location: string;
+  description: string;
+  challenge: string;
+  solution: string;
+  result: string;
+  images: string[];
+  testimonial?: { quote: string; author: string; role: string };
+  productsUsed?: string[];
+  relatedSlugs?: string[];
+}
+
+export const projects: Project[] = [
+  {
+    id: "king-abdullah-medical",
+    slug: "king-abdullah-medical",
+    title: "King Abdullah Medical Complex",
+    client: "Ministry of Health",
+    industry: "Healthcare",
+    division: "Medical Furniture",
+    location: "Riyadh, Saudi Arabia",
+    description:
+      "Complete medical furniture fit-out for a 300-bed tertiary care hospital, including examination rooms, patient wards, and ophthalmic clinics.",
+    challenge:
+      "The hospital required a comprehensive range of medical furniture that met stringent healthcare standards while accommodating diverse clinical workflows across multiple departments.",
+    solution:
+      "We supplied and installed 500+ units including examination tables, patient chairs, ophthalmic refractive units, and bedside cabinetry. Each product was configured to department specifications.",
+    result:
+      "The hospital opened on schedule with fully equipped clinical spaces. The medical staff reported high satisfaction with equipment ergonomics and reliability.",
+    images: [
+      "/images/products/product-t3000.jpg",
+      "/images/products/product-assem-echair.jpg",
+    ],
+    testimonial: {
+      quote: "MediMarks delivered exceptional quality and met our aggressive timeline. Their medical furniture has been well-received by our clinical staff.",
+      author: "Dr. Ahmed Al-Ghamdi",
+      role: "Hospital Director",
+    },
+    productsUsed: ["medical-furniture"],
+    relatedSlugs: ["ministry-education-school", "aramco-automation"],
+  },
+  {
+    id: "khobar-corniche-lighting",
+    slug: "khobar-corniche-lighting",
+    title: "Al Khobar Corniche Lighting Project",
+    client: "Eastern Province Municipality",
+    industry: "Government",
+    division: "Decorative Light Poles",
+    location: "Al Khobar, Saudi Arabia",
+    description:
+      "Architectural lighting installation along 4km of waterfront promenade, featuring custom-designed decorative light poles.",
+    challenge:
+      "The municipality needed lighting that enhanced the waterfront aesthetic while withstanding coastal salt corrosion and providing adequate illumination for public safety.",
+    solution:
+      "We designed and manufactured 200+ custom decorative light poles with hot-dip galvanized steel construction, LED lighting, and corrosion-resistant powder coating in a coastal-grade finish.",
+    result:
+      "The corniche now features consistent, energy-efficient illumination that has improved nighttime usage and received positive public feedback.",
+    images: [
+      "/images/products/product-garden-light-pole.jpg",
+    ],
+    testimonial: {
+      quote: "The lighting quality and pole design exceeded our expectations. MediMarks understood our vision perfectly.",
+      author: "Engineer Faisal Al-Qahtani",
+      role: "Municipal Projects Director",
+    },
+    productsUsed: ["decorative-light-poles"],
+    relatedSlugs: ["red-sea-mall-electrical", "dammam-municipality-fire"],
+  },
+  {
+    id: "riyadh-metro-storage",
+    slug: "riyadh-metro-storage",
+    title: "Riyadh Metro Station Storage Systems",
+    client: "Riyadh Metro Authority",
+    industry: "Commercial",
+    division: "Storage Solutions",
+    location: "Riyadh, Saudi Arabia",
+    description:
+      "Heavy-duty shelving and storage systems for maintenance facilities across 15 metro stations.",
+    challenge:
+      "The metro authority required standardized yet configurable storage solutions for tools, spare parts, and maintenance equipment across multiple stations with varying space constraints.",
+    solution:
+      "We delivered a modular shelving system with adjustable-height racks, heavy-duty beam shelving, and lockable tool cabinets. All systems shared common components for simplified maintenance.",
+    result:
+      "Installation completed across all 15 stations with consistent quality. The modular design allows future reconfiguration as storage needs evolve.",
+    images: [
+      "/images/products/product-shelf-model-1.jpg",
+    ],
+    productsUsed: ["storage-solutions"],
+    relatedSlugs: ["king-abdullah-medical", "ministry-education-school"],
+  },
+  {
+    id: "jeddah-tower-art",
+    slug: "jeddah-tower-art",
+    title: "Jeddah Tower Hotel Art Installation",
+    client: "Jeddah Tower Development",
+    industry: "Hospitality",
+    division: "Art & Sculptures",
+    location: "Jeddah, Saudi Arabia",
+    description:
+      "Custom sculptural metal installations for the grand lobby and public areas of a landmark hotel development.",
+    challenge:
+      "The hotel required large-scale art pieces that reflected Saudi heritage while complementing a contemporary architectural design — with a tight installation deadline.",
+    solution:
+      "We fabricated and installed 6 major sculptural pieces using stainless steel and aluminum with specialized finishing techniques including patina and brushed metal effects.",
+    result:
+      "The installations became signature features of the hotel interior, receiving acclaim from guests and design publications.",
+    images: [
+      "/images/products/product-star-alliance-2.jpg",
+    ],
+    testimonial: {
+      quote: "The sculptures are breathtaking. MediMarks translated our artistic vision into stunning physical works that define our lobby experience.",
+      author: "Nora Al-Saud",
+      role: "Hotel Design Director",
+    },
+    productsUsed: ["art-sculptures"],
+    relatedSlugs: ["khobar-corniche-lighting", "red-sea-mall-electrical"],
+  },
+  {
+    id: "aramco-automation",
+    slug: "aramco-automation",
+    title: "Saudi Aramco Facility Automation",
+    client: "Saudi Aramco",
+    industry: "Government",
+    division: "Automation",
+    location: "Dhahran, Saudi Arabia",
+    description:
+      "Custom automation systems for material handling and precision component manufacturing at an industrial facility.",
+    challenge:
+      "The facility needed to automate repetitive material handling processes to improve throughput and reduce workplace injuries while maintaining quality standards.",
+    solution:
+      "We designed and built a custom linear actuator system with PLC control, integrated sensors, and safety systems. The solution included custom end-effectors for material pickup.",
+    result:
+      "Production throughput increased by 40% with zero safety incidents. The automation system has been operating reliably for over 18 months with minimal maintenance.",
+    images: [
+      "/images/products/product-lc3-narrow-vertical.jpg",
+    ],
+    productsUsed: ["automation"],
+    relatedSlugs: ["riyadh-metro-storage", "dammam-municipality-fire"],
+  },
+  {
+    id: "ministry-education-school",
+    slug: "ministry-education-school",
+    title: "Ministry of Education School Furniture",
+    client: "Ministry of Education",
+    industry: "Education",
+    division: "Storage Solutions",
+    location: "Multiple Cities, Saudi Arabia",
+    description:
+      "Storage and furniture solutions for 50 new schools built under the national education infrastructure program.",
+    challenge:
+      "The rapid school construction program required furniture and storage systems that were cost-effective, durable, and could be delivered and installed across 50 sites simultaneously.",
+    solution:
+      "We standardized a school furniture package including classroom storage cabinets, library shelving, and administrative office furniture — manufactured and delivered in coordinated batches.",
+    result:
+      "All 50 schools received their furniture on schedule. The standardized package reduced per-school costs by 15% while maintaining quality standards.",
+    images: [
+      "/images/products/product-shelf-model-1.jpg",
+    ],
+    productsUsed: ["storage-solutions", "medical-furniture"],
+    relatedSlugs: ["king-abdullah-medical", "riyadh-metro-storage"],
+  },
+  {
+    id: "dammam-municipality-fire",
+    slug: "dammam-municipality-fire",
+    title: "Dammam Municipality Fire Safety Upgrade",
+    client: "Dammam Municipality",
+    industry: "Government",
+    division: "Fire Resistant Doors",
+    location: "Dammam, Saudi Arabia",
+    description:
+      "Comprehensive fire door installation across 20 municipal buildings to meet updated safety regulations.",
+    challenge:
+      "The municipality needed to retrofit 20 existing buildings with certified fire-rated doors that met new safety codes while minimizing disruption to daily operations.",
+    solution:
+      "We supplied and installed 400+ fire-rated steel doors with frames, vision panels, and intumescent seals. Installation was phased to maintain building access during working hours.",
+    result:
+      "All 20 buildings achieved fire safety compliance within the regulatory deadline. The phased installation approach caused zero operational downtime.",
+    images: [
+      "/images/products/product-t3000.jpg",
+    ],
+    productsUsed: ["fire-resistant-doors"],
+    relatedSlugs: ["khobar-corniche-lighting", "aramco-automation"],
+  },
+  {
+    id: "red-sea-mall-electrical",
+    slug: "red-sea-mall-electrical",
+    title: "Red Sea Mall Electrical Enclosure Upgrade",
+    client: "Red Sea Mall Management",
+    industry: "Commercial",
+    division: "Electrical Enclosures",
+    location: "Jeddah, Saudi Arabia",
+    description:
+      "Custom electrical enclosure installation for a major shopping center's electrical infrastructure upgrade.",
+    challenge:
+      "The mall required IP-rated electrical enclosures that could house sensitive equipment in public-accessible areas while maintaining aesthetic appearance.",
+    solution:
+      "We manufactured custom electrical cabinets with IP54 protection, lockable doors, and powder-coated finishes matching the mall's interior design palette.",
+    result:
+      "The new enclosures house all upgraded electrical equipment securely while blending seamlessly with the mall interior. No access incidents reported.",
+    images: [
+      "/images/products/product-wheel-chair-etables.jpg",
+    ],
+    productsUsed: ["electrical-enclosures"],
+    relatedSlugs: ["riyadh-metro-storage", "jeddah-tower-art"],
+  },
+];
+
 export const faqs = [
   {
     q: "Where is MediMarks located?",
@@ -614,5 +1060,13 @@ export const faqs = [
   {
     q: "What is your typical lead time?",
     a: "Lead times vary by product and order volume. Please contact us for specific timelines for your project.",
+  },
+  {
+    q: "Do you offer international shipping?",
+    a: "Yes, we ship to clients across the Middle East and Africa. Contact us with your location and requirements for a shipping quote.",
+  },
+  {
+    q: "How can I request a quote?",
+    a: "You can request a quote by filling out the contact form above, emailing us directly, or calling our team. We typically respond with a detailed quotation within 1-2 business days.",
   },
 ];

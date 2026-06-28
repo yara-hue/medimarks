@@ -14,15 +14,35 @@ export function Hero() {
           afterSrc="/images/Gemini_Generated_Image_7svq3d7svq3d7svq.jpg"
         />
       </div>
-      <div className="absolute inset-0 pointer-events-none z-[3]"
+      <div
+        className="absolute inset-0 pointer-events-none z-[3]"
         style={{
-          background: "linear-gradient(to right, #0A1628 0%, #0A1628 750px, rgba(10,22,40,0.97) 800px, rgba(10,22,40,0.7) 950px, rgba(10,22,40,0.2) 1200px, transparent 1400px)"
+          background:
+            "linear-gradient(to right, #0A1628 0%, #0A1628 750px, rgba(10,22,40,0.97) 800px, rgba(10,22,40,0.7) 950px, rgba(10,22,40,0.2) 1200px, transparent 1400px)",
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-navy-900/95 via-navy-900/75 to-navy-900/30 z-[2]" />
+      <div
+        className="absolute inset-0 opacity-[0.03] z-[1]"
+        style={{
+          backgroundImage: `
+            linear-gradient(0deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%),
+            linear-gradient(90deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%)
+          `,
+          backgroundSize: "80px 80px",
+        }}
+      />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16 w-full">
         <div className="max-w-2xl">
+          <motion.span
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="inline-block text-silver font-medium text-sm tracking-widest uppercase mb-4"
+          >
+            Engineering Without Compromise
+          </motion.span>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -42,7 +62,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.25 }}
             className="mt-6 text-base md:text-lg text-gray-300 dark:text-gray-400 leading-relaxed max-w-xl"
           >
-            Specialized products engineered for healthcare, infrastructure, and modern spaces.
+            Specialized products engineered for healthcare, infrastructure, and modern spaces — where precision meets purpose.
           </motion.p>
 
           <motion.div
@@ -51,7 +71,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="mt-8 flex flex-wrap gap-4"
           >
-            <Button href="/solutions" size="lg" className="bg-white text-navy-900 hover:bg-gray-100 dark:bg-white dark:text-navy-900">
+            <Button href="/solutions" size="lg" variant="cta">
               Explore Our Solutions
             </Button>
             <Button href="/contact" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white">

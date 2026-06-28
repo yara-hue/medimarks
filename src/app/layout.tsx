@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { LoadingScreen } from "@/components/LoadingScreen";
 import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
+import { SkipLink } from "@/components/ui/SkipLink";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${outfit.variable} h-full scroll-smooth`}
     >
       <body className="min-h-full flex flex-col antialiased">
+        <SkipLink />
         <LoadingScreen />
         <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{

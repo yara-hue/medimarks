@@ -1,0 +1,54 @@
+"use client";
+
+import { AnimatedSection } from "@/components/ui/AnimatedSection";
+import { Button } from "@/components/ui/Button";
+
+export function AboutHero() {
+  return (
+    <section className="relative min-h-[60vh] md:min-h-[65vh] flex items-center overflow-hidden pt-20 md:pt-24">
+      <div className="absolute inset-0 bg-gradient-to-b from-navy-900 to-navy-800" />
+      <div
+        className="absolute inset-0 opacity-[0.04]"
+        style={{
+          backgroundImage: `
+            linear-gradient(0deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%),
+            linear-gradient(90deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%)
+          `,
+          backgroundSize: "80px 80px",
+        }}
+      />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white dark:from-navy-900 to-transparent" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6 md:px-10 lg:px-16 w-full text-center">
+        <AnimatedSection delay={0.1}>
+          <span className="text-xs tracking-widest uppercase text-navy-300 font-medium">About</span>
+        </AnimatedSection>
+        <AnimatedSection delay={0.2}>
+          <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white tracking-tight leading-tight">
+            Built Different
+          </h1>
+        </AnimatedSection>
+        <AnimatedSection delay={0.3}>
+          <p className="mt-6 text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Engineering, manufacturing, and design — integrated under one roof since 2015.
+          </p>
+        </AnimatedSection>
+        <AnimatedSection delay={0.4}>
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
+            <Button href="#story" size="lg" variant="cta">
+              Our Story
+            </Button>
+            <Button
+              href="/contact"
+              size="lg"
+              variant="secondary"
+              className="border-white/40 text-white hover:bg-white/15 dark:border-white/40 dark:text-white"
+            >
+              Contact Us
+            </Button>
+          </div>
+        </AnimatedSection>
+      </div>
+    </section>
+  );
+}

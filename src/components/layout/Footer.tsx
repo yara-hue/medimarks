@@ -3,7 +3,7 @@ import { siteConfig, navigation } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 
 export function Footer() {
-  const solutionsItem = navigation.find((item) => item.children);
+  const solutionsItem = navigation.find((item) => item.label === "Solutions");
 
   return (
     <footer className="bg-navy-900 text-gray-300">
@@ -26,21 +26,19 @@ export function Footer() {
 
           <div>
             <h4 className="font-heading font-semibold text-white text-sm uppercase tracking-wider mb-4">
-              Quick Links
+              Explore
             </h4>
             <ul className="space-y-3">
-              {navigation
-                .filter((item) => !item.children)
-                .map((item) => (
-                  <li key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="text-sm text-gray-400 hover:text-white transition-colors"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+              {navigation.map((item) => (
+                <li key={item.label}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
