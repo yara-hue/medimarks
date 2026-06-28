@@ -100,7 +100,7 @@ export function Navbar() {
         </defs>
       </svg>
       <div
-        className="w-full max-w-5xl mx-auto px-4 md:px-6 bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)] rounded-2xl"
+        className="w-full max-w-5xl mx-auto px-4 md:px-6 bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border border-white/25 shadow-[0_2px_16px_rgba(0,0,0,0.08)] dark:border-white/[0.12] dark:shadow-[0_2px_16px_rgba(0,0,0,0.3)] rounded-2xl"
         style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
       >
         <nav className="w-full">
