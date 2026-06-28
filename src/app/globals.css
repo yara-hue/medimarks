@@ -68,49 +68,4 @@ html {
   color: white;
 }
 
-.loading-corner-tl {
-  animation: fade-in 0.4s 0.3s ease forwards;
-  opacity: 0;
-}
-.loading-corner-tr {
-  animation: fade-in 0.4s 0.5s ease forwards;
-  opacity: 0;
-}
-.loading-corner-bl {
-  animation: fade-in 0.4s 0.7s ease forwards;
-  opacity: 0;
-}
-.loading-corner-br {
-  animation: fade-in 0.4s 0.9s ease forwards;
-  opacity: 0;
-}
-.loading-reveal {
-  animation: reveal-text 1.8s 0s ease forwards;
-  width: 0;
-}
-.loading-subtitle {
-  animation: fade-in-up 0.6s 2s ease forwards;
-  opacity: 0;
-}
-.loading-since {
-  animation: fade-in 0.6s 2.5s ease forwards;
-  opacity: 0;
-}
-@keyframes fade-in {
-  to { opacity: 1; }
-}
-@keyframes fade-in-up {
-  to { opacity: 1; transform: translateY(0); }
-  from { opacity: 0; transform: translateY(10px); }
-}
-@keyframes reveal-text {
-  to { width: 100%; }
-}
 
-#loading-screen {
-  animation: dismiss-loading 4s ease forwards;
-}
-@keyframes dismiss-loading {
-  0%, 85% { opacity: 1; }
-  100% { opacity: 0; visibility: hidden; pointer-events: none; }
-}

@@ -3,7 +3,6 @@ import { Space_Grotesk, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { LoadingScreen } from "@/components/LoadingScreen";
 import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { SkipLink } from "@/components/ui/SkipLink";
 
@@ -47,7 +46,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col antialiased">
         <SkipLink />
-        <LoadingScreen />
         <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{
           __html: `
