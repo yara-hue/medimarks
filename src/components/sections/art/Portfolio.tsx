@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { artProducts } from "@/data/site";
+import { Markdown } from "@/components/ui/Markdown";
 
 export function ArtPortfolio() {
   return (
@@ -48,9 +49,7 @@ export function ArtPortfolio() {
                   <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
                     {product.name}
                   </h3>
-                  <p className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed">
-                    {product.description}
-                  </p>
+                  <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
                 </div>
               </div>
             </motion.div>

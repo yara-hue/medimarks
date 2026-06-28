@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { medicalProducts, lightingProducts, storageProducts, artProducts, automationProducts, electricalProducts, fireDoorProducts } from "@/data/site";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { Markdown } from "@/components/ui/Markdown";
 
 interface DisplayProduct {
   name: string;
@@ -82,9 +83,9 @@ export function FeaturedProducts() {
                   <h3 className="mt-1 font-heading font-semibold text-lg text-navy-900 dark:text-white">
                     {product.name}
                   </h3>
-                  <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed flex-1 line-clamp-3">
-                    {product.description}
-                  </p>
+                  <div className="mt-2 flex-1 line-clamp-3">
+                    <Markdown text={product.description} as="span" className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed" />
+                  </div>
                   {product.benefits && (
                     <div className="mt-4 flex flex-wrap gap-2">
                       {product.benefits.slice(0, 3).map((benefit) => (
@@ -92,7 +93,7 @@ export function FeaturedProducts() {
                           key={benefit}
                           className="text-xs text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-navy-800 px-2.5 py-1 rounded-md"
                         >
-                          {benefit}
+                          <Markdown text={benefit} as="span" />
                         </span>
                       ))}
                     </div>

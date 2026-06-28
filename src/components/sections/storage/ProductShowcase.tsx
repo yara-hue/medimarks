@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { storageProducts } from "@/data/site";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { Markdown } from "@/components/ui/Markdown";
 
 export function StorageProduct() {
   const product = storageProducts[0];
@@ -38,14 +39,12 @@ export function StorageProduct() {
             <h2 className="mt-2 text-3xl md:text-4xl font-heading font-bold text-navy-900 dark:text-white leading-tight">
               {product.name}
             </h2>
-            <p className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed">
-              {product.description}
-            </p>
+            <Markdown text={product.description} className="mt-4 text-gray-500 dark:text-gray-400 leading-relaxed" />
             <div className="mt-6 grid sm:grid-cols-2 gap-4">
               {product.benefits.map((item) => (
                 <div key={item} className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400">
                   <span className="w-1.5 h-1.5 rounded-full bg-navy-400 shrink-0" />
-                  {item}
+                  <Markdown text={item} as="span" />
                 </div>
               ))}
             </div>

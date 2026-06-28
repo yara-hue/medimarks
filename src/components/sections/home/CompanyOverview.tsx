@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Hospital, Warehouse, Lamp, Sparkles, Cog, Zap, Shield } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 
@@ -79,24 +80,26 @@ export function CompanyOverview() {
                   </div>
                   <div className="mt-6 grid grid-cols-2 gap-x-8 gap-y-4">
                     {[
-                      { name: "Medical Furniture", img: "product-assem-echair.jpg" },
-                      { name: "Storage Solutions", img: "product-shelf-model-1.jpg" },
-                      { name: "Light Poles", img: "product-garden-light-pole.jpg" },
-                      { name: "Art & Sculpture", img: "product-star-alliance-2.jpg" },
-                      { name: "Automation", img: "Automation/4 Axis CNC Router Machine 1530.jpg" },
-                      { name: "Electrical Enclosures", img: "Electrical Enclosures/Electrical Box 1.jpg" },
-                      { name: "Fire Resistant Doors", img: "Fire Resistant Metal Doors/MH.Door 100x220.jpg" },
-                    ].map((item) => (
-                      <div key={item.name} className="flex items-center gap-3">
-                        <div
-                          className="w-8 h-8 rounded-lg bg-cover bg-center shrink-0 border border-white/10"
-                          style={{ backgroundImage: "url(/images/products/" + item.img + ")" }}
-                        />
-                        <span className="text-white/80 text-xs tracking-wide text-left leading-tight">
-                          {item.name}
-                        </span>
-                      </div>
-                    ))}
+                      { name: "Medical Furniture", icon: Hospital },
+                      { name: "Storage Solutions", icon: Warehouse },
+                      { name: "Light Poles", icon: Lamp },
+                      { name: "Art & Sculpture", icon: Sparkles },
+                      { name: "Automation", icon: Cog },
+                      { name: "Electrical Enclosures", icon: Zap },
+                      { name: "Fire Resistant Doors", icon: Shield },
+                    ].map((item) => {
+                      const Icon = item.icon;
+                      return (
+                        <div key={item.name} className="flex items-center gap-3">
+                          <div className="w-8 h-8 rounded-lg bg-white/15 flex items-center justify-center shrink-0 backdrop-blur-sm">
+                            <Icon className="w-4 h-4 text-white/80" />
+                          </div>
+                          <span className="text-white/80 text-xs tracking-wide text-left leading-tight">
+                            {item.name}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               </div>

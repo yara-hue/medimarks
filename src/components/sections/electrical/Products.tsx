@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { electricalProducts } from "@/data/site";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { Markdown } from "@/components/ui/Markdown";
 
 export function ElectricalProducts() {
   return (
@@ -41,9 +42,7 @@ export function ElectricalProducts() {
                 <h3 className="mt-2 font-heading font-bold text-2xl md:text-3xl text-navy-900 dark:text-white">
                   {product.name}
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed">
-                  {product.description}
-                </p>
+                <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
                 <div className="mt-6 grid sm:grid-cols-2 gap-4">
                   <div>
@@ -51,8 +50,8 @@ export function ElectricalProducts() {
                     <ul className="space-y-1.5">
                       {product.benefits.map((b) => (
                         <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                          <span className="text-navy-400 mt-0.5">•</span>
-                          {b}
+                          <span className="text-navy-400 mt-0.5 shrink-0">•</span>
+                          <Markdown text={b} as="span" />
                         </li>
                       ))}
                     </ul>

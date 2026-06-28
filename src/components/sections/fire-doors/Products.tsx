@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { fireDoorProducts } from "@/data/site";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { Markdown } from "@/components/ui/Markdown";
 
 export function FireDoorsProducts() {
   return (
@@ -39,13 +40,13 @@ export function FireDoorsProducts() {
                 <h3 className="mt-2 font-heading font-semibold text-lg text-navy-900 dark:text-white">
                   {product.name}
                 </h3>
-                <p className="mt-2 text-sm text-gray-500 dark:text-gray-400 leading-relaxed line-clamp-3">
-                  {product.description}
-                </p>
+                <div className="mt-2 line-clamp-3">
+                  <Markdown text={product.description} as="span" className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed" />
+                </div>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {product.benefits.slice(0, 3).map((b) => (
                     <span key={b} className="text-xs text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-navy-800 px-2.5 py-1 rounded-md">
-                      {b}
+                      <Markdown text={b} as="span" />
                     </span>
                   ))}
                 </div>

@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { lightingProducts } from "@/data/site";
 import { FitBlurImage } from "@/components/ui/FitBlurImage";
+import { Markdown } from "@/components/ui/Markdown";
 
 export function LightingGallery() {
   return (
@@ -39,7 +40,7 @@ export function LightingGallery() {
                 )}
               </div>
               <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white">{product.name}</h3>
-              <p className="mt-1 text-gray-500 dark:text-gray-400 text-sm">{product.description}</p>
+              <Markdown text={product.description} className="mt-1 text-gray-500 dark:text-gray-400 text-sm" />
             </motion.div>
           ))}
         </div>
