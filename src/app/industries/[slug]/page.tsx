@@ -57,8 +57,7 @@ export default async function IndustryPage({ params }: Props) {
       <IndustryWhyWork
         subtitle="Experience and expertise you can count on."
         proofPoints={industry.proofPoints}
-        certifications={industry.certifications}
-      />
+        />
       <IndustryCTA
         title={`Let's Discuss Your ${industry.title} Project`}
         description="Contact our team to learn how MediMarks can support your next initiative."

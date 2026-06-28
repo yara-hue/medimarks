@@ -64,8 +64,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015"];
-
 const industries = [
   { name: "Public Art", href: "/industries/public-spaces", icon: "Trees" },
   { name: "Corporate Campuses", href: "/industries/commercial", icon: "Building2" },
@@ -108,8 +106,7 @@ export default function ArtSculpturesPage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Our work enhances spaces across sectors."
         industries={industries}

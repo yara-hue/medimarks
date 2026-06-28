@@ -102,34 +102,34 @@ export function Navbar() {
       <div
         className={cn(
           "transition-all duration-300",
-          isScrolled && "pt-1.5 sm:pt-3 px-3 sm:px-6"
+          isScrolled && "px-4 sm:px-8 pt-2 sm:pt-4"
         )}
       >
       <div
         className={cn(
-          "transition-all duration-300 mx-auto",
+          "transition-all duration-300",
           isScrolled
-            ? "max-w-5xl bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] shadow-[0_2px_16px_rgba(0,0,0,0.08)] dark:shadow-[0_2px_16px_rgba(0,0,0,0.3)] rounded-2xl"
-            : "max-w-full bg-transparent"
+            ? "rounded-2xl overflow-hidden bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] ring-1 ring-white/25 shadow-[0_2px_16px_rgba(0,0,0,0.08)] dark:ring-white/[0.12] dark:shadow-[0_2px_16px_rgba(0,0,0,0.3)]"
+            : "bg-transparent"
         )}
         style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
       >
-        <nav className="mx-auto max-w-7xl px-5 md:px-8 lg:px-10">
-        <div className="flex items-center justify-between h-12 md:h-14">
+        <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
+        <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
             className={cn(
-              "font-heading text-lg md:text-xl font-bold tracking-tight",
+              "font-heading text-xl md:text-2xl font-bold tracking-tight",
               isScrolled ? "text-navy-900 dark:text-white" : "text-white"
             )}
           >
             MediMarks
-            <span className="hidden sm:block text-[9px] font-sans font-normal tracking-widest uppercase -mt-0.5 text-gray-400 dark:text-gray-500">
+            <span className="block text-[10px] font-sans font-normal tracking-widest uppercase -mt-1 text-gray-400 dark:text-gray-500">
               Innovation by Design
             </span>
           </Link>
 
-          <div className="hidden lg:flex items-center gap-6">
+          <div className="hidden lg:flex items-center gap-8">
             {navigation.map((item) => {
               if (item.children) {
                 return <DesktopDropdown key={item.label} item={item} />;
@@ -169,7 +169,7 @@ export function Navbar() {
 
           <button
             className={cn(
-              "lg:hidden p-2",
+              "lg:hidden p-3",
               isScrolled
                 ? "text-gray-600 hover:text-navy-500 dark:text-gray-400 dark:hover:text-white"
                 : "text-white/80 hover:text-white"
@@ -178,7 +178,7 @@ export function Navbar() {
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
           >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
       </nav>

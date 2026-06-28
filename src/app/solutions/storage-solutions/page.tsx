@@ -64,8 +64,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015", "CE Marking", "SASO"];
-
 const industries = [
   { name: "Warehouses", href: "/industries/industrial", icon: "Warehouse" },
   { name: "Retail", href: "/industries/commercial", icon: "Store" },
@@ -108,8 +106,7 @@ export default function StorageSolutionsPage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Trusted across commercial and industrial sectors."
         industries={industries}

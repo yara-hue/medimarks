@@ -628,7 +628,6 @@ export interface Industry {
   challenges: { title: string; description: string; icon: string }[];
   divisions: string[];
   proofPoints: { value: string; label: string }[];
-  certifications: string[];
 }
 
 export const industries: Industry[] = [
@@ -673,7 +672,6 @@ export const industries: Industry[] = [
       { value: "200+", label: "Healthcare Facilities" },
       { value: "5+", label: "Product Lines" },
     ],
-    certifications: ["ISO 13485", "ISO 9001:2015", "CE Marking"],
   },
   {
     id: "commercial",
@@ -709,8 +707,8 @@ export const industries: Industry[] = [
       { value: "500+", label: "Commercial Projects" },
       { value: "Retail", label: "& Corporate Clients" },
       { value: "Custom", label: "Design Capabilities" },
-    ],
-    certifications: ["ISO 9001:2015", "CE Marking", "SASO"],
+    ]
+,
   },
   {
     id: "hospitality",
@@ -746,8 +744,8 @@ export const industries: Industry[] = [
       { value: "100+", label: "Hospitality Projects" },
       { value: "Hotels", label: "& Resorts Served" },
       { value: "Custom", label: "Fabrication Expertise" },
-    ],
-    certifications: ["ISO 9001:2015", "CE Marking", "NFPA Compliant"],
+    ]
+,
   },
   {
     id: "government",
@@ -789,8 +787,8 @@ export const industries: Industry[] = [
       { value: "50+", label: "Government Contracts" },
       { value: "Municipal", label: "Infrastructure Projects" },
       { value: "Compliant", label: "Procurement Ready" },
-    ],
-    certifications: ["ISO 9001:2015", "CE Marking", "SASO", "NFPA Compliant"],
+    ]
+,
   },
   {
     id: "education",
@@ -826,8 +824,8 @@ export const industries: Industry[] = [
       { value: "80+", label: "Educational Institutions" },
       { value: "Schools", label: "& Universities" },
       { value: "Durable", label: "Long-Lasting Products" },
-    ],
-    certifications: ["ISO 9001:2015", "CE Marking"],
+    ]
+,
   },
 ];
 

@@ -7,7 +7,7 @@ const milestones = [
   { year: "2015", label: "Founded in Jeddah" },
   { year: "2016", label: "First medical furniture line" },
   { year: "2018", label: "Expanded to 5 divisions" },
-  { year: "2020", label: "ISO 9001 certification" },
+  { year: "2020", label: "Quality management system" },
   { year: "2022", label: "Expanded to 7 divisions" },
   { year: "Present", label: "Regional market leader" },
 ];

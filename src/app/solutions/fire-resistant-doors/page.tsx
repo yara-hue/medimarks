@@ -64,8 +64,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015", "CE Marking", "SASO", "NFPA Compliant"];
-
 const industries = [
   { name: "Commercial Buildings", href: "/industries/commercial", icon: "Building2" },
   { name: "Healthcare Facilities", href: "/industries/healthcare", icon: "HeartPulse" },
@@ -108,8 +106,7 @@ export default function FireResistantDoorsPage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Essential safety solutions across sectors."
         industries={industries}

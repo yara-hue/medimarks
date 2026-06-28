@@ -65,8 +65,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015", "ISO 13485", "CE Marking", "SASO"];
-
 const industries = [
   { name: "Hospitals", href: "/industries/healthcare", icon: "Building2" },
   { name: "Clinics", href: "/industries/healthcare", icon: "Building2" },
@@ -119,8 +117,7 @@ export default function MedicalFurniturePage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Our medical equipment is trusted across a range of healthcare settings."
         industries={industries}

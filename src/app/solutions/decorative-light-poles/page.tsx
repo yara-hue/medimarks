@@ -64,8 +64,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015", "CE Marking", "SASO"];
-
 const industries = [
   { name: "Municipalities", href: "/industries/infrastructure", icon: "Building2" },
   { name: "Parks & Public Spaces", href: "/industries/public-spaces", icon: "Trees" },
@@ -108,8 +106,7 @@ export default function LightPolesPage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Serving public and commercial sectors."
         industries={industries}

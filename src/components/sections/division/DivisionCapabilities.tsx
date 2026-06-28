@@ -16,14 +16,12 @@ interface DivisionCapabilitiesProps {
   title?: string;
   subtitle?: string;
   capabilities: Capability[];
-  certifications?: string[];
 }
 
 export function DivisionCapabilities({
   title = "Technical Capabilities",
   subtitle,
   capabilities,
-  certifications,
 }: DivisionCapabilitiesProps) {
   return (
     <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
@@ -60,30 +58,6 @@ export function DivisionCapabilities({
             );
           })}
         </motion.div>
-
-        {certifications && certifications.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="mt-12 max-w-4xl mx-auto"
-          >
-            <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white tracking-widest uppercase mb-4 text-center">
-              Certifications & Standards
-            </h4>
-            <div className="flex flex-wrap justify-center gap-3">
-              {certifications.map((cert) => (
-                <span
-                  key={cert}
-                  className="text-xs text-navy-600 dark:text-navy-200 bg-navy-50 dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium"
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        )}
       </Container>
     </section>
   );

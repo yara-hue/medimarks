@@ -14,14 +14,12 @@ interface IndustryWhyWorkProps {
   title?: string;
   subtitle?: string;
   proofPoints: ProofPoint[];
-  certifications: string[];
 }
 
 export function IndustryWhyWork({
   title = "Why Work With Us",
   subtitle,
   proofPoints,
-  certifications,
 }: IndustryWhyWorkProps) {
   return (
     <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
@@ -33,7 +31,7 @@ export function IndustryWhyWork({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16"
+          className="grid sm:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
           {proofPoints.map((point) => (
             <motion.div
@@ -50,30 +48,6 @@ export function IndustryWhyWork({
             </motion.div>
           ))}
         </motion.div>
-
-        {certifications.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5 }}
-            className="text-center"
-          >
-            <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white tracking-widest uppercase mb-4">
-              Certifications & Standards
-            </h4>
-            <div className="flex flex-wrap justify-center gap-3">
-              {certifications.map((cert) => (
-                <span
-                  key={cert}
-                  className="text-xs text-navy-600 dark:text-navy-200 bg-white dark:bg-navy-800 px-3 py-1.5 rounded-md font-medium border border-gray-200 dark:border-navy-700"
-                >
-                  {cert}
-                </span>
-              ))}
-            </div>
-          </motion.div>
-        )}
       </Container>
     </section>
   );

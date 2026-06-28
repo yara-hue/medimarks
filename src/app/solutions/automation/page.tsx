@@ -64,8 +64,6 @@ const capabilities = [
   },
 ];
 
-const certifications = ["ISO 9001:2015", "CE Marking"];
-
 const industries = [
   { name: "Manufacturing", href: "/industries/industrial", icon: "Building2" },
   { name: "Woodworking", href: "/industries/industrial", icon: "Building2" },
@@ -108,8 +106,7 @@ export default function AutomationPage() {
       />
       <DivisionCapabilities
         capabilities={capabilities}
-        certifications={certifications}
-      />
+        />
       <DivisionIndustries
         subtitle="Serving industrial and manufacturing sectors."
         industries={industries}
