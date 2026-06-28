@@ -90,11 +90,22 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
+      <svg className="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true" width="0" height="0">
+        <defs>
+          <filter id="nav-liquid-glass" color-interpolation-filters="sRGB">
+            <feTurbulence type="fractalNoise" baseFrequency="0.008" numOctaves="2" result="noise" />
+            <feDisplacementMap in="SourceGraphic" in2="noise" xChannelSelector="R" yChannelSelector="G" scale="6" result="displaced" />
+            <feGaussianBlur in="displaced" stdDeviation="0.3" />
+          </filter>
+        </defs>
+      </svg>
       <div className={cn(
         isScrolled
-          ? "bg-white/40 backdrop-blur-[12px] saturate-[1.4] border-b border-white/20 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.55)] dark:bg-navy-800/40 dark:border-white/10 dark:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.2)]"
+          ? "bg-[rgba(255,255,255,0.18)] dark:bg-[rgba(255,255,255,0.055)] backdrop-blur-[20px] saturate-[1.8] border-b border-white/25 shadow-[inset_0_1px_0_rgba(255,255,255,0.6),inset_0_0_3px_1px_rgba(255,255,255,0.4)] dark:border-white/[0.12] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),inset_0_0_3px_1px_rgba(255,255,255,0.12)]"
           : "bg-transparent"
-      )}>
+      )}
+        style={isScrolled ? { filter: "url(#nav-liquid-glass)" } : {}}
+      >
         <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
