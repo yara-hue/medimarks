@@ -89,21 +89,13 @@ export function Navbar() {
   }, [pathname]);
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled
-          ? "bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200/50 dark:bg-navy-900/90 dark:border-navy-700/50"
-          : "bg-transparent"
-      )}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50">
       <div className={cn(
-        "mx-auto transition-all duration-300",
         isScrolled
-          ? "bg-white/40 backdrop-blur-[12px] saturate-[1.4] border border-white/20 rounded-full w-[min(1280px,calc(100%-2rem))] shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.55)] dark:bg-navy-800/40 dark:border-white/10 dark:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.2)]"
+          ? "bg-white/40 backdrop-blur-[12px] saturate-[1.4] border-b border-white/20 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.55)] dark:bg-navy-800/40 dark:border-white/10 dark:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.2)]"
           : "bg-transparent"
       )}>
-        <nav className="px-6 md:px-10 lg:px-16">
+        <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
