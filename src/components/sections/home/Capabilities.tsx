@@ -18,13 +18,13 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 const cardImages: Record<string, string> = {
-  "medical-furniture": "/images/products/product-assem-echair.jpg",
+  "medical-furniture": "/images/products/Medical Furniture/Refractive unit Model T3000/Refractive Unit Model T3000.jpg",
   "storage-solutions": "/images/products/product-shelf-model-1.jpg",
   "decorative-light-poles": "/images/products/product-garden-light-pole.jpg",
   "art-sculptures": "/images/products/product-star-alliance-2.jpg",
-  "automation": "/images/products/product-lc3-narrow-vertical.jpg",
-  "electrical-enclosures": "/images/products/product-wheel-chair-etables.jpg",
-  "fire-resistant-doors": "/images/products/product-t3000.jpg",
+  "automation": "/images/products/Automation/4 Axis CNC Router Machine 1530.jpg",
+  "electrical-enclosures": "/images/products/Electrical Enclosures/Electrical Box 1.jpg",
+  "fire-resistant-doors": "/images/products/Fire Resistant Metal Doors/MH.Door 100x220.jpg",
 };
 
 const cardGradients: Record<string, string> = {
