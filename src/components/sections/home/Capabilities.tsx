@@ -64,14 +64,14 @@ export function Capabilities() {
                     style={{ backgroundImage: `url("${bgImage}")` }}
                   />
                   <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
-                  <div className="relative z-10 p-8 h-full flex flex-col">
-                    <div className="w-12 h-12 rounded-lg bg-white/15 flex items-center justify-center mb-5 backdrop-blur-sm">
-                      <Icon className="w-6 h-6 text-white" />
+                  <div className="relative z-10 p-6 h-full flex flex-col">
+                    <div className="w-10 h-10 rounded-lg bg-white/15 flex items-center justify-center mb-3 backdrop-blur-sm">
+                      <Icon className="w-5 h-5 text-white" />
                     </div>
-                    <h3 className="font-heading font-semibold text-xl text-white mb-3">
+                    <h3 className="font-heading font-semibold text-lg text-white mb-2">
                       {division.title}
                     </h3>
-                    <p className="text-gray-200 text-sm leading-relaxed mb-6 flex-1">
+                    <p className="text-gray-200 text-sm leading-relaxed mb-4">
                       {division.description}
                     </p>
                     <Button
