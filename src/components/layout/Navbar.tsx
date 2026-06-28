@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, Sun, Moon } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navigation, type NavItem } from "@/data/site";
 
@@ -97,7 +97,13 @@ export function Navbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto max-w-7xl px-6 md:px-10 lg:px-16">
+      <div className={cn(
+        "mx-auto transition-all duration-300",
+        isScrolled
+          ? "bg-white/40 backdrop-blur-[12px] saturate-[1.4] border border-white/20 rounded-full w-[min(1280px,calc(100%-2rem))] shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.55)] dark:bg-navy-800/40 dark:border-white/10 dark:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.2)]"
+          : "bg-transparent"
+      )}>
+        <nav className="px-6 md:px-10 lg:px-16">
         <div className="flex items-center justify-between h-14 md:h-16">
           <Link
             href="/"
@@ -143,6 +149,22 @@ export function Navbar() {
                 </Link>
               );
             })}
+            <button
+              onClick={() => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem('theme', isDark ? 'dark' : 'light');
+              }}
+              className={cn(
+                "p-2 rounded-lg transition-colors",
+                isScrolled
+                  ? "text-gray-500 hover:text-navy-500 hover:bg-gray-100 dark:text-gray-400 dark:hover:text-white dark:hover:bg-navy-800"
+                  : "text-gray-300 hover:text-white hover:bg-white/10"
+              )}
+              aria-label="Toggle dark mode"
+            >
+              <Sun className="w-4 h-4 hidden dark:block" />
+              <Moon className="w-4 h-4 block dark:hidden" />
+            </button>
           </div>
 
           <button
@@ -160,6 +182,7 @@ export function Navbar() {
           </button>
         </div>
       </nav>
+      </div>
 
       {isOpen && (
         <div className="fixed inset-0 top-0 left-0 w-full h-full z-40 bg-black/50 backdrop-blur-sm" onClick={() => setIsOpen(false)} />
@@ -183,6 +206,20 @@ export function Navbar() {
               {navigation.map((item) => (
                 <NavMobileItem key={item.label} item={item} onNavigate={() => setIsOpen(false)} />
               ))}
+              <button
+                onClick={() => {
+                  const isDark = document.documentElement.classList.toggle('dark');
+                  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+                }}
+                className="flex items-center gap-3 w-full px-4 py-4 text-base font-medium rounded-xl transition-colors text-gray-700 hover:text-navy-500 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-navy-800"
+              >
+                <Sun className="w-5 h-5 hidden dark:block" />
+                <Moon className="w-5 h-5 block dark:hidden" />
+                <span>
+                  <span className="dark:hidden">Dark Mode</span>
+                  <span className="hidden dark:inline">Light Mode</span>
+                </span>
+              </button>
             </div>
           </div>
         </div>

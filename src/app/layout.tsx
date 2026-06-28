@@ -51,14 +51,21 @@ export default function RootLayout({
         <KeyboardShortcuts />
         <script dangerouslySetInnerHTML={{
           __html: `
-            setTimeout(function(){
-              var el = document.getElementById('loading-screen');
-              if (el && el.style.display !== 'none') { el.style.display = 'none'; }
-            }, 3500);
-            setTimeout(function(){
-              var el = document.getElementById('loading-screen');
-              if (el) { el.style.display = 'none'; }
-            }, 5000);
+            (function() {
+              var saved = localStorage.getItem('theme');
+              var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+              if (saved === 'dark' || (!saved && prefersDark)) {
+                document.documentElement.classList.add('dark');
+              }
+              setTimeout(function(){
+                var el = document.getElementById('loading-screen');
+                if (el && el.style.display !== 'none') { el.style.display = 'none'; }
+              }, 3500);
+              setTimeout(function(){
+                var el = document.getElementById('loading-screen');
+                if (el) { el.style.display = 'none'; }
+              }, 5000);
+            })();
           `
         }} />
         <Navbar />

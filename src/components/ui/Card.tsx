@@ -6,7 +6,7 @@ interface CardProps {
   className?: string;
   href?: string;
   hover?: boolean;
-  variant?: "default" | "feature" | "overlay" | "statistic";
+  variant?: "default" | "feature" | "overlay" | "statistic" | "glass";
 }
 
 export function Card({ children, className, href, hover = true, variant = "default" }: CardProps) {
@@ -15,11 +15,14 @@ export function Card({ children, className, href, hover = true, variant = "defau
     feature: "bg-white rounded-xl border border-gray-200/60 dark:bg-navy-800 dark:border-navy-600/60 border-l-4 border-l-navy-500 dark:border-l-blue-400",
     overlay: "relative overflow-hidden bg-white rounded-xl border border-gray-200/60 dark:bg-navy-800 dark:border-navy-600/60",
     statistic: "bg-white rounded-xl border border-gray-200/60 dark:bg-navy-800 dark:border-navy-600/60 bg-navy-50/50 dark:bg-navy-900/50",
+    glass: "bg-white/60 backdrop-blur-[8px] rounded-xl border border-white/30 shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.55)] dark:bg-navy-800/60 dark:border-white/10 dark:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.2)]",
   };
 
   const classes = cn(
     variantStyles[variant],
-    hover && "transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30",
+    variant === "glass" && hover
+      ? "transition-all duration-300 hover:-translate-y-1 hover:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.7),0_8px_32px_rgba(0,0,0,0.12)] dark:hover:shadow-[inset_0_0_2px_1px_rgba(255,255,255,0.3),0_8px_32px_rgba(0,0,0,0.3)]"
+      : hover && "transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30",
     className
   );
 
