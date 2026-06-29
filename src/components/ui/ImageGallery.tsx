@@ -16,6 +16,14 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
   const selectedSrc = images[selectedIndex];
   const hasMultiple = images.length > 1;
 
+  const prev = useCallback(() => {
+    setSelectedIndex((i) => (i - 1 + images.length) % images.length);
+  }, [images.length]);
+
+  const next = useCallback(() => {
+    setSelectedIndex((i) => (i + 1) % images.length);
+  }, [images.length]);
+
   const handleMouseMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
       if (!zoomed) return;
@@ -27,10 +35,29 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
     [zoomed],
   );
 
+  function ArrowBtn({ dir }: { dir: "prev" | "next" }) {
+    const onClick = dir === "prev" ? prev : next;
+    const pos = dir === "prev" ? "left-2" : "right-2";
+    return (
+      <button
+        type="button"
+        onClick={(e) => { e.stopPropagation(); onClick(); }}
+        className={`absolute ${pos} top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 hover:bg-white text-navy-700 shadow flex items-center justify-center transition-colors opacity-0 group-hover:opacity-100`}
+      >
+        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          {dir === "prev"
+            ? <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+            : <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          }
+        </svg>
+      </button>
+    );
+  }
+
   return (
     <>
       <div
-        className="relative rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800 cursor-crosshair select-none"
+        className="relative rounded-2xl overflow-hidden bg-gray-100 dark:bg-navy-800 cursor-crosshair select-none group"
         onMouseEnter={() => setZoomed(true)}
         onMouseLeave={() => { setZoomed(false); setZoomPos({ x: 50, y: 50 }); }}
         onMouseMove={handleMouseMove}
@@ -53,6 +80,12 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
               backgroundRepeat: "no-repeat",
             }}
           />
+        )}
+        {hasMultiple && (
+          <>
+            <ArrowBtn dir="prev" />
+            <ArrowBtn dir="next" />
+          </>
         )}
       </div>
 
@@ -89,6 +122,28 @@ export function ImageGallery({ images, alt }: ImageGalleryProps) {
               <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
+          {hasMultiple && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); prev(); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); next(); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </>
+          )}
           <img
             src={selectedSrc}
             alt={alt}
