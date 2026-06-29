@@ -22,9 +22,9 @@ export function LightingGallery() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="group"
+              className="group hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all duration-300 rounded-2xl p-4 -m-4"
             >
-              <div className="aspect-[3/4] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 mb-4">
+              <div className="aspect-[3/4] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 mb-4 group-hover:scale-[1.02] transition-transform duration-300">
                 {product.image ? (
                   <FitBlurImage
                     src={product.image}

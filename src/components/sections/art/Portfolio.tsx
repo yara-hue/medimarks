@@ -22,11 +22,11 @@ export function ArtPortfolio() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="md:col-span-2"
+              className="md:col-span-2 group hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all duration-300 rounded-2xl p-4 -m-4"
             >
               <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
                 <div className="md:col-span-2">
-                  <div className="aspect-square rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+                  <div className="aspect-square rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
                     {product.image ? (
                       <FitBlurImage
                         src={product.image}

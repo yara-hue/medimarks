@@ -25,10 +25,10 @@ export function AutomationProducts() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="grid md:grid-cols-5 gap-8 md:gap-12 items-center"
+              className="grid md:grid-cols-5 gap-8 md:gap-12 items-center group hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all duration-300 rounded-2xl p-4 -m-4"
             >
               <div className="md:col-span-2">
-                <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+                <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
                   <FitBlurImage
                     src={product.image}
                     alt={product.name}
@@ -46,18 +46,6 @@ export function AutomationProducts() {
                   </h3>
                 </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
-
-                <div className="mt-6">
-                  <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
-                  <ul className="space-y-1.5">
-                    {product.benefits.map((b) => (
-                      <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                        <span className="text-navy-400 mt-0.5 shrink-0">•</span>
-                        <Markdown text={b} as="span" />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </motion.div>
           ))}
