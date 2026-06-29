@@ -62,18 +62,6 @@ export function MedicalProducts() {
                 </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
-                <div className="mt-6">
-                  <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
-                  <ul className="space-y-1.5">
-                    {product.benefits.map((b) => (
-                      <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                        <span className="text-navy-400 mt-0.5 shrink-0">•</span>
-                        <Markdown text={b} as="span" />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
                 {"brochure" in product && typeof product.brochure === "string" && (
                   <div className="mt-4">
                     <a
