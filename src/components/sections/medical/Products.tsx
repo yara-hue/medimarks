@@ -62,30 +62,32 @@ export function MedicalProducts() {
                 </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
-                <div className="mt-6 grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
-                    <ul className="space-y-1.5">
-                      {product.benefits.map((b) => (
-                        <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                          <span className="text-navy-400 mt-0.5 shrink-0">•</span>
-                          <Markdown text={b} as="span" />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Technical Specifications</h4>
-                    <ul className="space-y-1.5">
-                      {product.specs.map((s) => (
-                        <li key={s} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                          <span className="text-navy-400 mt-0.5 shrink-0">•</span>
-                          <Markdown text={s} as="span" />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="mt-6">
+                  <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
+                  <ul className="space-y-1.5">
+                    {product.benefits.map((b) => (
+                      <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
+                        <span className="text-navy-400 mt-0.5 shrink-0">•</span>
+                        <Markdown text={b} as="span" />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+                {"brochure" in product && typeof product.brochure === "string" && (
+                  <div className="mt-4">
+                    <a
+                      href={product.brochure}
+                      download
+                      className="inline-flex items-center gap-1.5 text-sm text-navy-500 dark:text-navy-300 hover:text-navy-700 dark:hover:text-white transition-colors"
+                    >
+                      <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                      Download Brochure
+                    </a>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

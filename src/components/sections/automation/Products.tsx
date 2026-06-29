@@ -47,24 +47,16 @@ export function AutomationProducts() {
                 </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
-                <div className="mt-6 grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
-                    <ul className="space-y-1.5">
-                      {product.benefits.map((b) => (
-                        <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
-                          <span className="text-navy-400 mt-0.5 shrink-0">•</span>
-                          <Markdown text={b} as="span" />
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Technical Specifications</h4>
-                    <p className="text-sm text-gray-400 dark:text-gray-500 italic bg-gray-50 dark:bg-navy-900/50 rounded-lg p-3">
-                      Detailed specifications available upon request.
-                    </p>
-                  </div>
+                <div className="mt-6">
+                  <h4 className="font-heading font-semibold text-sm text-navy-900 dark:text-white mb-2">Key Benefits</h4>
+                  <ul className="space-y-1.5">
+                    {product.benefits.map((b) => (
+                      <li key={b} className="text-sm text-gray-500 dark:text-gray-400 flex items-start gap-2">
+                        <span className="text-navy-400 mt-0.5 shrink-0">•</span>
+                        <Markdown text={b} as="span" />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.div>
