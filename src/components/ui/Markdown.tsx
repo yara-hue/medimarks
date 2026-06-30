@@ -7,9 +7,9 @@ interface MarkdownProps {
 }
 
 function renderInline(text: string): ReactNode[] {
-  return text.split(/(\*[^*]+\*)/g).map((part, i) => {
-    if (part.startsWith("*") && part.endsWith("*")) {
-      return <strong key={i}>{part.slice(1, -1)}</strong>;
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, i) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return <strong key={i} className="text-base">{part.slice(2, -2)}</strong>;
     }
     return part;
   });
