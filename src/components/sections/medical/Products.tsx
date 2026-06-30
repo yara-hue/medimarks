@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { medicalProducts } from "@/data/site";
-import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { Markdown } from "@/components/ui/Markdown";
 
 export function MedicalProducts() {
@@ -28,14 +27,15 @@ export function MedicalProducts() {
               className="grid md:grid-cols-5 gap-8 md:gap-12 items-center group hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all duration-300 rounded-2xl p-4 -m-4"
             >
               <div className="md:col-span-2">
-                <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
+                <div className="rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
                   {product.image ? (
-                    <FitBlurImage
+                    <img
                       src={product.image}
                       alt={product.name}
+                      className="w-full h-auto block"
                     />
                   ) : (
-                    <div className="w-full h-full bg-gradient-to-br from-navy-100 to-navy-50 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+                    <div className="aspect-[4/3] bg-gradient-to-br from-navy-100 to-navy-50 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
                       <div className="text-center p-6">
                         <div className="w-20 h-20 mx-auto rounded-full bg-navy-200/50 flex items-center justify-center mb-3">
                           <span className="text-navy-500 font-heading font-bold text-2xl">

@@ -60,13 +60,13 @@ export function Capabilities() {
               >
                 <div className="group relative rounded-xl overflow-hidden h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30">
                   <div
-                    className="absolute inset-0 bg-cover bg-center scale-125 blur-3xl opacity-70"
+                    className="absolute inset-0 bg-cover bg-center scale-125 blur-3xl opacity-20"
                     style={{ backgroundImage: `url("${bgImage}")` }}
                   />
                   <img
                     src={bgImage}
                     alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-contain"
                     style={{
                       maskImage: "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",
                       WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%), linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%)",

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { storageProducts } from "@/data/site";
-import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { Markdown } from "@/components/ui/Markdown";
 
 export function StorageProduct() {
@@ -20,14 +19,15 @@ export function StorageProduct() {
           transition={{ duration: 0.5 }}
           className="grid md:grid-cols-2 gap-12 md:gap-16 items-center"
         >
-          <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+          <div className="rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
             {product.image ? (
-              <FitBlurImage
+              <img
                 src={product.image}
                 alt={product.name}
+                className="w-full h-auto block"
               />
             ) : (
-              <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
                 <div className="text-center p-6">
                   <span className="text-gray-400 text-5xl">▤</span>
                   <p className="mt-3 text-gray-400 text-xs tracking-widest uppercase">Product Image</p>

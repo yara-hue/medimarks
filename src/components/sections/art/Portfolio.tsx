@@ -4,7 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { artProducts } from "@/data/site";
 import { Markdown } from "@/components/ui/Markdown";
 
@@ -26,20 +25,21 @@ export function ArtPortfolio() {
             >
               <div className="grid md:grid-cols-5 gap-8 md:gap-12 items-center">
                 <div className="md:col-span-2">
-                  <div className="aspect-square rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
-                    {product.image ? (
-                      <FitBlurImage
-                        src={product.image}
-                        alt={product.name}
-                      />
-                    ) : (
-                      <div className="w-full h-full bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
-                        <div className="text-center p-6">
-                          <span className="text-4xl">✦</span>
-                        </div>
+                <div className="rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
+                  {product.image ? (
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-auto block"
+                    />
+                  ) : (
+                    <div className="aspect-square bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+                      <div className="text-center p-6">
+                        <span className="text-4xl">✦</span>
                       </div>
-                    )}
-                  </div>
+                    </div>
+                  )}
+                </div>
                 </div>
                 <div className="md:col-span-3">
                   {product.category && (

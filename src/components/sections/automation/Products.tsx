@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { automationProducts } from "@/data/site";
-import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { Markdown } from "@/components/ui/Markdown";
 
 export function AutomationProducts() {
@@ -28,10 +27,11 @@ export function AutomationProducts() {
               className="grid md:grid-cols-5 gap-8 md:gap-12 items-center group hover:-translate-y-1 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-black/30 transition-all duration-300 rounded-2xl p-4 -m-4"
             >
               <div className="md:col-span-2">
-                <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
-                  <FitBlurImage
+                <div className="rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
+                  <img
                     src={product.image}
                     alt={product.name}
+                    className="w-full h-auto block"
                   />
                 </div>
               </div>
