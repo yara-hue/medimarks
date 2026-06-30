@@ -52,11 +52,11 @@ export default function RootLayout({
             setTimeout(function(){
               var el = document.getElementById('loading-screen');
               if (el && el.style.display !== 'none') { el.style.display = 'none'; }
-            }, 3500);
+            }, 2000);
             setTimeout(function(){
               var el = document.getElementById('loading-screen');
               if (el) { el.style.display = 'none'; }
-            }, 5000);
+            }, 3000);
           `
         }} />
         <Navbar />

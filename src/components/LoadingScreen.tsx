@@ -6,7 +6,7 @@ export function LoadingScreen() {
   const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setHidden(true), 3000);
+    const timer = setTimeout(() => setHidden(true), 1800);
     return () => clearTimeout(timer);
   }, []);
 
