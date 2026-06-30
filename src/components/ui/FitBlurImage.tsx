@@ -9,7 +9,7 @@ export function FitBlurImage({ src, alt, className = "" }: FitBlurImageProps) {
     <img
       src={src}
       alt={alt}
-      className={`w-full h-full object-cover ${className}`}
+      className={`w-full h-full object-contain ${className}`}
     />
   );
 }
