@@ -19,15 +19,15 @@ export function StorageProduct() {
           transition={{ duration: 0.5 }}
           className="grid md:grid-cols-2 gap-12 md:gap-16 items-center"
         >
-          <div className="rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
+          <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800">
             {product.image ? (
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-auto block"
-              />
+              <>
+                <div className="absolute inset-0 bg-cover bg-center opacity-15 dark:opacity-10"
+                     style={{ backgroundImage: `url("${product.image}")` }} />
+                <img src={product.image} alt={product.name} className="relative w-full h-full object-contain" />
+              </>
             ) : (
-              <div className="aspect-[4/3] bg-gradient-to-br from-gray-200 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
+              <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
                 <div className="text-center p-6">
                   <span className="text-gray-400 text-5xl">▤</span>
                   <p className="mt-3 text-gray-400 text-xs tracking-widest uppercase">Product Image</p>
