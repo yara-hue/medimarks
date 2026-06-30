@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { automationProducts } from "@/data/site";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { Markdown } from "@/components/ui/Markdown";
 
 export function AutomationProducts() {
@@ -28,9 +29,10 @@ export function AutomationProducts() {
             >
               <div className="md:col-span-2">
                 <div className="aspect-[4/3] rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
-                  <div className="absolute inset-0 bg-cover bg-center opacity-15 dark:opacity-10"
-                       style={{ backgroundImage: `url("${product.image}")` }} />
-                  <img src={product.image} alt={product.name} className="relative w-full h-full object-contain" />
+                  <FitBlurImage
+                    src={product.image}
+                    alt={product.name}
+                  />
                 </div>
               </div>
 

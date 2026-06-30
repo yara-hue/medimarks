@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { FitBlurImage } from "@/components/ui/FitBlurImage";
 import { artProducts } from "@/data/site";
 import { Markdown } from "@/components/ui/Markdown";
 
@@ -27,11 +28,10 @@ export function ArtPortfolio() {
                 <div className="md:col-span-2">
                 <div className="aspect-square rounded-2xl relative overflow-hidden bg-gray-100 dark:bg-navy-800 group-hover:scale-[1.02] transition-transform duration-300">
                   {product.image ? (
-                    <>
-                      <div className="absolute inset-0 bg-cover bg-center opacity-15 dark:opacity-10"
-                           style={{ backgroundImage: `url("${product.image}")` }} />
-                      <img src={product.image} alt={product.name} className="relative w-full h-full object-contain" />
-                    </>
+                    <FitBlurImage
+                      src={product.image}
+                      alt={product.name}
+                    />
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-slate-100 to-gray-100 dark:from-navy-800 dark:to-navy-900 flex items-center justify-center">
                       <div className="text-center p-6">
