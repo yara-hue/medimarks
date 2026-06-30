@@ -62,8 +62,14 @@ export function MedicalProducts() {
                 </Link>
                 <Markdown text={product.description} className="mt-3 text-gray-500 dark:text-gray-400 leading-relaxed" />
 
-                {"brochure" in product && typeof product.brochure === "string" && (
-                  <div className="mt-4">
+                <div className="mt-4 flex items-center gap-4">
+                  <Link
+                    href={`/solutions/medical-furniture/${product.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-medium text-navy-600 dark:text-navy-300 hover:text-navy-800 dark:hover:text-white transition-colors"
+                  >
+                    Explore <span className="text-lg leading-none">→</span>
+                  </Link>
+                  {"brochure" in product && typeof product.brochure === "string" && (
                     <a
                       href={product.brochure}
                       download
@@ -74,8 +80,8 @@ export function MedicalProducts() {
                       </svg>
                       Download Brochure
                     </a>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

@@ -56,6 +56,14 @@ export function StorageProduct() {
                 Detailed specifications, load capacities, and dimension options available upon request.
               </p>
             </div>
+            <div className="mt-6">
+              <Link
+                href={`/solutions/storage-solutions/${product.slug}`}
+                className="inline-flex items-center gap-1 text-sm font-medium text-navy-600 dark:text-navy-300 hover:text-navy-800 dark:hover:text-white transition-colors"
+              >
+                Explore <span className="text-lg leading-none">→</span>
+              </Link>
+            </div>
           </div>
         </motion.div>
       </Container>

@@ -44,6 +44,12 @@ export function LightingGallery() {
                 <h3 className="font-heading font-semibold text-lg text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-200 transition-colors">{product.name}</h3>
               </Link>
               <Markdown text={product.description} className="mt-1 text-gray-500 dark:text-gray-400 text-sm" />
+              <Link
+                href={`/solutions/decorative-light-poles/${product.slug}`}
+                className="mt-3 inline-flex items-center gap-1 text-sm font-medium text-navy-600 dark:text-navy-300 hover:text-navy-800 dark:hover:text-white transition-colors"
+              >
+                Explore <span className="text-lg leading-none">→</span>
+              </Link>
             </motion.div>
           ))}
         </div>
