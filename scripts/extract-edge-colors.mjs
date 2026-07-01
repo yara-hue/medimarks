@@ -3,7 +3,8 @@ import { readdirSync, existsSync, writeFileSync } from "fs";
 import { join } from "path";
 
 const ROOT = "public/images/products";
-const STOPS = 32;
+const STOPS = 64;
+const EDGE = 3; // sample only the outermost 3px
 
 function walk(dir) {
   const entries = readdirSync(dir, { withFileTypes: true });
@@ -32,13 +33,13 @@ function diff(c1, c2) {
   return Math.abs(c1[0] - c2[0]) + Math.abs(c1[1] - c2[1]) + Math.abs(c1[2] - c2[2]);
 }
 
+// fraction t ∈ [0, 1) → (x, y, edge) around perimeter clockwise from top-left
 function perimeterPoint(w, h, t) {
-  // t in [0, 1) — fraction around perimeter clockwise from top-left
   const p = t * 2 * (w + h);
-  if (p < w) return { x: p, y: 0 };                     // top edge, L→R
-  if (p < w + h) return { x: w, y: p - w };              // right edge, T→B
-  if (p < 2 * w + h) return { x: w - (p - w - h), y: h };// bottom edge, R→L
-  return { x: 0, y: h - (p - 2 * w - h) };               // left edge, B→T
+  if (p < w) return { x: p, y: 0, edge: "top" };
+  if (p < w + h) return { x: w, y: p - w, edge: "right" };
+  if (p < 2 * w + h) return { x: w - (p - w - h), y: h, edge: "bottom" };
+  return { x: 0, y: h - (p - 2 * w - h), edge: "left" };
 }
 
 async function sample(file, left, top, w, h) {
@@ -47,19 +48,41 @@ async function sample(file, left, top, w, h) {
 
 async function getColors(file) {
   const { width: w, height: h } = await sharp(file).metadata();
-
-  // small square size for each perimeter sample (3% of min dim, clamped 3–12 px)
-  const ss = Math.max(3, Math.min(12, Math.round(Math.min(w, h) * 0.03)));
-  const half = Math.floor(ss / 2);
+  const half = Math.floor(EDGE / 2); // 1
 
   const colors = [];
   for (let i = 0; i < STOPS; i++) {
     const t = i / STOPS;
-    const { x, y } = perimeterPoint(w, h, t);
-    const left = Math.max(0, Math.round(x - half));
-    const top = Math.max(0, Math.round(y - half));
-    const sw = Math.min(ss, w - left);
-    const sh = Math.min(ss, h - top);
+    const { x, y, edge } = perimeterPoint(w, h, t);
+
+    let left, top, sw, sh;
+
+    if (edge === "top") {
+      // 3px inward from top, 3px wide along edge centered on x
+      left = Math.max(0, Math.round(x - half));
+      top = 0;
+      sw = Math.min(EDGE, w - left);
+      sh = Math.min(EDGE, h);
+    } else if (edge === "right") {
+      // 3px inward from right, 3px tall along edge centered on y
+      left = w - EDGE;
+      top = Math.max(0, Math.round(y - half));
+      sw = EDGE;
+      sh = Math.min(EDGE, h - top);
+    } else if (edge === "bottom") {
+      // 3px inward from bottom, 3px wide along edge centered on x
+      left = Math.max(0, Math.round(x - half));
+      top = h - EDGE;
+      sw = Math.min(EDGE, w - left);
+      sh = EDGE;
+    } else {
+      // left edge: 3px inward from left, 3px tall along edge centered on y
+      left = 0;
+      top = Math.max(0, Math.round(y - half));
+      sw = EDGE;
+      sh = Math.min(EDGE, h - top);
+    }
+
     if (sw > 0 && sh > 0) {
       const buf = await sample(file, left, top, sw, sh);
       colors.push(mean(buf));
@@ -70,7 +93,6 @@ async function getColors(file) {
   const sum = valid.reduce((a, c) => [a[0] + c[0], a[1] + c[1], a[2] + c[2]], [0, 0, 0]);
   const avg = [Math.round(sum[0] / valid.length), Math.round(sum[1] / valid.length), Math.round(sum[2] / valid.length)];
 
-  // gradient if max diff between any two perimeter samples > 15
   let md = 0;
   for (let i = 0; i < valid.length; i++)
     for (let j = i + 1; j < valid.length; j++)
