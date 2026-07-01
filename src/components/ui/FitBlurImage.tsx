@@ -11,10 +11,7 @@ function bgStyle(data: EdgeColors | undefined): React.CSSProperties {
   if (!data) return { backgroundColor: "#f0f0f0" };
   if (data.gradient) {
     return {
-      background: [
-        `linear-gradient(to bottom, ${data.top}, ${data.bottom})`,
-        `linear-gradient(to right, ${data.left}, ${data.right})`,
-      ].join(", "),
+      background: `conic-gradient(from 0deg, ${data.stops.join(", ")})`,
     };
   }
   return { backgroundColor: data.flat };

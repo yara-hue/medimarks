@@ -10,7 +10,7 @@ import { Markdown } from "@/components/ui/Markdown";
 
 export function LightingGallery() {
   return (
-    <section id="gallery" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
+    <section id="gallery" className="py-10 md:py-14 lg:py-20 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading title="Product Gallery" subtitle="Our range of decorative light poles." />
 

@@ -24,7 +24,7 @@ const reasons = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-gray-50 dark:bg-navy-900/50">
+    <section className="py-6 md:py-10 lg:py-14 bg-gray-50 dark:bg-navy-900/50">
       <Container>
         <SectionHeading
           title="Why Choose Our Medical Furniture"

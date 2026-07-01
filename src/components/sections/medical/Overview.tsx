@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 
 export function MedicalOverview() {
   return (
-    <section className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
+    <section className="py-6 md:py-10 lg:py-14 bg-white dark:bg-navy-900">
       <Container>
         <div className="max-w-3xl">
           <motion.div

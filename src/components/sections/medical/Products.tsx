@@ -10,7 +10,7 @@ import { Markdown } from "@/components/ui/Markdown";
 
 export function MedicalProducts() {
   return (
-    <section id="products" className="py-16 md:py-20 lg:py-28 bg-white dark:bg-navy-900">
+    <section id="products" className="py-10 md:py-14 lg:py-20 bg-white dark:bg-navy-900">
       <Container>
         <SectionHeading
           title="Our Medical Products"
